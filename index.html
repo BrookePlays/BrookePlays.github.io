@@ -1,0 +1,2242 @@
+<html>
+<head>
+<title>Project BCC</title>
+<style>
+body {
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align: center
+}
+th, td {
+  padding: 5px;
+}
+table {
+  width: 100%
+}
+</style>
+</head>
+<body>
+
+<table>
+<tr>
+<td>
+<p>Choose an endorsement:</p>
+<select id="selection">
+  <option value="endo">Advanced Endorsement</option>
+  <option value="care">Advanced Career Endorsement</option>
+  <option value="hono">Advanced Honors Endorsement</option>
+</select>
+</td>
+<td>
+<legend>MS classes passed:</legend>
+<input type="checkbox" name="msclass" value="Alge">MS Algebra<br>      
+<input type="checkbox" name="msclass" value="Health">MS Health<br>      
+<input type="checkbox" name="msclass" value="CSP">MS CSP<br>  
+</td>
+<td>
+<button type="button" onclick="myFunction()">Apply Changes</button>
+<button type="button"onclick="deleteItems()">Erase Changes</button>
+</td>
+</tr>    
+</table> 
+<p></p>
+<table>
+    <colgroup>
+        <col width="8%">
+        <col width="23%">
+        <col width="23%">
+        <col width="23%">
+        <col width="23%">
+    </colgroup>
+  <tr>
+    <th></th>
+    <th>9th</th>
+    <th>10th</th>
+    <th>11th</th>
+    <th>12th</th>
+  </tr>
+  <tr>
+    <td>ELA</td>
+    <td><input list="class_9" name="class9" id="class9">
+      <datalist id="class_9">
+        <option value="English I">English I</option>
+        <option value="Honors English I">Honors English I</option>
+        <option value="Strategic Reading">Strategic Reading</option>
+      </datalist></td>
+    <td><input list="class_90" name="class90" id="class90">
+      <datalist id="class_90">
+        <option value="English II + Speech">English II + Speech</option>
+        <option value="Honors English II + Speech">Honors English II + Speech</option>
+        <option value="Strategic Reading">Strategic Reading</option>
+      </datalist></td>
+    <td><input list="class_91" name="class91" id="class91">
+      <datalist id="class_91">
+        <option value="English III">English III</option>
+        <option value="Honors English III">Honors English III</option>
+        <option value="Strategic Reading">Strategic Reading</option>
+        <option value="Creative Writing">Creative Writing</option>
+      </datalist>
+      <input list="class_92" name="class92" id="class92">
+      <datalist id="class_92">
+        <option value="English III">English III</option>
+        <option value="Honors English III">Honors English III</option>
+        <option value="Strategic Reading">Strategic Reading</option>
+        <option value="Creative Writing">Creative Writing</option>
+      </datalist></td>
+    <td><input list="class_93" name="class93" id="class93">
+      <datalist id="class_93">
+        <option value="English IV">English IV</option>
+        <option value="Strategic Reading">Strategic Reading</option>
+        <option value="Creative Writing">Creative Writing</option>
+        <option value="Research and Communications Writing">Research and Communications Writing</option>
+        <option value="Senior Literature">Senior Literature</option>
+      </datalist>
+      <input list="class_94" name="class94" id="class94">
+      <datalist id="class_94">
+        <option value="English IV">English IV</option>
+        <option value="Strategic Reading">Strategic Reading</option>
+        <option value="Creative Writing">Creative Writing</option>
+        <option value="Research and Communications Writing">Research and Communications Writing</option>
+        <option value="Senior Literature">Senior Literature</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>Math</td>
+    <td><input list="class_8" name="class8" id="class8">
+      <datalist id="class_8">
+        <option value="Algebra I Lab">Algebra I Lab</option>
+        <option value="Algebra I">Algebra I</option>
+        <option value="Geometry">Geometry</option>
+        <option value="Accelerated Geometry">Accelerated Geometry</option>
+        <option value="Algebra II">Algebra II</option>
+        <option value="Accelerated Algebra II">Accelerated Algebra II</option>
+      </datalist></td>
+    <td><input list="class_80" name="class80" id="class80">
+      <datalist id="class_80">
+        <option value="Algebra I">Algebra I</option>
+        <option value="Geometry">Geometry</option>
+        <option value="Accelerated Geometry">Accelerated Geometry</option>
+        <option value="Algebra II">Algebra II</option>
+        <option value="Accelerated Algebra II">Accelerated Algebra II</option>
+      </datalist></td>
+    <td><input list="class_81" name="class81" id="class81">
+      <datalist id="class_81">
+        <option value="Algebra I">Algebra I</option>
+        <option value="Geometry">Geometry</option>
+        <option value="Accelerated Geometry">Accelerated Geometry</option>
+        <option value="Algebra II">Algebra II</option>
+        <option value="Accelerated Algebra II">Accelerated Algebra II</option>
+        <option value="Honors Pre-Calculus">
+        <option value="Trigonometry">Trigonometry</option>
+        <option value="Consumer Math">Consumer Math</option>
+        <option value="Statistics and Probability">Statistics and Probability</option>
+      </datalist>
+      <input list="class_82" name="class82" id="class82">
+      <datalist id="class_82">
+        <option value="Algebra I">Algebra I</option>
+        <option value="Geometry">Geometry</option>
+        <option value="Accelerated Geometry">Accelerated Geometry</option>
+        <option value="Algebra II">Algebra II</option>
+        <option value="Accelerated Algebra II">Accelerated Algebra II</option>
+        <option value="Honors Pre-Calculus">
+        <option value="Trigonometry">Trigonometry</option>
+        <option value="Consumer Math">Consumer Math</option>
+        <option value="Statistics and Probability">Statistics and Probability</option>
+      </datalist></td>
+    <td><input list="class_83" name="class83" id="class83">
+      <datalist id="class_83">
+        <option value="Algebra I">Algebra I</option>
+        <option value="Geometry">Geometry</option>
+        <option value="Accelerated Geometry">Accelerated Geometry</option>
+        <option value="Algebra II">Algebra II</option>
+        <option value="Accelerated Algebra II">Accelerated Algebra II</option>
+        <option value="Honors Pre-Calculus">
+        <option value="Trigonometry">Trigonometry</option>
+        <option value="Consumer Math">Consumer Math</option>
+        <option value="Statistics and Probability">Statistics and Probability</option>
+        <option value="AP Statistics">AP Statistics</option>
+        <option value="AP Calculus AB">AP Calculus AB</option>
+      </datalist>
+      <input list="class_84" name="class84" id="class84">
+      <datalist id="class_84">
+        <option value="Algebra I">Algebra I</option>
+        <option value="Geometry">Geometry</option>
+        <option value="Accelerated Geometry">Accelerated Geometry</option>
+        <option value="Algebra II">Algebra II</option>
+        <option value="Accelerated Algebra II">Accelerated Algebra II</option>
+        <option value="Honors Pre-Calculus">
+        <option value="Trigonometry">Trigonometry</option>
+        <option value="Consumer Math">Consumer Math</option>
+        <option value="Statistics and Probability">Statistics and Probability</option>
+        <option value="AP Statistics">AP Statistics</option>
+        <option value="AP Calculus AB">AP Calculus AB</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>Sci</td>
+    <td><input list="class_7" name="class7" id="class7">
+      <datalist id="class_7">
+        <option value="Physical Science">Physical Science</option>
+        <option value="Biology">Biology</option>
+        <option value="Honors Biology">Honors Biology</option>
+      </datalist></td>
+    <td><input list="class_70" name="class70" id="class70">
+      <datalist id="class_70">
+        <option value="Chemistry">Chemistry</option>
+        <option value="Honors Chemistry">Honors Chemistry</option>
+      </datalist></td>
+    <td><input list="class_71" name="class71" id="class71">
+      <datalist id="class_71">
+        <option value="Physics">Physics</option>
+        <option value="Honors Physics">Honors Physics</option>
+        <option value="Anatomy/Physiology">Anatomy/Physiology</option>
+        <option value="Astrology">Astrology</option>
+        <option value="Environmental Science">Environmental Science</option>
+        <option value="AP Physics">AP Physics</option>
+      </datalist>
+      <input list="class_72" name="class72" id="class72">
+      <datalist id="class_72">
+        <option value="Physics">Physics</option>
+        <option value="Honors Physics">Honors Physics</option>
+        <option value="Anatomy/Physiology">Anatomy/Physiology</option>
+        <option value="Astrology">Astrology</option>
+        <option value="Environmental Science">Environmental Science</option>
+        <option value="AP Physics">AP Physics</option>
+      </datalist></td>
+    <td><input list="class_73" name="class73" id="class73">
+      <datalist id="class_73">
+        <option value="Anatomy/Physiology">Anatomy/Physiology</option>
+        <option value="Astrology">Astrology</option>
+        <option value="Environmental Science">Environmental Science</option>
+        <option value="AP Physics">AP Physics</option>
+      </datalist>
+      <input list="class_74" name="class74" id="class74">
+      <datalist id="class_74">
+        <option value="Anatomy/Physiology">Anatomy/Physiology</option>
+        <option value="Astrology">Astrology</option>
+        <option value="Environmental Science">Environmental Science</option>
+        <option value="AP Physics">AP Physics</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>SS</td>
+    <td><input list="class_6" name="class6" id="class6">
+      <datalist id="class_6">
+        <option value="World History/Geography">World History/Geography</option>
+        <option value="Honors World History/Geography">Honors World History/Geography</option>
+      </datalist></td>
+    <td><input list="class_60" name="class60" id="class60">
+      <datalist id="class_60">
+        <option value="American History">American History</option>
+        <option value="Criminal Justice Today">Criminal Justice Today</option>
+        <option value="African American History">African American History</option>
+        <option value="AP American History">AP American History</option>
+      </datalist></td>
+    <td><input list="class_61" name="class61" id="class61">
+      <datalist id="class_61">
+        <option value="American History">American History</option>
+        <option value="Criminal Justice Today">Criminal Justice Today</option>
+        <option value="African American History">African American History</option>
+        <option value="Government">Government</option>
+        <option value="International Affairs">International Affairs</option>
+        <option value="American History and Film">American History and Film</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Psychology">Psychology</option>
+        <option value="AP Psychology">AP Sociology</option>
+        <option value="AP American History">AP American History</option>
+      </datalist>
+      <input list="class_62" name="class62" id="class62">
+      <datalist id="class_62">
+        <option value="American History">American History</option>
+        <option value="Criminal Justice Today">Criminal Justice Today</option>
+        <option value="African American History">African American History</option>
+        <option value="Government">Government</option>
+        <option value="International Affairs">International Affairs</option>
+        <option value="American History and Film">American History and Film</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Psychology">Psychology</option>
+        <option value="AP Psychology">AP Sociology</option>
+        <option value="AP American History">AP American History</option>
+      </datalist></td>
+    <td><input list="class_63" name="class63" id="class63">
+      <datalist id="class_63">
+        <option value="Criminal Justice Today">Criminal Justice Today</option>
+        <option value="African American History">African American History</option>
+        <option value="Government">Government</option>
+        <option value="International Affairs">International Affairs</option>
+        <option value="American History and Film">American History and Film</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Psychology">Psychology</option>
+        <option value="AP Psychology">AP Sociology</option>
+        <option value="AP American History">AP American History</option>
+      </datalist>
+      <input list="class_64" name="class64" id="class64">
+      <datalist id="class_64">
+        <option value="Criminal Justice Today">Criminal Justice Today</option>
+        <option value="African American History">African American History</option>
+        <option value="Government">Government</option>
+        <option value="International Affairs">International Affairs</option>
+        <option value="American History and Film">American History and Film</option>
+        <option value="Sociology">Sociology</option>
+        <option value="Psychology">Psychology</option>
+        <option value="AP Psychology">AP Sociology</option>
+        <option value="AP American History">AP American History</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>Arts</td>
+    <td><input list="class_5" name="class5" id="class5">
+      <datalist id="class_5">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Photography">Photography</option>
+      </datalist>
+      <input list="class_50" name="class50" id="class50">
+      <datalist id="class_50">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Photography">Photography</option>
+      </datalist>
+      <input list="class_51" name="class51" id="class51">
+      <datalist id="class_51">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Photography">Photography</option>
+      </datalist>
+      <input list="class_52" name="class52" id="class52">
+      <datalist id="class_52">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Photography">Photography</option>
+      </datalist></td>
+    <td><input list="class_53" name="class53" id="class53">
+      <datalist id="class_53">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+      </datalist>
+      <input list="class_54" name="class54" id="class54">
+      <datalist id="class_54">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+      </datalist>
+      <input list="class_55" name="class55" id="class55">
+      <datalist id="class_55">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+      </datalist>
+      <input list="class_56" name="class56" id="class56">
+      <datalist id="class_56">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+      </datalist></td>
+    <td><input list="class_57" name="class57" id="class57">
+      <datalist id="class_57">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+        <option value="Art Portfolio">Art Portfolio</option>
+      </datalist>
+      <input list="class_58" name="class58" id="class58">
+      <datalist id="class_58">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+        <option value="Art Portfolio">Art Portfolio</option>
+      </datalist>
+      <input list="class_59" name="class59" id="class59">
+      <datalist id="class_59">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+        <option value="Art Portfolio">Art Portfolio</option>
+      </datalist>
+      <input list="class_5a" name="class5a" id="class5a">
+      <datalist id="class_5a">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+        <option value="Art Portfolio">Art Portfolio</option>
+      </datalist></td>
+    <td><input list="class_5b" name="class5b" id="class5b">
+      <datalist id="class_5b">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+        <option value="Art Portfolio">Art Portfolio</option>
+      </datalist>
+      <input list="class_5c" name="class5c" id="class5c">
+      <datalist id="class_5c">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+        <option value="Art Portfolio">Art Portfolio</option>
+      </datalist>
+      <input list="class_5d" name="class5d" id="class5d">
+      <datalist id="class_5d">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+        <option value="Art Portfolio">Art Portfolio</option>
+      </datalist>
+      <input list="class_5e" name="class5e" id="class5e">
+      <datalist id="class_5e">
+        <option value="Music Appreciation">Music Appreciation</option>
+        <option value="Band">Band</option>
+        <option value="Concert Choir">Concert Choir</option>
+        <option value="Men's Choir">Men's Choir</option>
+        <option value="Women's Choir">Women's Choir</option>
+        <option value="Intro to Art I">Intro to Art I</option>
+        <option value="Intro to Art II">Intro to Art II</option>
+        <option value="Drawing I">Drawing I</option>
+        <option value="Drawing II">Drawing II</option>
+        <option value="Painting I">Painting I</option>
+        <option value="Painting II">Painting II</option>
+        <option value="Pottery I">Pottery I</option>
+        <option value="Pottery II">Pottery II</option>
+        <option value="Photography">Photography</option>
+        <option value="Art Portfolio">Art Portfolio</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>Lang</td>
+    <td><input list="class_4" name="class4" id="class4">
+      <datalist id="class_4">
+        <option value="Spanish I">Spanish I</option>
+        <option value="ASL I">ASL I</option>
+      </datalist></td>
+    <td><input list="class_40" name="class40" id="class40">
+      <datalist id="class_40">
+        <option value="Spanish I">Spanish I</option>
+        <option value="Spanish II">Spanish II</option>
+        <option value="ASL I">ASL I</option>
+        <option value="ASL II">ASL II</option>
+      </datalist></td>
+    <td><input list="class_41" name="class41" id="class41">
+      <datalist id="class_41">
+        <option value="Spanish I">Spanish I</option>
+        <option value="Spanish II">Spanish II</option>
+        <option value="Spanish III">Spanish III</option>
+        <option value="ASL I">ASL I</option>
+        <option value="ASL II">ASL II</option>
+        <option value="ASL III">ASL III</option>
+      </datalist></td>
+    <td><input list="class_42" name="class42" id="class42">
+      <datalist id="class_42">
+        <option value="Spanish I">Spanish I</option>
+        <option value="Spanish II">Spanish II</option>
+        <option value="Spanish III">Spanish III</option>
+        <option value="ASL I">ASL I</option>
+        <option value="ASL II">ASL II</option>
+        <option value="ASL III">ASL III</option>
+        <option value="ASL IV">ASL IV</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>H / PE</td>
+    <td><input list="class_3" name="class3" id="class3">
+      <datalist id="class_3">
+        <option value="PE">PE</option>
+        <option value="Health">Health</option>
+        <option value="Cardio">Cardio</option>
+      </datalist>
+      <input list="class_30" name="class30" id="class30">
+      <datalist id="class_30">
+        <option value="PE">PE</option>
+        <option value="Health">Health</option>
+        <option value="Cardio">Cardio</option>
+      </datalist></td>
+    <td><input list="class_31" name="class31" id="class31">
+      <datalist id="class_31">
+        <option value="Cardio">Cardio</option>
+        <option value="Fitness and Conditioning">Fitness and Conditioning</option>
+      </datalist>
+      <input list="class_32" name="class32" id="class32">
+      <datalist id="class_32">
+        <option value="Cardio">Cardio</option>
+        <option value="Fitness and Conditioning">Fitness and Conditioning</option>
+      </datalist></td>
+    <td><input list="class_33" name="class33" id="class33">
+      <datalist id="class_33">
+        <option value="Cardio">Cardio</option>
+        <option value="Fitness and Conditioning">Fitness and Conditioning</option>
+      </datalist>
+      <input list="class_34" name="class34" id="class34">
+      <datalist id="class_34">
+        <option value="Cardio">Cardio</option>
+        <option value="Fitness and Conditioning">Fitness and Conditioning</option>
+      </datalist></td>
+    <td><input list="class_35" name="class35" id="class35">
+      <datalist id="class_35">
+        <option value="Cardio">Cardio</option>
+        <option value="Fitness and Conditioning">Fitness and Conditioning</option>
+      </datalist>
+      <input list="class_36" name="class36" id="class36">
+      <datalist id="class_36">
+        <option value="Cardio">Cardio</option>
+        <option value="Fitness and Conditioning">Fitness and Conditioning</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>CTE</td>
+    <td><input list="class_2" name="class2" id="class2">
+      <datalist id="class_2">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Intro to Construction">Intro to Construction</option>
+      </datalist>
+      <input list="class_20" name="class20" id="class20">
+      <datalist id="class_20">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Intro to Construction">Intro to Construction</option>
+      </datalist>
+      <input list="class_21" name="class21" id="class21">
+      <datalist id="class_21">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Intro to Construction">Intro to Construction</option>
+      </datalist>
+      <input list="class_22" name="class22" id="class22">
+      <datalist id="class_22">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Intro to Construction">Intro to Construction</option>
+      </datalist>
+      <input list="class_23" name="class23" id="class23">
+      <datalist id="class_23">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Intro to Construction">Intro to Construction</option>
+      </datalist>
+      <input list="class_24" name="class24" id="class24">
+      <datalist id="class_24">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Intro to Construction">Intro to Construction</option>
+      </datalist></td>
+    <td><input list="class_25" name="class25" id="class25">
+      <datalist id="class_25">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_26" name="class26" id="class26">
+      <datalist id="class_26">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_27" name="class27" id="class27">
+      <datalist id="class_27">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>>
+      </datalist>
+      <input list="class_28" name="class28" id="class28">
+      <datalist id="class_28">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_29" name="class29" id="class29">
+      <datalist id="class_29">
+        <option value="Intro to Business">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2a" name="class2a" id="class2a">
+      <datalist id="class_2a">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist></td>
+    <td><input list="class_2b" name="class2b" id="class2b">
+      <datalist id="class_2b">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2c" name="class2c" id="class2c">
+      <datalist id="class_2c">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2d" name="class2d" id="class2d">
+      <datalist id="class_2d">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2e" name="class2e" id="class2e">
+      <datalist id="class_2e">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2f" name="class2f" id="class2f">
+      <datalist id="class_2f">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2g" name="class2g" id="class2g">
+      <datalist id="class_2g">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist></td>
+    <td><input list="class_2h" name="class2h" id="class2h">
+      <datalist id="class_2h">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Welding Tech IV">Welding Tech IV</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2i" name="class2i" id="class2i">
+      <datalist id="class_2i">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Welding Tech IV">Welding Tech IV</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2j" name="class2j" id="class2j">
+      <datalist id="class_2j">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Welding Tech IV">Welding Tech IV</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2k" name="class2k" id="class2k">
+      <datalist id="class_2k">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Welding Tech IV">Welding Tech IV</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2l" name="class2l" id="class2l">
+      <datalist id="class_2l">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Welding Tech IV">Welding Tech IV</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist>
+      <input list="class_2m" name="class2m" id="class2m">
+      <datalist id="class_2m">
+        <option value="Intro to Business">Intro to Business</option>
+        <option value="Accounting">Accounting</option>
+        <option value="Business Law">Business Law</option>
+        <option value="Nutrition and Wellness">Nutrition and Wellness</option>
+        <option value="Nutrition Sciences">Nutrition and Sciences</option>
+        <option value="Human Development I">Human Development I</option>
+        <option value="Human Development II">Human Development II</option>
+        <option value="Business Computer Applications">Business Computer Applications</option>
+        <option value="Exploration of Information Technology">Exploration of Information Technology</option>
+        <option value="Computer Science Principles I">Computer Science Principles I</option>
+        <option value="Computer Science Principles II">Computer Science Principles II</option>
+        <option value="Cybersecurity I">Cybersecurity I</option>
+        <option value="Cybersecurity II">Cybersecurity II</option>
+        <option value="Exploration of Media Arts I">Exploration of Media Arts I</option>
+        <option value="Exploration of Media Arts II">Exploration of Media Arts II</option>
+        <option value="Media Design and Broadcasting I">Media Design and Broadcasting I</option>
+        <option value="Media Design and Broadcasting II">Media Design and Broadcasting II</option>
+        <option value="Interior Design I">Interior Design I</option>
+        <option value="Interior Design II">Interior Design II</option>
+        <option value="Introduction to Building Trades">Introduction to Building Trades</option>
+        <option value="Residential Construction">Residential Construction</option>
+        <option value="Welding Tech I">Welding Tech I</option>
+        <option value="Welding Tech II">Welding Tech II</option>
+        <option value="Welding Tech III">Welding Tech III</option>
+        <option value="Welding Tech IV">Welding Tech IV</option>
+        <option value="Principles of Biomedical Science">Principles of Biomedical Science</option>
+        <option value="Human Body Systems">Human Body Systems</option>
+        <option value="Medical Interventions">Medical Interventions</option>option>
+        <option value="Entrepreneurship">Entrepreneurship</option>
+        <option value="Intro to Engineering Design">Intro to Engineering Design</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>Other</td>
+    <td><input list="class_1" name="class1" id="class1">
+      <datalist id="class_1">
+        <option value="Intro to Journalism">Intro to Journalism</option>
+      </datalist></td>
+    <td><input list="class_10" name="class10" id="class10">
+      <datalist id="class_10">
+        <option value="Intro to Journalism">Intro to Journalism</option>
+        <option value="Yearbook/Journalism">Yearbook/Journalism</option>
+      </datalist></td>
+    <td><input list="class_11" name="class11" id="class11">
+      <datalist id="class_11">
+        <option value="Personal Finance">Personal Finance</option>
+        <option value="Intro to Journalism">Intro to Journalism</option>
+        <option value="Yearbook/Journalism">Yearbook/Journalism</option>
+        <option value="Mentoring">Mentoring</option>
+      </datalist>
+      <input list="class_12" name="class12" id="class12">
+      <datalist id="class_12">
+        <option value="Personal Finance">Personal Finance</option>
+        <option value="Intro to Journalism">Intro to Journalism</option>
+        <option value="Yearbook/Journalism">Yearbook/Journalism</option>
+        <option value="Mentoring">Mentoring</option>
+      </datalist></td>
+    <td><input list="class_13" name="class13" id="class13">
+      <datalist id="class_13">
+        <option value="Personal Finance">Personal Finance</option>
+        <option value="Intro to Journalism">Intro to Journalism</option>
+        <option value="Yearbook/Journalism">Yearbook/Journalism</option>
+        <option value="Mentoring">Mentoring</option>
+        <option value="Youth Internships">Youth Internships</option>
+        <option value="Senior Experience">Senior Experience</option>
+      </datalist>
+      <input list="class_14" name="class14" id="class14">
+      <datalist id="class_14">
+        <option value="Personal Finance">Personal Finance</option>
+        <option value="Intro to Journalism">Intro to Journalism</option>
+        <option value="Yearbook/Journalism">Yearbook/Journalism</option>
+        <option value="Mentoring">Mentoring</option>
+        <option value="Youth Internships">Youth Internships</option>
+        <option value="Senior Experience">Senior Experience</option>
+      </datalist></td>
+  </tr>
+  <tr>
+    <td>Dual</td>
+    <td>unavailable</td>
+    <td>unavailable</td>
+    <td><input list="class_00" name="class00" id="class00">
+      <datalist id="class_00">
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+      </datalist>
+      <input list="class_01" name="class01" id="class01">
+      <datalist id="class_01">
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+      </datalist>
+      <input list="class_02" name="class02" id="class02">
+      <datalist id="class_02">
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+      </datalist>
+      <input list="class_03" name="class03" id="class03">
+      <datalist id="class_03">
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+      </datalist>
+      <input list="class_04" name="class04" id="class04">
+      <datalist id="class_04">
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+      </datalist>
+      <input list="class_05" name="class05" id="class05">
+      <datalist id="class_05">
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+      </datalist>
+</td>
+    <td><input list="class_06" name="class06" id="class06">
+    <datalist id="class_06">
+        <option value="English Composition">English Composition</option>
+        <option value="Math College Algebra">Math College Algebra</option>
+        <option value="Intro to Literature">Intro to Literature</option>
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+    </datalist>
+    <input list="class_07" name="class07" id="class07">
+    <datalist id="class_07">
+        <option value="English Composition">English Composition</option>
+        <option value="Math College Algebra">Math College Algebra</option>
+        <option value="Intro to Literature">Intro to Literature</option>
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+    </datalist>
+    <input list="class_08" name="class08" id="class08">
+    <datalist id="class_08">
+        <option value="English Composition">English Composition</option>
+        <option value="Math College Algebra">Math College Algebra</option>
+        <option value="Intro to Literature">Intro to Literature</option>
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+    </datalist>
+    <input list="class_09" name="class09" id="class09">
+    <datalist id="class_09">
+        <option value="English Composition">English Composition</option>
+        <option value="Math College Algebra">Math College Algebra</option>
+        <option value="Intro to Literature">Intro to Literature</option>
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+    </datalist>
+    <input list="class_0" name="class0" id="class0">
+    <datalist id="class_0">
+        <option value="English Composition">English Composition</option>
+        <option value="Math College Algebra">Math College Algebra</option>
+        <option value="Intro to Literature">Intro to Literature</option>
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+    </datalist>
+    <input list="class_" name="class" id="class">
+    <datalist id="class_">
+        <option value="English Composition">English Composition</option>
+        <option value="Math College Algebra">Math College Algebra</option>
+        <option value="Intro to Literature">Intro to Literature</option>
+        <option value="Chemistry 106">Chemistry 106</option>
+        <option value="Online/Other">Online/Other</option>
+    </datalist></td>
+  </tr>
+  <tr>
+    <td>
+      Total
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      DualT
+    </td>
+    <td>
+      unavaliable
+    </td>
+    <td>
+      unavaliable
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+  </tr>
+</table>
+</body>
+
+<script>
+function deleteItems() {
+  localStorage.clear();
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+   var input = document.getElementById('class'), 
+   input0 = document.getElementById('class0'), 
+   input09 = document.getElementById('class09'),
+   input08 = document.getElementById('class08'), 
+   input07 = document.getElementById('class07'),
+   input06 = document.getElementById('class06'), 
+   input05 = document.getElementById('class05'),
+   input04 = document.getElementById('class04'), 
+   input03 = document.getElementById('class03'), 
+   input02 = document.getElementById('class02'),
+   input01 = document.getElementById('class01'), 
+   input00 = document.getElementById('class00'),
+   input1 = document.getElementById('class1'), 
+   input10 = document.getElementById('class10'),
+   input11 = document.getElementById('class11'), 
+   input12 = document.getElementById('class12'), 
+   input13 = document.getElementById('class13'),
+   input14 = document.getElementById('class14'), 
+   input2 = document.getElementById('class2'),
+   input20 = document.getElementById('class20'), 
+   input21 = document.getElementById('class21'),
+   input22 = document.getElementById('class22'), 
+   input23 = document.getElementById('class23'), 
+   input24 = document.getElementById('class24'),
+   input25 = document.getElementById('class25'), 
+   input26 = document.getElementById('class26'),
+   input27 = document.getElementById('class27'), 
+   input28 = document.getElementById('class28'),
+   input29 = document.getElementById('class29'), 
+   input2a = document.getElementById('class2a'), 
+   input2b = document.getElementById('class2b'),
+   input2c = document.getElementById('class2c'), 
+   input2d = document.getElementById('class2d'),
+   input2e = document.getElementById('class2e'), 
+   input2f = document.getElementById('class2f'),
+   input2g = document.getElementById('class2g'), 
+   input2h = document.getElementById('class2h'), 
+   input2i = document.getElementById('class2i'),
+   input2j = document.getElementById('class2j'), 
+   input2k = document.getElementById('class2k'),
+   input2l = document.getElementById('class2l'), 
+   input2m = document.getElementById('class2m'),
+   input3 = document.getElementById('class3'), 
+   input30 = document.getElementById('class30'), 
+   input31 = document.getElementById('class31'),
+   input32 = document.getElementById('class32'), 
+   input33 = document.getElementById('class33'),
+   input34 = document.getElementById('class34'), 
+   input35 = document.getElementById('class35'),
+   input36 = document.getElementById('class36'), 
+   input4 = document.getElementById('class4'), 
+   input40 = document.getElementById('class40'),
+   input41 = document.getElementById('class41'), 
+   input42 = document.getElementById('class42'),
+   input5 = document.getElementById('class5'), 
+   input50 = document.getElementById('class50'),
+   input51 = document.getElementById('class51'), 
+   input52 = document.getElementById('class52'), 
+   input53 = document.getElementById('class53'),
+   input54 = document.getElementById('class54'), 
+   input55 = document.getElementById('class55'),
+   input56 = document.getElementById('class56'), 
+   input57 = document.getElementById('class57'),
+   input58 = document.getElementById('class58'), 
+   input59 = document.getElementById('class59'), 
+   input5a = document.getElementById('class5a'),
+   input5b = document.getElementById('class5b'), 
+   input5c = document.getElementById('class5c'),
+   input5d = document.getElementById('class5d'), 
+   input5e = document.getElementById('class5e'),
+   input6 = document.getElementById('class6'), 
+   input60 = document.getElementById('class60'), 
+   input61 = document.getElementById('class61'),
+   input62 = document.getElementById('class62'), 
+   input63 = document.getElementById('class63'),
+   input64 = document.getElementById('class64'), 
+   input7 = document.getElementById('class7'),
+   input70 = document.getElementById('class70'), 
+   input71 = document.getElementById('class71'), 
+   input72 = document.getElementById('class72'),
+   input73 = document.getElementById('class73'), 
+   input74 = document.getElementById('class74'),
+   input8 = document.getElementById('class8'), 
+   input80 = document.getElementById('class80'),
+   input81 = document.getElementById('class81'), 
+   input82 = document.getElementById('class82'), 
+   input83 = document.getElementById('class83'),
+   input84 = document.getElementById('class84'), 
+   input9 = document.getElementById('class9'),
+   input90 = document.getElementById('class90'), 
+   input91 = document.getElementById('class91'),
+   input92 = document.getElementById('class92'), 
+   input93 = document.getElementById('class93'), 
+   input94 = document.getElementById('class94');
+   
+   if (localStorage['class']) { 
+       input.value = localStorage['class']; 
+   }
+   if (localStorage['class0']) { 
+       input0.value = localStorage['class0']; 
+   }
+   if (localStorage['class09']) { 
+       input09.value = localStorage['class09']; 
+   }
+   if (localStorage['class08']) { 
+       input08.value = localStorage['class08']; 
+   }
+   if (localStorage['class07']) { 
+       input07.value = localStorage['class07']; 
+   }
+   if (localStorage['class06']) { 
+       input06.value = localStorage['class06']; 
+   }
+   if (localStorage['class05']) { 
+       input05.value = localStorage['class05']; 
+   }
+   if (localStorage['class04']) { 
+       input04.value = localStorage['class04']; 
+   }
+   if (localStorage['class03']) { 
+       input03.value = localStorage['class03']; 
+   }
+   if (localStorage['class02']) { 
+       input02.value = localStorage['class02']; 
+   }
+   if (localStorage['class01']) { 
+       input01.value = localStorage['class01']; 
+   }
+   if (localStorage['class00']) { 
+       input00.value = localStorage['class00']; 
+   }
+   if (localStorage['class1']) { 
+       input1.value = localStorage['class1']; 
+   }
+   if (localStorage['class10']) { 
+       input10.value = localStorage['class10']; 
+   }
+   if (localStorage['class11']) { 
+       input11.value = localStorage['class11']; 
+   }
+   if (localStorage['class12']) { 
+       input12.value = localStorage['class12']; 
+   }
+   if (localStorage['class13']) { 
+       input13.value = localStorage['class13']; 
+   }
+   if (localStorage['class14']) { 
+       input14.value = localStorage['class14']; 
+   }
+   if (localStorage['class2']) { 
+       input2.value = localStorage['class2']; 
+   }
+   if (localStorage['class20']) { 
+       input20.value = localStorage['class20']; 
+   }
+   if (localStorage['class21']) { 
+       input21.value = localStorage['class21']; 
+   }
+   if (localStorage['class22']) { 
+       input22.value = localStorage['class22']; 
+   }
+   if (localStorage['class23']) { 
+       input23.value = localStorage['class23']; 
+   }
+   if (localStorage['class24']) { 
+       input24.value = localStorage['class24']; 
+   }
+   if (localStorage['class25']) { 
+       input25.value = localStorage['class25']; 
+   }
+   if (localStorage['class26']) { 
+       input26.value = localStorage['class26']; 
+   }
+   if (localStorage['class27']) { 
+       input27.value = localStorage['class27']; 
+   }
+   if (localStorage['class28']) { 
+       input28.value = localStorage['class28']; 
+   }
+   if (localStorage['class29']) { 
+       input29.value = localStorage['class29']; 
+   }
+   if (localStorage['class2a']) { 
+       input2a.value = localStorage['class2a']; 
+   }
+   if (localStorage['class2b']) { 
+       input2b.value = localStorage['class2b']; 
+   }
+   if (localStorage['class2c']) { 
+       input2c.value = localStorage['class2c']; 
+   }
+   if (localStorage['class2d']) { 
+       input2d.value = localStorage['class2d']; 
+   }
+   if (localStorage['class2e']) { 
+       input2e.value = localStorage['class2e']; 
+   }
+   if (localStorage['class2f']) { 
+       input2f.value = localStorage['class2f']; 
+   }
+   if (localStorage['class2g']) { 
+       input2g.value = localStorage['class2g']; 
+   }
+   if (localStorage['class2h']) { 
+       input2h.value = localStorage['class2h']; 
+   }
+   if (localStorage['class2i']) { 
+       input2i.value = localStorage['class2i']; 
+   }
+   if (localStorage['class2j']) { 
+       input2j.value = localStorage['class2j']; 
+   }
+   if (localStorage['class2k']) { 
+       input2k.value = localStorage['class2k']; 
+   }
+   if (localStorage['class2l']) { 
+       input2l.value = localStorage['class2l']; 
+   }
+   if (localStorage['class2m']) { 
+       input2m.value = localStorage['class2m']; 
+   }
+   if (localStorage['class3']) { 
+       input3.value = localStorage['class3']; 
+   }
+   if (localStorage['class30']) { 
+       input30.value = localStorage['class30']; 
+   }
+   if (localStorage['class31']) { 
+       input31.value = localStorage['class31']; 
+   }
+   if (localStorage['class32']) { 
+       input32.value = localStorage['class32']; 
+   }
+   if (localStorage['class33']) { 
+       input33.value = localStorage['class33']; 
+   }
+   if (localStorage['class34']) { 
+       input34.value = localStorage['class34']; 
+   }
+   if (localStorage['class35']) { 
+       input35.value = localStorage['class35']; 
+   }
+   if (localStorage['class36']) { 
+       input36.value = localStorage['class36']; 
+   }
+   if (localStorage['class4']) { 
+       input4.value = localStorage['class4']; 
+   }
+   if (localStorage['class40']) { 
+       input40.value = localStorage['class40']; 
+   }
+   if (localStorage['class41']) { 
+       input41.value = localStorage['class41']; 
+   }
+   if (localStorage['class42']) { 
+       input42.value = localStorage['class42']; 
+   }
+   if (localStorage['class5']) { 
+       input5.value = localStorage['class5']; 
+   }
+   if (localStorage['class50']) { 
+       input50.value = localStorage['class50']; 
+   }
+   if (localStorage['class51']) { 
+       input51.value = localStorage['class51']; 
+   }
+   if (localStorage['class52']) { 
+       input52.value = localStorage['class52']; 
+   }
+   if (localStorage['class53']) { 
+       input53.value = localStorage['class53']; 
+   }
+   if (localStorage['class54']) { 
+       input54.value = localStorage['class54']; 
+   }
+   if (localStorage['class55']) { 
+       input55.value = localStorage['class55']; 
+   }
+   if (localStorage['class56']) { 
+       input56.value = localStorage['class56']; 
+   }
+   if (localStorage['class57']) { 
+       input57.value = localStorage['class57']; 
+   }
+   if (localStorage['class58']) { 
+       input58.value = localStorage['class58']; 
+   }
+   if (localStorage['class59']) { 
+       input59.value = localStorage['class59']; 
+   }
+   if (localStorage['class5a']) { 
+       input5a.value = localStorage['class5a']; 
+   }
+   if (localStorage['class5b']) { 
+       input5b.value = localStorage['class5b']; 
+   }
+   if (localStorage['class5c']) { 
+       input5c.value = localStorage['class5c']; 
+   }
+   if (localStorage['class5d']) { 
+       input5d.value = localStorage['class5d']; 
+   }
+   if (localStorage['class5e']) { 
+       input5e.value = localStorage['class5e']; 
+   }
+   if (localStorage['class6']) { 
+       input6.value = localStorage['class6']; 
+   }
+   if (localStorage['class60']) { 
+       input60.value = localStorage['class60']; 
+   }
+   if (localStorage['class61']) { 
+       input61.value = localStorage['class61']; 
+   }
+   if (localStorage['class62']) { 
+       input62.value = localStorage['class62']; 
+   }
+   if (localStorage['class63']) { 
+       input63.value = localStorage['class63']; 
+   }
+   if (localStorage['class64']) { 
+       input64.value = localStorage['class64']; 
+   }
+   if (localStorage['class7']) { 
+       input7.value = localStorage['class7']; 
+   }
+   if (localStorage['class70']) { 
+       input70.value = localStorage['class70']; 
+   }
+   if (localStorage['class71']) { 
+       input71.value = localStorage['class71']; 
+   }
+   if (localStorage['class72']) { 
+       input72.value = localStorage['class72']; 
+   }
+   if (localStorage['class73']) { 
+       input73.value = localStorage['class73']; 
+   }
+   if (localStorage['class74']) { 
+       input74.value = localStorage['class74']; 
+   }
+   if (localStorage['class8']) { 
+       input8.value = localStorage['class8']; 
+   }
+   if (localStorage['class80']) { 
+       input80.value = localStorage['class80']; 
+   }
+   if (localStorage['class81']) { 
+       input81.value = localStorage['class81']; 
+   }
+   if (localStorage['class82']) { 
+       input82.value = localStorage['class82']; 
+   }
+   if (localStorage['class83']) { 
+       input83.value = localStorage['class83']; 
+   }
+   if (localStorage['class84']) { 
+       input84.value = localStorage['class84']; 
+   }
+   if (localStorage['class9']) { 
+       input9.value = localStorage['class9']; 
+   }
+   if (localStorage['class90']) { 
+       input90.value = localStorage['class90']; 
+   }
+   if (localStorage['class91']) { 
+       input91.value = localStorage['class91']; 
+   }
+   if (localStorage['class92']) { 
+       input92.value = localStorage['class92']; 
+   }
+   if (localStorage['class93']) { 
+       input93.value = localStorage['class93']; 
+   }
+   if (localStorage['class94']) { 
+       input94.value = localStorage['class94'];
+   }
+
+   input.onchange = function () {
+        localStorage['class'] = this.value;
+   }
+   input0.onchange = function () {
+        localStorage['class0'] = this.value;
+   }
+   input09.onchange = function () {
+        localStorage['class09'] = this.value;
+   }
+   input08.onchange = function () {
+        localStorage['class08'] = this.value;
+   }
+   input07.onchange = function () {
+        localStorage['class07'] = this.value;
+   }
+   input06.onchange = function () {
+        localStorage['class06'] = this.value;
+   }
+   input05.onchange = function () {
+        localStorage['class05'] = this.value;
+   }
+   input04.onchange = function () {
+        localStorage['class04'] = this.value;
+   }
+   input03.onchange = function () {
+        localStorage['class03'] = this.value;
+   }
+   input02.onchange = function () {
+        localStorage['class02'] = this.value;
+   }
+   input01.onchange = function () {
+        localStorage['class01'] = this.value;
+   }
+   input00.onchange = function () {
+        localStorage['class00'] = this.value;
+   }
+   input1.onchange = function () {
+        localStorage['class1'] = this.value;
+   }
+   input10.onchange = function () {
+        localStorage['class10'] = this.value;
+   }
+   input11.onchange = function () {
+        localStorage['class11'] = this.value;
+   }
+   input12.onchange = function () {
+        localStorage['class12'] = this.value;
+   }
+   input13.onchange = function () {
+        localStorage['class13'] = this.value;
+   }
+   input14.onchange = function () {
+        localStorage['class14'] = this.value;
+   }
+   input2.onchange = function () {
+        localStorage['class2'] = this.value;
+   }
+   input20.onchange = function () {
+        localStorage['class20'] = this.value;
+   }
+   input21.onchange = function () {
+        localStorage['class21'] = this.value;
+   }
+   input22.onchange = function () {
+        localStorage['class22'] = this.value;
+   }
+   input23.onchange = function () {
+        localStorage['class23'] = this.value;
+   }
+   input24.onchange = function () {
+        localStorage['class24'] = this.value;
+   }
+   input25.onchange = function () {
+        localStorage['class25'] = this.value;
+   }
+   input26.onchange = function () {
+        localStorage['class26'] = this.value;
+   }
+   input27.onchange = function () {
+        localStorage['class27'] = this.value;
+   }
+   input28.onchange = function () {
+        localStorage['class28'] = this.value;
+   }
+   input29.onchange = function () {
+        localStorage['class29'] = this.value;
+   }
+   input2a.onchange = function () {
+        localStorage['class2a'] = this.value;
+   }
+   input2b.onchange = function () {
+        localStorage['class2b'] = this.value;
+   }
+   input2c.onchange = function () {
+        localStorage['class2c'] = this.value;
+   }
+   input2d.onchange = function () {
+        localStorage['class2d'] = this.value;
+   }
+   input2e.onchange = function () {
+        localStorage['class2e'] = this.value;
+   }
+   input2f.onchange = function () {
+        localStorage['class2f'] = this.value;
+   }
+   input2g.onchange = function () {
+        localStorage['class2g'] = this.value;
+   }
+   input2h.onchange = function () {
+        localStorage['class2h'] = this.value;
+   }
+   input2i.onchange = function () {
+        localStorage['class2i'] = this.value;
+   }
+   input2j.onchange = function () {
+        localStorage['class2j'] = this.value;
+   }
+   input2k.onchange = function () {
+        localStorage['class2k'] = this.value;
+   }
+   input2l.onchange = function () {
+        localStorage['class2l'] = this.value;
+   }
+   input2m.onchange = function () {
+        localStorage['class2m'] = this.value;
+   }
+   input3.onchange = function () {
+        localStorage['class3'] = this.value;
+   }
+   input30.onchange = function () {
+        localStorage['class30'] = this.value;
+   }
+   input31.onchange = function () {
+        localStorage['class31'] = this.value;
+   }
+   input32.onchange = function () {
+        localStorage['class32'] = this.value;
+   }
+   input33.onchange = function () {
+        localStorage['class33'] = this.value;
+   }
+   input34.onchange = function () {
+        localStorage['class34'] = this.value;
+   }
+   input35.onchange = function () {
+        localStorage['class35'] = this.value;
+   }
+   input36.onchange = function () {
+        localStorage['class36'] = this.value;
+   }
+   input4.onchange = function () {
+        localStorage['class4'] = this.value;
+   }
+   input40.onchange = function () {
+        localStorage['class40'] = this.value;
+   }
+   input41.onchange = function () {
+        localStorage['class41'] = this.value;
+   }
+   input42.onchange = function () {
+        localStorage['class42'] = this.value;
+   }
+   input5.onchange = function () {
+        localStorage['class5'] = this.value;
+   }
+   input50.onchange = function () {
+        localStorage['class50'] = this.value;
+   }
+   input51.onchange = function () {
+        localStorage['class51'] = this.value;
+   }
+   input52.onchange = function () {
+        localStorage['class52'] = this.value;
+   }
+   input53.onchange = function () {
+        localStorage['class53'] = this.value;
+   }
+   input54.onchange = function () {
+        localStorage['class54'] = this.value;
+   }
+   input55.onchange = function () {
+        localStorage['class55'] = this.value;
+   }
+   input56.onchange = function () {
+        localStorage['class56'] = this.value;
+   }
+   input57.onchange = function () {
+        localStorage['class57'] = this.value;
+   }
+   input58.onchange = function () {
+        localStorage['class58'] = this.value;
+   }
+   input59.onchange = function () {
+        localStorage['class59'] = this.value;
+   }
+   input5a.onchange = function () {
+        localStorage['class5a'] = this.value;
+   }
+   input5b.onchange = function () {
+        localStorage['class5b'] = this.value;
+   }
+   input5c.onchange = function () {
+        localStorage['class5c'] = this.value;
+   }
+   input5d.onchange = function () {
+        localStorage['class5d'] = this.value;
+   }
+   input5e.onchange = function () {
+        localStorage['class5e'] = this.value;
+   }
+   input6.onchange = function () {
+        localStorage['class6'] = this.value;
+   }
+   input60.onchange = function () {
+        localStorage['class60'] = this.value;
+   }
+   input61.onchange = function () {
+        localStorage['class61'] = this.value;
+   }
+   input62.onchange = function () {
+        localStorage['class62'] = this.value;
+   }
+   input63.onchange = function () {
+        localStorage['class63'] = this.value;
+   }
+   input64.onchange = function () {
+        localStorage['class64'] = this.value;
+   }
+   input7.onchange = function () {
+        localStorage['class7'] = this.value;
+   }
+   input70.onchange = function () {
+        localStorage['class70'] = this.value;
+   }
+   input71.onchange = function () {
+        localStorage['class71'] = this.value;
+   }
+   input72.onchange = function () {
+        localStorage['class72'] = this.value;
+   }
+   input73.onchange = function () {
+        localStorage['class73'] = this.value;
+   }
+   input74.onchange = function () {
+        localStorage['class74'] = this.value;
+   }
+   input8.onchange = function () {
+        localStorage['class8'] = this.value;
+   }
+   input80.onchange = function () {
+        localStorage['class80'] = this.value;
+   }
+   input81.onchange = function () {
+        localStorage['class81'] = this.value;
+   }
+   input82.onchange = function () {
+        localStorage['class82'] = this.value;
+   }
+   input83.onchange = function () {
+        localStorage['class83'] = this.value;
+   }
+   input84.onchange = function () {
+        localStorage['class84'] = this.value;
+   }
+   input9.onchange = function () {
+        localStorage['class9'] = this.value;
+   }
+   input90.onchange = function () {
+        localStorage['class90'] = this.value;
+   }
+   input91.onchange = function () {
+        localStorage['class91'] = this.value;
+   }
+   input92.onchange = function () {
+        localStorage['class92'] = this.value;
+   }
+   input93.onchange = function () {
+        localStorage['class93'] = this.value;
+   }
+   input94.onchange = function () {
+        localStorage['class94'] = this.value;
+   }
+});
+</script>
+</html>
+
+<!-- 
+The process:
+They will start to enter classes in and change the endorsements/ms credits. Classes that aren't avaliable in that grade won't show up. They have to put everything in correctly or else the page will have to be refreshed without saving. I don't know how to fix this at the moment. Clicking apply will add up the credits, dual credits, and units that are in each class. They will also overflow into electives if need be. Maybe you should also add how much DC will be, and how much semesters it will take up. They will also need to be added up. Error messages/reccomendations will show up at the bottom, will include if they have too much/too little credits, if they don't have required classes, etc. 
+
+What's been added:
+Monday: Started the website/project, got a table with labels.
+Tuesday: tested out forms/checkboxes/selections, made instructions.
+Wednesday: Started listings for most of the classes.
+Thursday: Filled out the rest of classes, filled out most of the selections.
+Friday: Filled out rest of the selections, found info on selection,saves, and variables.
+Monday: Started to learn saves, variables, and selections and how to apply them.
+Tuesday: Renamed the selections so they have values and started the save function.
+Wednesday: Finished the save function and started applying the adding section. 
+Thursday: Finished adding columns section and made the html website.
+
+Currently looking at finishing this on Friday, April 9th. This hasn’t been fully planned out yet, but We still need to be able to calculate the rows so we can see how many credits each row has, and will make it easier to determine requirements/overflows for each subject. I’m unsure at the moment if overflows are needed for columns, because they don’t have set value, but they do have a set maximum and minimum. Speaking of that, we still need to add in recommendation messages to talk about if they need to change things. Then along with rows and overflows in that direction, we need to finish those MS credits and endorsements. After all of that, just make it look better. You got so much done at this point, I didn’t even know if I was going to be capable of creating such a thing. You can’t turn back now. Don’t let burnout get you. 
+
+Extra code:
+<!DOCTYPE html>
+<html>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <input list="class_" name="class" id="class" />
+          <datalist id="class_">
+            <option value="Short HS">Short HS</option>
+            <option value="Long HS">Long HS</option>
+          </datalist>
+        </td>
+        <td>
+          <input list="class_0" name="class0" id="class0" />
+          <datalist id="class_0">
+            <option value="Short DC">Short DC</option>
+            <option value="Long DC">Long DC</option>
+          </datalist>
+        </td>
+      </tr>
+      <tr>
+        <td id="total"></td>
+        <td id="total0"></td>
+      </tr>
+    </table>
+
+    <button type="button" onclick="calculate()">Apply Changes</button>
+
+    <script>
+      function calculate() {
+        var hs0 = document.getElementById("class0").value,
+        hs = document.getElementById("class").value,
+        dctotal = 0 , hstotal = 0; //these values are the complete totals for columns.
+
+          if (hs0 == "Long DC") {
+              var credit0=1 , dcredit0=4;
+              dctotal =(dcredit0 + dctotal);
+              hstotal =(credit0 + hstotal);
+          } else if (hs0 == "Short DC") {
+              var credit0=0.75, dcredit0=3;
+              hstotal = (credit0 + hstotal);
+              dctotal = (dcredit0 + dctotal);
+          }
+          if (hs == "Long HS") {
+              var credit=1;
+              hstotal =(credit + hstotal);
+          } else if (hs == "Short HS") {
+              var credit=0.5;
+              hstotal = (credit + hstotal);
+          }
+
+      document.getElementById("total").innerHTML = hstotal;
+      document.getElementById("total0").innerHTML = dctotal;
+      };
+    </script>
+  </body>
+</html>
+-->
