@@ -1,36 +1,61 @@
 <html>
   <head>
-    <title>Project BCC</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sarala&family=Sofia&display=swap" rel="stylesheet">
+    <title>Project BCC</title>    
     <style>
-      body {
-        background-color: #e1e7f7;
-        text-align: center;
-        color: #00000f;
-        font-family: Arial, Helvetica, sans-serif;
+      body { background-color: #333344; 
+      font-family: Sarala, sans-serif;
+      color: #222233;
       }
       table, th, td {
-        border: 1px solid black;
+      	background-color: #dde0ef; 
+        border: 1px solid #8888af;
         border-collapse: collapse;
-        text-align: center
+        text-align: center;
       }
       th, td {
         padding: 5px;
       }
       table {
-        width: 100%
+        width: 100%;
       }
+      .button {
+  background-color: #dde0ef;
+  font-family: Gill Sans, sans-serif;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+      .info {
+	color: #dde0ef;
+    font-size: 11px;
+    text-align: center;
+}
+a:link, a:visited, a:hover, a:active{
+  color: #dde0ef;
+  text-decoration: underline;
+}
+      .warn {
+	color: #ffd0df;
+}
     </style>
   </head>
   <body>
     <table>
+		<colgroup>
+        <col width="33%" />
+        <col width="33%" />
+        <col width="33%" />
+      </colgroup>
       <tr>
         <td>
           <p>Choose an endorsement:</p>
-          <select id="selection">
-            <option value="endo">Advanced Endorsement</option>
-            <option value="care">Advanced Career Endorsement</option>
-            <option value="hono">Advanced Honors Endorsement</option>
-          </select>
+          <input list="selection_" name="selection" id="selection" />
+          <datalist id="selection_">
+            <option value="Advanced Endorsement">Advanced Endorsement</option>
+            <option value="Advanced Career Endorsement">Advanced Career Endorsement</option>
+            <option value="Advanced Honors Endorsement">Advanced Honors Endorsement</option>
+          </datalist>
         </td>
         <td>
           <legend>MS classes passed:</legend>
@@ -39,8 +64,8 @@
 			<input type="checkbox" id="msclass1">MS CSP<br>  
         </td>
         <td>
-          <button type="button" onclick="calc()">Apply Changes</button>
-          <button type="button" onclick="deleteItems()">Erase Changes</button>
+          <button class="button" type="button" onclick="calc()">Apply Changes</button>
+          <button class="button" type="button" onclick="deleteItems()">Erase Changes</button>
         </td>
       </tr>
     </table>
@@ -48,10 +73,11 @@
     <table>
       <colgroup>
         <col width="8%" />
-        <col width="23%" />
-        <col width="23%" />
-        <col width="23%" />
-        <col width="23%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="12%" />
       </colgroup>
       <tr>
         <th></th>
@@ -59,6 +85,7 @@
         <th>10th</th>
         <th>11th</th>
         <th>12th</th>
+        <th>Total</th>
       </tr>
       <tr>
         <td>ELA</td>
@@ -112,6 +139,7 @@
             <option value="Senior Literature">Senior Literature</option>
           </datalist>
         </td>
+        <td id="9sub" ></td>
       </tr>
       <tr>
         <td>Math</td>
@@ -192,6 +220,7 @@
             <option value="AP Calculus AB">AP Calculus AB</option>
           </datalist>
         </td>
+        <td id="8sub" ></td>
       </tr>
       <tr>
         <td>Sci</td>
@@ -246,6 +275,7 @@
             <option value="AP Physics">AP Physics</option>
           </datalist>
         </td>
+        <td id="7sub" ></td>
       </tr>
       <tr>
         <td>SS</td>
@@ -319,6 +349,7 @@
             <option value="AP American History">AP American History</option>
           </datalist>
         </td>
+        <td id="6sub" ></td>
       </tr>
       <tr>
         <td>Arts</td>
@@ -594,6 +625,7 @@
             <option value="Art Portfolio">Art Portfolio</option>
           </datalist>
         </td>
+        <td id="5sub" ></td>
       </tr>
       <tr>
         <td>Lang</td>
@@ -636,6 +668,7 @@
             <option value="ASL IV">ASL IV</option>
           </datalist>
         </td>
+        <td id="4sub" ></td>
       </tr>
       <tr>
         <td>H / PE</td>
@@ -689,6 +722,7 @@
             <option value="Fitness and Conditioning">Fitness and Conditioning</option>
           </datalist>
         </td>
+        <td id="3sub" ></td>
       </tr>
       <tr>
         <td>CTE</td>
@@ -1397,6 +1431,7 @@
             <option value="Intro to Engineering Design" >Intro to Engineering Design</option>
           </datalist>
         </td>
+        <td id="2sub" ></td>
       </tr>
       <tr>
         <td>Other</td>
@@ -1449,11 +1484,12 @@
             <option value="Senior Experience">Senior Experience</option>
           </datalist>
         </td>
+        <td></td>
       </tr>
       <tr>
         <td>Dual</td>
-        <td>unavailable</td>
-        <td>unavailable</td>
+        <td>Unavailable</td>
+        <td>Unavailable</td>
         <td>
           <input list="class_00" name="class00" id="class00" />
           <datalist id="class_00">
@@ -1536,6 +1572,7 @@
             <option value="Online/Other">Online/Other</option>
           </datalist>
         </td>
+        <td></td>
       </tr>
       <tr>
         <td>Total</td>
@@ -1543,13 +1580,15 @@
         <td id="total10hs"></td>
         <td id="total11hs"></td>
         <td id="total12hs"></td>
+        <td id="totes"></td>
       </tr>
       <tr>
         <td>DualT</td>
-        <td>unavaliable</td>
-        <td>unavaliable</td>
+        <td>Unavaliable</td>
+        <td>Unavaliable</td>
         <td id="total11dc"></td>
         <td id="total12dc"></td>
+        <td id="totest"></td>
       </tr>
       <tr>
         <td>Units</td>
@@ -1557,17 +1596,44 @@
         <td id="10unit"></td>
         <td id="11unit"></td>
         <td id="12unit"></td>
+        <td id="totesu"></td>
       </tr>
     </table>
-    
-    <p>This is version 1.0</p>
-    <p>Meant to run on a Chromebook or PC.</p>
+    <p class = "warn" id = "elareq1"></p>
+    <p class = "warn" id = "elareq2"></p>
+    <p class = "warn" id = "elareq3"></p>
+    <p class = "warn" id = "perfi"></p>
+    <p class = "warn" id = "reqcap"></p>
+    <p class = "warn" id = "req1math"></p>
+    <p class = "warn" id = "req2math"></p>
+    <p class = "warn" id = "req3math"></p>
+    <p class = "warn" id = "scireq1"></p>
+    <p class = "warn" id = "scireq2"></p>
+    <p class = "warn" id = "scireq3"></p>
+    <p class = "warn" id = "ssreq1"></p>
+    <p class = "warn" id = "ssreq2"></p>
+    <p class = "warn" id = "subela"></p>
+    <p class = "warn" id = "submath"></p>
+    <p class = "warn" id = "subsci"></p>
+    <p class = "warn" id = "subss"></p>
+    <p class = "warn" id = "sublang"></p>
+    <p class = "warn" id = "subart"></p>
+    <p class = "warn" id = "subpe"></p>
+    <p class = "warn" id = "ssreq3"></p>
+    <p class = "warn" id = "reqheal"></p>
+    <p class = "warn" id = "required9"></p>
+    <p class = "warn" id = "required10"></p>
+    <p class = "warn" id = "required11"></p>
+    <p class = "warn" id = "required12"></p>
+    <p class = "warn" id = "totesr"></p>
+    <p class = "info">This is version 1.0 - Meant to run on a Chromebook or PC.</p>
+    <p class = "info"><a href="https://sites.google.com/k12.sd.us/brookes-class-calculator/">Go back to Brooke's website</a></p>
   </body>
-
   <script>
     var checked = JSON.parse(localStorage.getItem('msclass')), classms=0,
     checked0 = JSON.parse(localStorage.getItem('msclass0')), classms0=0,
     checked1 = JSON.parse(localStorage.getItem('msclass1')), classms1=0;
+    
     function deleteItems() {
       localStorage.clear();
       location.reload();
@@ -1577,7 +1643,8 @@
       document.getElementById("msclass").checked = checked;
       document.getElementById("msclass0").checked = checked0;
       document.getElementById("msclass1").checked = checked1;
-       var input = document.getElementById('class'),
+       var inputs = document.getElementById('selection'),
+       input = document.getElementById('class'),
        input0 = document.getElementById('class0'),
        input09 = document.getElementById('class09'),
        input08 = document.getElementById('class08'),
@@ -1672,6 +1739,9 @@
        input93 = document.getElementById('class93'),
        input94 = document.getElementById('class94');
 
+		if (localStorage['selection']) {
+           inputs.value = localStorage['selection'];
+       }
        if (localStorage['class']) {
            input.value = localStorage['class'];
        }
@@ -1955,6 +2025,9 @@
            input94.value = localStorage['class94'];
        }
 
+       inputs.onchange = function () {
+            localStorage['selection'] = this.value;
+       }
        input.onchange = function () {
             localStorage['class'] = this.value;
        }
@@ -2237,7 +2310,7 @@
        input94.onchange = function () {
             localStorage['class94'] = this.value;
        }
- 
+ 	calc()
     });
 
     function calc() {
@@ -2295,7 +2368,7 @@
         hs12 = document.getElementById("class12").value,
         hs13 = document.getElementById("class13").value,
         hs14 = document.getElementById("class14").value,
-     	hs5 = document.getElementById("class5").value,
+     	  hs5 = document.getElementById("class5").value,
         hs50 = document.getElementById("class50").value,
         hs51 = document.getElementById("class51").value,
         hs52 = document.getElementById("class52").value,
@@ -2335,667 +2408,966 @@
         hs2k = document.getElementById("class2k").value,
         hs2l = document.getElementById("class2l").value,
         hs2m = document.getElementById("class2m").value,
-        dctotal12 = 0 , hstotal12 = 0, unit12 = 0,
-        dctotal11 = 0 , hstotal11 = 0, unit11 = 0,
-        dctotal10 = 0 , hstotal10 = 0, unit10 = 0,
-        dctotal9 = 0 , hstotal9 = 0, unit9 = 0, mscredit = 0; //these values are the complete totals for columns.
+        dctotal12 = 0 , hstotal12 = 0, unit12 = 0, dctotal11 = 0 , hstotal11 = 0, unit11 = 0, dctotal10 = 0 , hstotal10 = 0, unit10 = 0, dctotal9 = 0 , hstotal9 = 0, unit9 = 0,//totals for grades
+        req9 = "", req10 = "",req11 = "",req12 = "", reqtotal="", req1ela="", req2ela="", req3ela="", perf="", reqmath1="", reqmath2="", reqmath3="", sci1req="",sci3req="",sci2req="", ss1req="", ss2req="", ss3req="", healreq="", capreq="", reqsubela="", reqsubmath="", reqsubsci="", reqsubss="", reqsubpe="", reqsublang="", reqsubart="",//reccommendations
+        reqmath = 3, reqsci = 3, reqlang = 0, sub9=0, sub8=0, sub7=0, sub6=0, sub5=0, sub4=0, sub3=0, sub2=0, overflowsci=0, overflowela=0,//requirements for endorsements and all the subject totals
+        temp9=0, temp8=0, temp7=0, temp6=0, temp5=0, temp4=0, temp3=0, //overflows
+        endorsement = document.getElementById("selection").value, mscredit = 0, total = 0, totalu = 0, totalt = 0; //more totals, etc
         
           	if (hs0 == "Chemistry 106") {
               	dctotal12 =(4 + dctotal12);
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub2=(sub2+1);
           	} else if (hs0 == "Online/Other" || hs0=="Math College Algebra" || hs0=="English Composition" || hs0=="Intro to Literature") {
                   hstotal12 = (0.75 + hstotal12);
                   dctotal12 = (3 + dctotal12);
                   unit12=(1+unit12);
+                  sub2=(sub2+0.75);
               }
           	if (hs == "Chemistry 106") {
               	dctotal12 =(4 + dctotal12);
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub2=(sub2+1);
           	} else if (hs == "Online/Other" || hs=="Math College Algebra" || hs=="English Composition" || hs=="Intro to Literature") {
                   hstotal12 = (0.75 + hstotal12);
                   dctotal12 = (3 + dctotal12);
                   unit12=(1+unit12);
+                  sub2=(sub2+0.75);
               }
           	if (hs09 == "Chemistry 106") {
               	dctotal12 =(4 + dctotal12);
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub2=(sub2+1);
           	} else if (hs09 == "Online/Other" || hs09=="Math College Algebra" || hs09=="English Composition" || hs09=="Intro to Literature") {
                   hstotal12 = (0.75 + hstotal12);
                   dctotal12 = (3 + dctotal12);
                   unit12=(1+unit12);
+                  sub2=(sub2+0.75);
               }
           	if (hs08 == "Chemistry 106") {
               	dctotal12 =(4 + dctotal12);
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub2=(sub2+1);
           	} else if (hs08 == "Online/Other" || hs08=="Math College Algebra" || hs08=="English Composition" || hs08=="Intro to Literature") {
                   hstotal12 = (0.75 + hstotal12);
                   dctotal12 = (3 + dctotal12);
                   unit12=(1+unit12);
+                  sub2=(sub2+0.75);
               }
           	if (hs07 == "Chemistry 106") {
               	dctotal12 =(4 + dctotal12);
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub2=(sub2+1);
           	} else if (hs07 == "Online/Other" || hs07=="Math College Algebra" || hs07=="English Composition" || hs07=="Intro to Literature") {
                   hstotal12 = (0.75 + hstotal12);
                   dctotal12 = (3 + dctotal12);
                   unit12=(1+unit12);
+                  sub2=(sub2+0.75);
               }
           	if (hs06 == "Chemistry 106") {
               	dctotal12 =(4 + dctotal12);
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub2=(sub2+1);
           	} else if (hs06 == "Online/Other" || hs06=="Math College Algebra" || hs06=="English Composition" || hs06=="Intro to Literature") {
                   hstotal12 = (0.75 + hstotal12);
                   dctotal12 = (3 + dctotal12);
                   unit12=(1+unit12);
+                  sub2=(sub2+0.75);
               }
-
           	if (hs05 == "Chemistry 106") {
               	dctotal11 =(4 + dctotal11);
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub2=(sub2+1);
           	} else if (hs05 == "Online/Other") {
                   hstotal11 = (0.75 + hstotal11);
                   dctotal11 = (3 + dctotal11);
                   unit11=(1+unit11);
+                  sub2=(sub2+0.75);
               }
           	if (hs04 == "Chemistry 106") {
               	dctotal11 =(4 + dctotal11);
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub2=(sub2+1);
           	} else if (hs04 == "Online/Other") {
                   hstotal11 = (0.75 + hstotal11);
                   dctotal11 = (3 + dctotal11);
                   unit11=(1+unit11);
+                  sub2=(sub2+0.75);
               }
           	if (hs03 == "Chemistry 106") {
               	dctotal11 =(4 + dctotal11);
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub2=(sub2+1);
           	} else if (hs03 == "Online/Other") {
                   hstotal11 = (0.75 + hstotal11);
                   dctotal11 = (3 + dctotal11);
                   unit11=(1+unit11);
+                  sub2=(sub2+0.75);
               }
           	if (hs02 == "Chemistry 106") {
               	dctotal11 =(4 + dctotal11);
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub2=(sub2+1);
           	} else if (hs02 == "Online/Other") {
                   hstotal11 = (0.75 + hstotal11);
                   dctotal11 = (3 + dctotal11);
                   unit11=(1+unit11);
+                  sub2=(sub2+0.75);
               }
           	if (hs01 == "Chemistry 106") {
               	dctotal11 =(4 + dctotal11);
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub2=(sub2+1);
           	} else if (hs01 == "Online/Other") {
                   hstotal11 = (0.75 + hstotal11);
                   dctotal11 = (3 + dctotal11);
                   unit11=(1+unit11);
+                  sub2=(sub2+0.75);
               }
           	if (hs00 == "Chemistry 106") {
               	dctotal11 =(4 + dctotal11);
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub2=(sub2+1);
           	} else if (hs00 == "Online/Other") {
                   hstotal11 = (0.75 + hstotal11);
                   dctotal11 = (3 + dctotal11);
                   unit11=(1+unit11);
+                  sub2=(sub2+0.75);
               }
-
-
     		if (hs9 == "English I" || hs9 == "Honors English I" || hs9 == "Strategic Reading") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub9=(sub9+1);
           	}
     		if (hs90 == "English II + Speech" || hs90 == "Honors English II + Speech" || hs90 == "Strategic Reading") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub9=(sub9+1);
           	}
     		if (hs91 == "English III" || hs91 == "Honors English III" || hs91 == "Strategic Reading" || hs91 == "Creative Writing") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub9=(sub9+1);
           	}
     		if (hs92 == "English III" || hs92 == "Honors English III" || hs92 == "Strategic Reading" || hs92 == "Creative Writing") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub9=(sub9+1);
           	}
     		if (hs93 == "English IV" || hs93 == "Senior Literature" || hs93 == "Strategic Reading" || hs93 == "Research and Communications Writing") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub9=(sub9+1);
           	}
     		if (hs94 == "English IV" || hs94 == "Senior Literature" || hs94 == "Strategic Reading" || hs93 == "Research and Communications Writing") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub9=(sub9+1);
           	}
-
         if (hs8 == "Algebra I Lab" || hs8 == "Algebra I" || hs8 == "Geometry" || hs8 == "Accelerated Geometry" || hs8 == "Algebra II" || hs8 == "Accelerated Algebra II") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub8=(sub8+1);
           	}
     		if (hs80 == "Algebra I" || hs80 == "Geometry" || hs80 == "Accelerated Geometry" || hs80 == "Algebra II" || hs80 == "Accelerated Algebra II") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub8=(sub8+1);
           	}
     		if (hs81 == "Algebra I" || hs81 == "Geometry" || hs81 == "Accelerated Geometry" || hs81 == "Algebra II" || hs81 == "Accelerated Algebra II" || hs81 == "Consumer Math" || hs81 =="Honors Pre-Calculus") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub8=(sub8+1);
           	} else if (hs81 == "Statistics and Probability" || hs81 == "Trigonometry") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub8=(sub8+0.5);
               }
     		if (hs82 == "Algebra I" || hs82 == "Geometry" || hs82 == "Accelerated Geometry" || hs82 == "Algebra II" || hs82 == "Accelerated Algebra II" || hs81 == "Consumer Math" || hs82 =="Honors Pre-Calculus") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub8=(sub8+1);
           	} else if (hs82 == "Statistics and Probability" || hs82 == "Trigonometry") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub8=(sub8+0.5);
               }
     		if (hs83 == "Algebra I" || hs83 == "Geometry" || hs83 == "Accelerated Geometry" || hs83 == "Algebra II" || hs83 == "Accelerated Algebra II" || hs83 == "Consumer Math" || hs83 == "AP Statistics" || hs83 == "AP Calculus AB" || hs83 =="Honors Pre-Calculus") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub8=(sub8+1);
           	} else if (hs83 == "Statistics and Probability" || hs83 == "Trigonometry") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub8=(sub8+0.5);
               }
     		if (hs84 == "Algebra I" || hs84 == "Geometry" || hs84 == "Accelerated Geometry" || hs84 == "Algebra II" || hs84 == "Accelerated Algebra II" || hs84 == "Consumer Math" || hs84 == "AP Statistics" || hs84 == "AP Calculus AB" || hs84 =="Honors Pre-Calculus") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub8=(sub8+1);
           	} else if (hs84 == "Statistics and Probability" || hs84 == "Trigonometry") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub8=(sub8+0.5);
               }
-
         if (hs7 == "Physical Science" || hs7 == "Biology" || hs7 == "Honors Biology") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub7=(sub7+1);
           	}
     		if (hs70 == "Chemistry" || hs70 == "Honors Chemistry") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub7=(sub7+1);
           	}
     		if (hs71 == "Physics" || hs71 == "Honors Physics" || hs71 == "AP Physics" || hs71 == "Anatomy/Physiology") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub7=(sub7+1);
           	} else if (hs71 == "Environmental Science" || hs71 == "Astrology") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub7=(sub7+0.5);
               }
     		if (hs72 == "Physics" || hs72 == "Honors Physics" || hs72 == "AP Physics" || hs72 == "Anatomy/Physiology") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub7=(sub7+1);
           	} else if (hs72 == "Environmental Science" || hs72 == "Astrology") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub7=(sub7+0.5);
               }
     		if (hs73 == "AP Physics" || hs73 == "Anatomy/Physiology") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub7=(sub7+1);
           	} else if (hs73 == "Environmental Science" || hs73 == "Astrology") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub7=(sub7+0.5);
               }
     		if (hs74 == "AP Physics" || hs74 == "Anatomy/Physiology") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub7=(sub7+1);
           	} else if (hs74 == "Environmental Science" || hs74 == "Astrology") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub7=(sub7+0.5);
               }
-
         if (hs6 == "World History/Geography" || hs6 == "Honors World History/Geography") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub6=(sub6+1);
           	}
     		if (hs60 == "American History" || hs60 == "AP American History") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub6=(sub6+1);
           	} else if (hs60 == "Criminal Justice Today" || hs60 == "African American History") {
                   hstotal10 = (0.5 + hstotal10);
                   unit10=(1+unit10);
+                  sub6=(sub6+0.5);
               }
     		if (hs61 == "American History" || hs61 == "AP American History" || hs61 == "AP Psychology") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub6=(sub6+1);
           	} else if (hs61 == "Criminal Justice Today" || hs61 == "African American History" || hs61 == "Psychology" || hs61 == "Sociology" || hs61 == "International Affairs" || hs61 == "American History and Film" || hs61 == "Government") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub6=(sub6+0.5);
               }
     		if (hs62 == "American History" || hs62 == "AP American History" || hs62 == "AP Psychology") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub6=(sub6+1);
           	} else if (hs62 == "Criminal Justice Today" || hs62 == "African American History" || hs62 == "Psychology" || hs62 == "Sociology" || hs62 == "International Affairs" || hs62 == "American History and Film" || hs62 == "Government") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub6=(sub6+0.5);
               }
     		if (hs63 == "AP American History" || hs63 == "AP Psychology") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub6=(sub6+1);
           	} else if (hs63 == "Criminal Justice Today" || hs63 == "African American History" || hs63 == "Psychology" || hs63 == "Sociology" || hs63 == "International Affairs" || hs63 == "American History and Film" || hs63 == "Government") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub6=(sub6+0.5);
               }
     		if (hs64 == "AP American History" || hs64 == "AP Psychology") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub6=(sub6+1);
           	} else if (hs64 == "Criminal Justice Today" || hs64 == "African American History" || hs64 == "Psychology" || hs64 == "Sociology" || hs64 == "International Affairs" || hs64 == "American History and Film" || hs64 == "Government") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub6=(sub6+0.5);
               }
-
     		if (hs5 == "Band" || hs5 == "Concert Choir" || hs5 == "Women's Choir" || hs5 == "Men's Choir" || hs5 == "Music Appreciation") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub5=(sub5+1);
           	} else if (hs5 == "Intro to Art I" || hs5 == "Intro to Art II" || hs5 == "Drawing I" || hs5 == "Drawing II" || hs5 == "Photography") {
                   hstotal9 = (0.5 + hstotal9);
                   unit9=(1+unit9);
+                  sub5=(sub5+0.5);
               }
             if (hs50 == "Band" || hs50 == "Concert Choir" || hs50 == "Women's Choir" || hs50 == "Men's Choir" || hs50 == "Music Appreciation") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub5=(sub5+1);
           	} else if (hs50 == "Intro to Art I" || hs50 == "Intro to Art II" || hs50 == "Drawing I" || hs50 == "Drawing II" || hs50 == "Photography") {
                   hstotal9 = (0.5 + hstotal9);
                   unit9=(1+unit9);
+                  sub5=(sub5+0.5);
               }
             if (hs51 == "Band" || hs51 == "Concert Choir" || hs51 == "Women's Choir" || hs51 == "Men's Choir" || hs51 == "Music Appreciation") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub5=(sub5+1);
           	} else if (hs51 == "Intro to Art I" || hs51 == "Intro to Art II" || hs51 == "Drawing I" || hs51 == "Drawing II" || hs51 == "Photography") {
                   hstotal9 = (0.5 + hstotal9);
                   unit9=(1+unit9);
+                  sub5=(sub5+0.5);
               }
             if (hs52 == "Band" || hs52 == "Concert Choir" || hs52 == "Women's Choir" || hs52 == "Men's Choir" || hs52 == "Music Appreciation") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub5=(sub5+1);
           	} else if (hs52 == "Intro to Art I" || hs52 == "Intro to Art II" || hs52 == "Drawing I" || hs52 == "Drawing II" || hs52 == "Photography") {
                   hstotal9 = (0.5 + hstotal9);
                   unit9=(1+unit9);
+                  sub5=(sub5+0.5);
               }
             if (hs53 == "Band" || hs53 == "Concert Choir" || hs53 == "Women's Choir" || hs53 == "Men's Choir" || hs53 == "Music Appreciation") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub5=(sub5+1);
           	} else if (hs53 == "Intro to Art I" || hs53 == "Intro to Art II" || hs53 == "Drawing I" || hs53 == "Drawing II" || hs53 == "Photography" || hs53 == "Painting II" || hs53 == "Pottery I" || hs53 == "Pottery II" || hs53 == "Painting I") {
                   hstotal10 = (0.5 + hstotal10);
                   unit10=(1+unit10);
+                  sub5=(sub5+0.5);
               }
             if (hs54 == "Band" || hs54 == "Concert Choir" || hs54 == "Women's Choir" || hs54 == "Men's Choir" || hs54 == "Music Appreciation") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub5=(sub5+1);
           	} else if (hs54 == "Intro to Art I" || hs54 == "Intro to Art II" || hs54 == "Drawing I" || hs54 == "Drawing II" || hs54 == "Photography" || hs54 == "Painting II" || hs54 == "Pottery I" || hs54 == "Pottery II" || hs54 == "Painting I") {
                   hstotal10 = (0.5 + hstotal10);
                   unit10=(1+unit10);
+                  sub5=(sub5+0.5);
               }
             if (hs55 == "Band" || hs55 == "Concert Choir" || hs55 == "Women's Choir" || hs55 == "Men's Choir" || hs55 == "Music Appreciation") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub5=(sub5+1);
           	} else if (hs55 == "Intro to Art I" || hs55 == "Intro to Art II" || hs55 == "Drawing I" || hs55 == "Drawing II" || hs55 == "Photography" || hs55 == "Painting II" || hs55 == "Pottery I" || hs55 == "Pottery II" || hs55 == "Painting I") {
                   hstotal10 = (0.5 + hstotal10);
                   unit10=(1+unit10);
+                  sub5=(sub5+0.5);
               }
             if (hs56 == "Band" || hs56 == "Concert Choir" || hs56 == "Women's Choir" || hs56 == "Men's Choir" || hs56 == "Music Appreciation") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub5=(sub5+1);
           	} else if (hs56 == "Intro to Art I" || hs56 == "Intro to Art II" || hs56 == "Drawing I" || hs56 == "Drawing II" || hs56 == "Photography" || hs56 == "Painting II" || hs56 == "Pottery I" || hs56 == "Pottery II" || hs56 == "Painting I") {
                   hstotal10 = (0.5 + hstotal10);
                   unit10=(1+unit10);
+                  sub5=(sub5+0.5);
               }
             if (hs57 == "Band" || hs57 == "Concert Choir" || hs57 == "Women's Choir" || hs57 == "Men's Choir" || hs57 == "Music Appreciation" || hs57 == "Art Portfolio") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub5=(sub5+1);
           	} else if (hs57 == "Intro to Art I" || hs57 == "Intro to Art II" || hs57 == "Drawing I" || hs57 == "Drawing II" || hs57 == "Photography" || hs57 == "Painting II" || hs57 == "Pottery I" || hs57 == "Pottery II" || hs57 == "Painting I") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub5=(sub5+0.5);
               }
             if (hs58 == "Band" || hs58 == "Concert Choir" || hs58 == "Women's Choir" || hs58 == "Men's Choir" || hs58 == "Music Appreciation" || hs58 == "Art Portfolio") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub5=(sub5+1);
           	} else if (hs58 == "Intro to Art I" || hs58 == "Intro to Art II" || hs58 == "Drawing I" || hs58 == "Drawing II" || hs58 == "Photography" || hs58 == "Painting II" || hs58 == "Pottery I" || hs58 == "Pottery II" || hs58 == "Painting I") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub5=(sub5+0.5);
               }
             if (hs59 == "Band" || hs59 == "Concert Choir" || hs59 == "Women's Choir" || hs59 == "Men's Choir" || hs59 == "Music Appreciation" || hs59 == "Art Portfolio") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub5=(sub5+1);
           	} else if (hs59 == "Intro to Art I" || hs59 == "Intro to Art II" || hs59 == "Drawing I" || hs59 == "Drawing II" || hs59 == "Photography" || hs59 == "Painting II" || hs59 == "Pottery I" || hs59 == "Pottery II" || hs59 == "Painting I") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub5=(sub5+0.5);
               }
             if (hs5a == "Band" || hs5a == "Concert Choir" || hs5a == "Women's Choir" || hs5a == "Men's Choir" || hs5a == "Music Appreciation" || hs5a == "Art Portfolio") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub5=(sub5+1);
           	} else if (hs5a == "Intro to Art I" || hs5a == "Intro to Art II" || hs5a == "Drawing I" || hs5a == "Drawing II" || hs5a == "Photography" || hs5a == "Painting II" || hs5a == "Pottery I" || hs5a == "Pottery II" || hs5a == "Painting I") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub5=(sub5+0.5);
               }
             if (hs5b == "Band" || hs5b == "Concert Choir" || hs5b == "Women's Choir" || hs5b == "Men's Choir" || hs5b == "Music Appreciation" || hs5b == "Art Portfolio") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub5=(sub5+1);
           	} else if (hs5b == "Intro to Art I" || hs5b == "Intro to Art II" || hs5b == "Drawing I" || hs5b == "Drawing II" || hs5b == "Photography" || hs5b == "Painting II" || hs5b == "Pottery I" || hs5b == "Pottery II" || hs5b == "Painting I") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub5=(sub5+0.5);
               }
             if (hs5c == "Band" || hs5c == "Concert Choir" || hs5c == "Women's Choir" || hs5c == "Men's Choir" || hs5c == "Music Appreciation" || hs5c == "Art Portfolio") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub5=(sub5+1);
           	} else if (hs5c == "Intro to Art I" || hs5c == "Intro to Art II" || hs5c == "Drawing I" || hs5c == "Drawing II" || hs5c == "Photography" || hs5c == "Painting II" || hs5c == "Pottery I" || hs5c == "Pottery II" || hs5c == "Painting I") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub5=(sub5+0.5);
               }
             if (hs5d == "Band" || hs5d == "Concert Choir" || hs5d == "Women's Choir" || hs5d == "Men's Choir" || hs5d == "Music Appreciation" || hs5d == "Art Portfolio") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub5=(sub5+1);
           	} else if (hs5d == "Intro to Art I" || hs5d == "Intro to Art II" || hs5d == "Drawing I" || hs5d == "Drawing II" || hs5d == "Photography" || hs5d == "Painting II" || hs5d == "Pottery I" || hs5d == "Pottery II" || hs5d == "Painting I") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub5=(sub5+0.5);
               }
             if (hs5e == "Band" || hs5e == "Concert Choir" || hs5e == "Women's Choir" || hs5e == "Men's Choir" || hs5e == "Music Appreciation" || hs5e == "Art Portfolio") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub5=(sub5+1);
           	} else if (hs5e == "Intro to Art I" || hs5e == "Intro to Art II" || hs5e == "Drawing I" || hs5e == "Drawing II" || hs5e == "Photography" || hs5e == "Painting II" || hs5e == "Pottery I" || hs5e == "Pottery II" || hs5e == "Painting I") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub5=(sub5+0.5);
               }
-            
-
               if (hs4 == "Spanish I" || hs4 == "ASL I") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub4=(sub4+1);
           	}
               if (hs40 == "Spanish I" || hs40 == "ASL I" || hs40 == "Spanish II" || hs40 == "ASL II") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub4=(sub4+1);
           	}
               if (hs41 == "Spanish I" || hs41 == "ASL I" || hs41 == "Spanish II" || hs41 == "ASL II" || hs41 == "Spanish III" || hs41 == "ASL III") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub4=(sub4+1);
           	}
               if (hs42 == "Spanish I" || hs42 == "ASL I" || hs42 == "Spanish II" || hs42 == "ASL II" || hs42 == "Spanish III" || hs42 == "ASL III" || hs42 == "ASL III") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub4=(sub4+1);
           	}
-
-
         if (hs3 == "Health" || hs3 == "PE" || hs3 == "Cardio") {
               	hstotal9 =(0.5 + hstotal9);
                 unit9=(1+unit9);
+                sub3=(sub3+0.5);
           	}
         if (hs30 == "Health" || hs30 == "PE" || hs30 == "Cardio") {
               	hstotal9 =(0.5 + hstotal9);
                 unit9=(1+unit9);
+                sub3=(sub3+0.5);
           	}
         if (hs31 == "Cardio") {
               	hstotal10 =(0.5 + hstotal10);
                 unit10=(1+unit10);
+                sub3=(sub3+0.5);
           	} else if (hs31 == "Fitness and Conditioning") {
                   hstotal10 = (1 + hstotal10);
                   unit10=(2+unit10);
+                  sub3=(sub3+1);
               }
         if (hs32 == "Cardio") {
               	hstotal10 =(0.5 + hstotal10);
                 unit10=(1+unit10);
+                sub3=(sub3+0.5);
           	} else if (hs32 == "Fitness and Conditioning") {
                   hstotal10 = (1 + hstotal10);
                   unit10=(2+unit10);
+                  sub3=(sub3+1);
               }
         if (hs33 == "Cardio") {
               	hstotal11 =(0.5 + hstotal11);
                 unit11=(1+unit11);
+                sub3=(sub3+0.5);
           	} else if (hs33 == "Fitness and Conditioning") {
                   hstotal11 = (1 + hstotal11);
                   unit11=(2+unit11);
+                  sub3=(sub3+1);
               }
         if (hs34 == "Cardio") {
               	hstotal11 =(0.5 + hstotal11);
                 unit11=(1+unit11);
+                sub3=(sub3+0.5);
           	} else if (hs34 == "Fitness and Conditioning") {
                   hstotal11 = (1 + hstotal11);
                   unit11=(2+unit11);
+                  sub3=(sub3+1);
               }
         if (hs35 == "Cardio") {
               	hstotal12 =(0.5 + hstotal12);
                 unit12=(1+unit12);
+                sub3=(sub3+0.5);
           	} else if (hs35 == "Fitness and Conditioning") {
                   hstotal12 = (1 + hstotal12);
                   unit12=(2+unit12);
+                  sub3=(sub3+1);
               }
         if (hs36 == "Cardio") {
               	hstotal12 =(0.5 + hstotal12);
                 unit12=(1+unit12);
+                sub3=(sub3+0.5);
           	} else if (hs36 == "Fitness and Conditioning") {
                   hstotal12 = (1 + hstotal12);
                   unit12=(2+unit12);
+                  sub3=(sub3+1);
               }
-              
               if (hs2 == "Intro to Business" || hs2 == "Nutrition and Wellness" || hs2 == "Nutrition Sciences" || hs2 == "Human Development I" || hs2 == "Human Development II" || hs2 == "Business Computer Applications" || hs2 == "Exploration of Information Technology" || hs2 == "Computer Science Principles I" || hs2 == "Computer Science Principles II" || hs2 == "Exploration of Media Arts I" || hs2 == "Exploration of Media Arts II" || hs2 == "Interior Design I" || hs2 == "Interior Design II" || hs2 == "Welding Tech I" || hs2 == "Welding Tech II" || hs2 == "Intro to Construction") {
               	hstotal9 =(0.5 + hstotal9);
                 unit9=(1+unit9);
+                sub2=(sub2+0.5);
           	} else if (hs2 == "Principles of Biomedical Science" || hs2 == "Human Body Systems") {
                   hstotal9 = (1 + hstotal9);
                   unit9=(2+unit9);
+                  sub2=(sub2+1);
               }
             if (hs20 == "Intro to Business" || hs20 == "Nutrition and Wellness" || hs20 == "Nutrition Sciences" || hs20 == "Human Development I" || hs20 == "Human Development II" || hs20 == "Business Computer Applications" || hs20 == "Exploration of Information Technology" || hs20 == "Computer Science Principles I" || hs20 == "Computer Science Principles II" || hs20 == "Exploration of Media Arts I" || hs20 == "Exploration of Media Arts II" || hs20 == "Interior Design I" || hs20 == "Interior Design II" || hs20 == "Welding Tech I" || hs20 == "Welding Tech II" || hs20 == "Intro to Construction") {
               	hstotal9 =(0.5 + hstotal9);
                 unit9=(1+unit9);
+                sub2=(sub2+0.5);
           	} else if (hs20 == "Principles of Biomedical Science" || hs20 == "Human Body Systems") {
                   hstotal9 = (1 + hstotal9);
                   unit9=(2+unit9);
+                  sub2=(sub2+1);
               }
              if (hs21 == "Intro to Business" || hs21 == "Nutrition and Wellness" || hs21 == "Nutrition Sciences" || hs21 == "Human Development I" || hs21 == "Human Development II" || hs21 == "Business Computer Applications" || hs21 == "Exploration of Information Technology" || hs21 == "Computer Science Principles I" || hs21 == "Computer Science Principles II" || hs21 == "Exploration of Media Arts I" || hs21 == "Exploration of Media Arts II" || hs21 == "Interior Design I" || hs21 == "Interior Design II" || hs21 == "Welding Tech I" || hs21 == "Welding Tech II" || hs21 == "Intro to Construction") {
               	hstotal9 =(0.5 + hstotal9);
                 unit9=(1+unit9);
+                sub2=(sub2+0.5);
           	} else if (hs21 == "Principles of Biomedical Science" || hs21 == "Human Body Systems") {
                   hstotal9 = (1 + hstotal9);
                   unit9=(2+unit9);
+                  sub2=(sub2+1);
               }
             if (hs22 == "Intro to Business" || hs22 == "Nutrition and Wellness" || hs22 == "Nutrition Sciences" || hs22 == "Human Development I" || hs22 == "Human Development II" || hs22 == "Business Computer Applications" || hs22 == "Exploration of Information Technology" || hs22 == "Computer Science Principles I" || hs22 == "Computer Science Principles II" || hs22 == "Exploration of Media Arts I" || hs22 == "Exploration of Media Arts II" || hs22 == "Interior Design I" || hs22 == "Interior Design II" || hs22 == "Welding Tech I" || hs22 == "Welding Tech II" || hs22 == "Intro to Construction") {
               	hstotal9 =(0.5 + hstotal9);
                 unit9=(1+unit9);
+                sub2=(sub2+0.5);
           	} else if (hs22 == "Principles of Biomedical Science" || hs22 == "Human Body Systems") {
                   hstotal9 = (1 + hstotal9);
                   unit9=(2+unit9);
+                  sub2=(sub2+1);
               }
             if (hs23 == "Intro to Business" || hs23 == "Nutrition and Wellness" || hs23 == "Nutrition Sciences" || hs23 == "Human Development I" || hs23 == "Human Development II" || hs23 == "Business Computer Applications" || hs23 == "Exploration of Information Technology" || hs23 == "Computer Science Principles I" || hs23 == "Computer Science Principles II" || hs23 == "Exploration of Media Arts I" || hs23 == "Exploration of Media Arts II" || hs23 == "Interior Design I" || hs23 == "Interior Design II" || hs23 == "Welding Tech I" || hs23 == "Welding Tech II" || hs23 == "Intro to Construction") {
               	hstotal9 =(0.5 + hstotal9);
                 unit9=(1+unit9);
+                sub2=(sub2+0.5);
           	} else if (hs23 == "Principles of Biomedical Science" || hs23 == "Human Body Systems") {
                   hstotal9 = (1 + hstotal9);
                   unit9=(2+unit9);
+                  sub2=(sub2+1);
               }
             if (hs24 == "Intro to Business" || hs24 == "Nutrition and Wellness" || hs24 == "Nutrition Sciences" || hs24 == "Human Development I" || hs24 == "Human Development II" || hs24 == "Business Computer Applications" || hs24 == "Exploration of Information Technology" || hs24 == "Computer Science Principles I" || hs24 == "Computer Science Principles II" || hs24 == "Exploration of Media Arts I" || hs24 == "Exploration of Media Arts II" || hs24 == "Interior Design I" || hs24 == "Interior Design II" || hs24 == "Welding Tech I" || hs24 == "Welding Tech II" || hs24 == "Intro to Construction") {
               	hstotal9 =(0.5 + hstotal9);
                 unit9=(1+unit9);
+                sub2=(sub2+0.5);
           	} else if (hs24 == "Principles of Biomedical Science" || hs24 == "Human Body Systems") {
                   hstotal9 = (1 + hstotal9);
                   unit9=(2+unit9);
+                  sub2=(sub2+1);
               }
             if (hs25 == "Intro to Business" || hs25 == "Nutrition and Wellness" || hs25 == "Nutrition Sciences" || hs25 == "Human Development I" || hs25 == "Human Development II" || hs25 == "Business Computer Applications" || hs25 == "Exploration of Information Technology" || hs25 == "Computer Science Principles I" || hs25 == "Computer Science Principles II" || hs25 == "Exploration of Media Arts I" || hs25 == "Exploration of Media Arts II" || hs25 == "Interior Design I" || hs25 == "Interior Design II" || hs25 == "Welding Tech I" || hs25 == "Welding Tech II" || hs25 == "Cybersecurity I" || hs25 == "Cybersecurity II" || hs25 == "Accounting I" || hs25 == "Business Law" || hs25 == "Media Design and Broadcasting I" || hs25 == "Media Design and Broadcasting II" || hs25 == "Welding Tech III" || hs25 == "Introduction to Building Trades" || hs25 == "Entrepreneurship") {
               	hstotal10 =(0.5 + hstotal10);
                 unit10=(1+unit10);
+                sub2=(sub2+0.5);
           	} else if (hs25 == "Principles of Biomedical Science" || hs25 == "Human Body Systems") {
                   hstotal10 = (1 + hstotal10);
                   unit10=(2+unit10);
+                  sub2=(sub2+1);
               }
             if (hs26 == "Intro to Business" || hs26 == "Nutrition and Wellness" || hs26 == "Nutrition Sciences" || hs26 == "Human Development I" || hs26 == "Human Development II" || hs26 == "Business Computer Applications" || hs26 == "Exploration of Information Technology" || hs26 == "Computer Science Principles I" || hs26 == "Computer Science Principles II" || hs26 == "Exploration of Media Arts I" || hs26 == "Exploration of Media Arts II" || hs26 == "Interior Design I" || hs26 == "Interior Design II" || hs26 == "Welding Tech I" || hs26 == "Welding Tech II" || hs26 == "Cybersecurity I" || hs26 == "Cybersecurity II" || hs26 == "Accounting I" || hs26 == "Business Law" || hs26 == "Media Design and Broadcasting I" || hs26 == "Media Design and Broadcasting II" || hs26 == "Welding Tech III" || hs26 == "Introduction to Building Trades" || hs26 == "Entrepreneurship") {
               	hstotal10 =(0.5 + hstotal10);
                 unit10=(1+unit10);
+                sub2=(sub2+0.5);
           	} else if (hs26 == "Principles of Biomedical Science" || hs26 == "Human Body Systems") {
                   hstotal10 = (1 + hstotal10);
                   unit10=(2+unit10);
+                  sub2=(sub2+1);
               }
             if (hs27 == "Intro to Business" || hs27 == "Nutrition and Wellness" || hs27 == "Nutrition Sciences" || hs27 == "Human Development I" || hs27 == "Human Development II" || hs27 == "Business Computer Applications" || hs27 == "Exploration of Information Technology" || hs27 == "Computer Science Principles I" || hs27 == "Computer Science Principles II" || hs27 == "Exploration of Media Arts I" || hs27 == "Exploration of Media Arts II" || hs27 == "Interior Design I" || hs27 == "Interior Design II" || hs27 == "Welding Tech I" || hs27 == "Welding Tech II" || hs27 == "Cybersecurity I" || hs27 == "Cybersecurity II" || hs27 == "Accounting I" || hs27 == "Business Law" || hs27 == "Media Design and Broadcasting I" || hs27 == "Media Design and Broadcasting II" || hs27 == "Welding Tech III" || hs27 == "Introduction to Building Trades" || hs27 == "Entrepreneurship") {
               	hstotal10 =(0.5 + hstotal10);
                 unit10=(1+unit10);
+                sub2=(sub2+0.5);
           	} else if (hs27 == "Principles of Biomedical Science" || hs27 == "Human Body Systems") {
                   hstotal10 = (1 + hstotal10);
                   unit10=(2+unit10);
+                  sub2=(sub2+1);
               }
             if (hs28 == "Intro to Business" || hs28 == "Nutrition and Wellness" || hs28 == "Nutrition Sciences" || hs28 == "Human Development I" || hs28 == "Human Development II" || hs28 == "Business Computer Applications" || hs28 == "Exploration of Information Technology" || hs28 == "Computer Science Principles I" || hs28 == "Computer Science Principles II" || hs28 == "Exploration of Media Arts I" || hs28 == "Exploration of Media Arts II" || hs28 == "Interior Design I" || hs28 == "Interior Design II" || hs28 == "Welding Tech I" || hs28 == "Welding Tech II" || hs28 == "Cybersecurity I" || hs28 == "Cybersecurity II" || hs28 == "Accounting I" || hs28 == "Business Law" || hs28 == "Media Design and Broadcasting I" || hs28 == "Media Design and Broadcasting II" || hs28 == "Welding Tech III" || hs28 == "Introduction to Building Trades" || hs28 == "Entrepreneurship") {
               	hstotal10 =(0.5 + hstotal10);
                 unit10=(1+unit10);
+                sub2=(sub2+0.5);
           	} else if (hs28 == "Principles of Biomedical Science" || hs28 == "Human Body Systems") {
                   hstotal10 = (1 + hstotal10);
                   unit10=(2+unit10);
+                  sub2=(sub2+1);
               }
             if (hs29 == "Intro to Business" || hs29 == "Nutrition and Wellness" || hs29 == "Nutrition Sciences" || hs29 == "Human Development I" || hs29 == "Human Development II" || hs29 == "Business Computer Applications" || hs29 == "Exploration of Information Technology" || hs29 == "Computer Science Principles I" || hs29 == "Computer Science Principles II" || hs29 == "Exploration of Media Arts I" || hs29 == "Exploration of Media Arts II" || hs29 == "Interior Design I" || hs29 == "Interior Design II" || hs29 == "Welding Tech I" || hs29 == "Welding Tech II" || hs29 == "Cybersecurity I" || hs29 == "Cybersecurity II" || hs29 == "Accounting I" || hs29 == "Business Law" || hs29 == "Media Design and Broadcasting I" || hs29 == "Media Design and Broadcasting II" || hs29 == "Welding Tech III" || hs29 == "Introduction to Building Trades" || hs29 == "Entrepreneurship") {
               	hstotal10 =(0.5 + hstotal10);
                 unit10=(1+unit10);
+                sub2=(sub2+0.5);
           	} else if (hs29 == "Principles of Biomedical Science" || hs29 == "Human Body Systems") {
                   hstotal10 = (1 + hstotal10);
                   unit10=(2+unit10);
+                  sub2=(sub2+1);
               }
             if (hs2a == "Intro to Business" || hs2a == "Nutrition and Wellness" || hs2a == "Nutrition Sciences" || hs2a == "Human Development I" || hs2a == "Human Development II" || hs2a == "Business Computer Applications" || hs2a == "Exploration of Information Technology" || hs2a == "Computer Science Principles I" || hs2a == "Computer Science Principles II" || hs2a == "Exploration of Media Arts I" || hs2a == "Exploration of Media Arts II" || hs2a == "Interior Design I" || hs2a == "Interior Design II" || hs2a == "Welding Tech I" || hs2a == "Welding Tech II" || hs2a == "Cybersecurity I" || hs2a == "Cybersecurity II" || hs2a == "Accounting I" || hs2a == "Business Law" || hs2a == "Media Design and Broadcasting I" || hs2a == "Media Design and Broadcasting II" || hs2a == "Welding Tech III" || hs2a == "Introduction to Building Trades" || hs2a == "Entrepreneurship") {
               	hstotal10 =(0.5 + hstotal10);
                 unit10=(1+unit10);
+                sub2=(sub2+0.5);
           	} else if (hs2a == "Principles of Biomedical Science" || hs2a == "Human Body Systems") {
                   hstotal10 = (1 + hstotal10);
                   unit10=(2+unit10);
+                  sub2=(sub2+1);
               }
             if (hs2b == "Intro to Business" || hs2b == "Nutrition and Wellness" || hs2b == "Nutrition Sciences" || hs2b == "Human Development I" || hs2b == "Human Development II" || hs2b == "Business Computer Applications" || hs2b == "Exploration of Information Technology" || hs2b == "Computer Science Principles I" || hs2b == "Computer Science Principles II" || hs2b == "Exploration of Media Arts I" || hs2b == "Exploration of Media Arts II" || hs2b == "Interior Design I" || hs2b == "Interior Design II" || hs2b == "Welding Tech I" || hs2b == "Welding Tech II" || hs2b == "Cybersecurity I" || hs2b == "Cybersecurity II" || hs2b == "Accounting I" || hs2b == "Business Law" || hs2b == "Media Design and Broadcasting I" || hs2b == "Media Design and Broadcasting II" || hs2b == "Welding Tech III" || hs2b == "Introduction to Building Trades" || hs2b == "Entrepreneurship" || hs2b == "Medical Interventions") {
               	hstotal11 =(0.5 + hstotal11);
                 unit11=(1+unit11);
+                sub2=(sub2+0.5);
           	} else if (hs2b == "Principles of Biomedical Science" || hs2b == "Human Body Systems" || hs2b == "Residential Construction") {
                   hstotal11 = (1 + hstotal11);
                   unit11=(2+unit11);
+                  sub2=(sub2+1);
               }
             if (hs2c == "Intro to Business" || hs2c == "Nutrition and Wellness" || hs2c == "Nutrition Sciences" || hs2c == "Human Development I" || hs2c == "Human Development II" || hs2c == "Business Computer Applications" || hs2c == "Exploration of Information Technology" || hs2c == "Computer Science Principles I" || hs2c == "Computer Science Principles II" || hs2c == "Exploration of Media Arts I" || hs2c == "Exploration of Media Arts II" || hs2c == "Interior Design I" || hs2c == "Interior Design II" || hs2c == "Welding Tech I" || hs2c == "Welding Tech II" || hs2c == "Cybersecurity I" || hs2c == "Cybersecurity II" || hs2c == "Accounting I" || hs2c == "Business Law" || hs2c == "Media Design and Broadcasting I" || hs2c == "Media Design and Broadcasting II" || hs2c == "Welding Tech III" || hs2c == "Introduction to Building Trades" || hs2c == "Entrepreneurship" || hs2c == "Medical Interventions") {
               	hstotal11 =(0.5 + hstotal11);
                 unit11=(1+unit11);
+                sub2=(sub2+0.5);
           	} else if (hs2c == "Principles of Biomedical Science" || hs2c == "Human Body Systems" || hs2c == "Residential Construction") {
                   hstotal11 = (1 + hstotal11);
                   unit11=(2+unit11);
+                  sub2=(sub2+1);
               }
             if (hs2d == "Intro to Business" || hs2d == "Nutrition and Wellness" || hs2d == "Nutrition Sciences" || hs2d == "Human Development I" || hs2d == "Human Development II" || hs2d == "Business Computer Applications" || hs2d == "Exploration of Information Technology" || hs2d == "Computer Science Principles I" || hs2d == "Computer Science Principles II" || hs2d == "Exploration of Media Arts I" || hs2d == "Exploration of Media Arts II" || hs2d == "Interior Design I" || hs2d == "Interior Design II" || hs2d == "Welding Tech I" || hs2d == "Welding Tech II" || hs2d == "Cybersecurity I" || hs2d == "Cybersecurity II" || hs2d == "Accounting I" || hs2d == "Business Law" || hs2d == "Media Design and Broadcasting I" || hs2d == "Media Design and Broadcasting II" || hs2d == "Welding Tech III" || hs2d == "Introduction to Building Trades" || hs2d == "Entrepreneurship" || hs2d == "Medical Interventions") {
               	hstotal11 =(0.5 + hstotal11);
                 unit11=(1+unit11);
+                sub2=(sub2+0.5);
           	} else if (hs2d == "Principles of Biomedical Science" || hs2d == "Human Body Systems" || hs2d == "Residential Construction") {
                   hstotal11 = (1 + hstotal11);
                   unit11=(2+unit11);
+                  sub2=(sub2+1);
               }
             if (hs2e == "Intro to Business" || hs2e == "Nutrition and Wellness" || hs2e == "Nutrition Sciences" || hs2e == "Human Development I" || hs2e == "Human Development II" || hs2e == "Business Computer Applications" || hs2e == "Exploration of Information Technology" || hs2e == "Computer Science Principles I" || hs2e == "Computer Science Principles II" || hs2e == "Exploration of Media Arts I" || hs2e == "Exploration of Media Arts II" || hs2e == "Interior Design I" || hs2e == "Interior Design II" || hs2e == "Welding Tech I" || hs2e == "Welding Tech II" || hs2e == "Cybersecurity I" || hs2e == "Cybersecurity II" || hs2e == "Accounting I" || hs2e == "Business Law" || hs2e == "Media Design and Broadcasting I" || hs2e == "Media Design and Broadcasting II" || hs2e == "Welding Tech III" || hs2e == "Introduction to Building Trades" || hs2e == "Entrepreneurship" || hs2e == "Medical Interventions") {
               	hstotal11 =(0.5 + hstotal11);
                 unit11=(1+unit11);
+                sub2=(sub2+0.5);
           	} else if (hs2e == "Principles of Biomedical Science" || hs2e == "Human Body Systems" || hs2e == "Residential Construction") {
                   hstotal11 = (1 + hstotal11);
                   unit11=(2+unit11);
+                  sub2=(sub2+1);
               }
             if (hs2f == "Intro to Business" || hs2f == "Nutrition and Wellness" || hs2f == "Nutrition Sciences" || hs2f == "Human Development I" || hs2f == "Human Development II" || hs2f == "Business Computer Applications" || hs2f == "Exploration of Information Technology" || hs2f == "Computer Science Principles I" || hs2f == "Computer Science Principles II" || hs2f == "Exploration of Media Arts I" || hs2f == "Exploration of Media Arts II" || hs2f == "Interior Design I" || hs2f == "Interior Design II" || hs2f == "Welding Tech I" || hs2f == "Welding Tech II" || hs2f == "Cybersecurity I" || hs2f == "Cybersecurity II" || hs2f == "Accounting I" || hs2f == "Business Law" || hs2f == "Media Design and Broadcasting I" || hs2f == "Media Design and Broadcasting II" || hs2f == "Welding Tech III" || hs2f == "Introduction to Building Trades" || hs2f == "Entrepreneurship" || hs2f == "Medical Interventions") {
               	hstotal11 =(0.5 + hstotal11);
                 unit11=(1+unit11);
+                sub2=(sub2+0.5);
           	} else if (hs2f == "Principles of Biomedical Science" || hs2f == "Human Body Systems" || hs2f == "Residential Construction") {
                   hstotal11 = (1 + hstotal11);
                   unit11=(2+unit11);
+                  sub2=(sub2+1);
               }
             if (hs2g == "Intro to Business" || hs2g == "Nutrition and Wellness" || hs2g == "Nutrition Sciences" || hs2g == "Human Development I" || hs2g == "Human Development II" || hs2g == "Business Computer Applications" || hs2g == "Exploration of Information Technology" || hs2g == "Computer Science Principles I" || hs2g == "Computer Science Principles II" || hs2g == "Exploration of Media Arts I" || hs2g == "Exploration of Media Arts II" || hs2g == "Interior Design I" || hs2g == "Interior Design II" || hs2g == "Welding Tech I" || hs2g == "Welding Tech II" || hs2g == "Cybersecurity I" || hs2g == "Cybersecurity II" || hs2g == "Accounting I" || hs2g == "Business Law" || hs2g == "Media Design and Broadcasting I" || hs2g == "Media Design and Broadcasting II" || hs2g == "Welding Tech III" || hs2g == "Introduction to Building Trades" || hs2g == "Entrepreneurship" || hs2g == "Medical Interventions") {
               	hstotal11 =(0.5 + hstotal11);
                 unit11=(1+unit11);
+                sub2=(sub2+0.5);
           	} else if (hs2g == "Principles of Biomedical Science" || hs2g == "Human Body Systems" || hs2g == "Residential Construction") {
                   hstotal11 = (1 + hstotal11);
                   unit11=(2+unit11);
+                  sub2=(sub2+1);
               }
             if (hs2h == "Intro to Business" || hs2h == "Nutrition and Wellness" || hs2h == "Nutrition Sciences" || hs2h == "Human Development I" || hs2h == "Human Development II" || hs2h == "Business Computer Applications" || hs2h == "Exploration of Information Technology" || hs2h == "Computer Science Principles I" || hs2h == "Computer Science Principles II" || hs2h == "Exploration of Media Arts I" || hs2h == "Exploration of Media Arts II" || hs2h == "Interior Design I" || hs2h == "Interior Design II" || hs2h == "Welding Tech I" || hs2h == "Welding Tech II" || hs2h == "Cybersecurity I" || hs2h == "Cybersecurity II" || hs2h == "Accounting I" || hs2h == "Business Law" || hs2h == "Media Design and Broadcasting I" || hs2h == "Media Design and Broadcasting II" || hs2h == "Welding Tech III" || hs2h == "Introduction to Building Trades" || hs2h == "Entrepreneurship" || hs2h == "Medical Interventions") {
               	hstotal12 =(0.5 + hstotal12);
                 unit12=(1+unit12);
+                sub2=(sub2+0.5);
           	} else if (hs2h == "Principles of Biomedical Science" || hs2h == "Human Body Systems" || hs2h == "Residential Construction" || hs2h == "Welding Tech IV") {
                   hstotal12 = (1 + hstotal12);
                   unit12=(2+unit12);
+                  sub2=(sub2+1);
               }
             if (hs2i == "Intro to Business" || hs2i == "Nutrition and Wellness" || hs2i == "Nutrition Sciences" || hs2i == "Human Development I" || hs2i == "Human Development II" || hs2i == "Business Computer Applications" || hs2i == "Exploration of Information Technology" || hs2i == "Computer Science Principles I" || hs2i == "Computer Science Principles II" || hs2i == "Exploration of Media Arts I" || hs2i == "Exploration of Media Arts II" || hs2i == "Interior Design I" || hs2i == "Interior Design II" || hs2i == "Welding Tech I" || hs2i == "Welding Tech II" || hs2i == "Cybersecurity I" || hs2i == "Cybersecurity II" || hs2i == "Accounting I" || hs2i == "Business Law" || hs2i == "Media Design and Broadcasting I" || hs2i == "Media Design and Broadcasting II" || hs2i == "Welding Tech III" || hs2i == "Introduction to Building Trades" || hs2i == "Entrepreneurship" || hs2i == "Medical Interventions") {
               	hstotal12 =(0.5 + hstotal12);
                 unit12=(1+unit12);
+                sub2=(sub2+0.5);
           	} else if (hs2i == "Principles of Biomedical Science" || hs2i == "Human Body Systems" || hs2i == "Residential Construction" || hs2i == "Welding Tech IV") {
                   hstotal12 = (1 + hstotal12);
                   unit12=(2+unit12);
+                  sub2=(sub2+1);
               }
             if (hs2j == "Intro to Business" || hs2j == "Nutrition and Wellness" || hs2j == "Nutrition Sciences" || hs2j == "Human Development I" || hs2j == "Human Development II" || hs2j == "Business Computer Applications" || hs2j == "Exploration of Information Technology" || hs2j == "Computer Science Principles I" || hs2j == "Computer Science Principles II" || hs2j == "Exploration of Media Arts I" || hs2j == "Exploration of Media Arts II" || hs2j == "Interior Design I" || hs2j == "Interior Design II" || hs2j == "Welding Tech I" || hs2j == "Welding Tech II" || hs2j == "Cybersecurity I" || hs2j == "Cybersecurity II" || hs2j == "Accounting I" || hs2j == "Business Law" || hs2j == "Media Design and Broadcasting I" || hs2j == "Media Design and Broadcasting II" || hs2j == "Welding Tech III" || hs2j == "Introduction to Building Trades" || hs2j == "Entrepreneurship" || hs2j == "Medical Interventions") {
               	hstotal12 =(0.5 + hstotal12);
                 unit12=(1+unit12);
+                sub2=(sub2+0.5);
           	} else if (hs2j == "Principles of Biomedical Science" || hs2j == "Human Body Systems" || hs2j == "Residential Construction" || hs2j == "Welding Tech IV") {
                   hstotal12 = (1 + hstotal12);
                   unit12=(2+unit12);
+                  sub2=(sub2+1);
               }
             if (hs2k == "Intro to Business" || hs2k == "Nutrition and Wellness" || hs2k == "Nutrition Sciences" || hs2k == "Human Development I" || hs2k == "Human Development II" || hs2k == "Business Computer Applications" || hs2k == "Exploration of Information Technology" || hs2k == "Computer Science Principles I" || hs2k == "Computer Science Principles II" || hs2k == "Exploration of Media Arts I" || hs2k == "Exploration of Media Arts II" || hs2k == "Interior Design I" || hs2k == "Interior Design II" || hs2k == "Welding Tech I" || hs2k == "Welding Tech II" || hs2k == "Cybersecurity I" || hs2k == "Cybersecurity II" || hs2k == "Accounting I" || hs2k == "Business Law" || hs2k == "Media Design and Broadcasting I" || hs2k == "Media Design and Broadcasting II" || hs2k == "Welding Tech III" || hs2k == "Introduction to Building Trades" || hs2k == "Entrepreneurship" || hs2k == "Medical Interventions") {
               	hstotal12 =(0.5 + hstotal12);
                 unit12=(1+unit12);
+                sub2=(sub2+0.5);
           	} else if (hs2k == "Principles of Biomedical Science" || hs2k == "Human Body Systems" || hs2k == "Residential Construction" || hs2k == "Welding Tech IV") {
                   hstotal12 = (1 + hstotal12);
                   unit12=(2+unit12);
+                  sub2=(sub2+1);
               }
             if (hs2l == "Intro to Business" || hs2l == "Nutrition and Wellness" || hs2l == "Nutrition Sciences" || hs2l == "Human Development I" || hs2l == "Human Development II" || hs2l == "Business Computer Applications" || hs2l == "Exploration of Information Technology" || hs2l == "Computer Science Principles I" || hs2l == "Computer Science Principles II" || hs2l == "Exploration of Media Arts I" || hs2l == "Exploration of Media Arts II" || hs2l == "Interior Design I" || hs2l == "Interior Design II" || hs2l == "Welding Tech I" || hs2l == "Welding Tech II" || hs2l == "Cybersecurity I" || hs2l == "Cybersecurity II" || hs2l == "Accounting I" || hs2l == "Business Law" || hs2l == "Media Design and Broadcasting I" || hs2l == "Media Design and Broadcasting II" || hs2l == "Welding Tech III" || hs2l == "Introduction to Building Trades" || hs2l == "Entrepreneurship" || hs2l == "Medical Interventions") {
               	hstotal12 =(0.5 + hstotal12);
                 unit12=(1+unit12);
+                sub2=(sub2+0.5);
           	} else if (hs2l == "Principles of Biomedical Science" || hs2l == "Human Body Systems" || hs2l == "Residential Construction" || hs2l == "Welding Tech IV") {
                   hstotal12 = (1 + hstotal12);
                   unit12=(2+unit12);
+                  sub2=(sub2+1);
               }
             if (hs2m == "Intro to Business" || hs2m == "Nutrition and Wellness" || hs2m == "Nutrition Sciences" || hs2m == "Human Development I" || hs2m == "Human Development II" || hs2m == "Business Computer Applications" || hs2m == "Exploration of Information Technology" || hs2m == "Computer Science Principles I" || hs2m == "Computer Science Principles II" || hs2m == "Exploration of Media Arts I" || hs2m == "Exploration of Media Arts II" || hs2m == "Interior Design I" || hs2m == "Interior Design II" || hs2m == "Welding Tech I" || hs2m == "Welding Tech II" || hs2m == "Cybersecurity I" || hs2m == "Cybersecurity II" || hs2m == "Accounting I" || hs2m == "Business Law" || hs2m == "Media Design and Broadcasting I" || hs2m == "Media Design and Broadcasting II" || hs2m == "Welding Tech III" || hs2m == "Introduction to Building Trades" || hs2m == "Entrepreneurship" || hs2m == "Medical Interventions") {
               	hstotal12 =(0.5 + hstotal12);
                 unit12=(1+unit12);
+                sub2=(sub2+0.5);
           	} else if (hs2m == "Principles of Biomedical Science" || hs2m == "Human Body Systems" || hs2m == "Residential Construction" || hs2m == "Welding Tech IV") {
                   hstotal12 = (1 + hstotal12);
                   unit12=(2+unit12);
-              }
-              
+                  sub2=(sub2+1);
+              } 
 		if (hs1 == "Intro to Journalism") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
+                sub2=(sub2+1);
           	}
 		if (hs10 == "Intro to Journalism" || hs10 == "Yearbook/Journalism") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
+                sub2=(sub2+1);
           	}
         if (hs11 == "Intro to Journalism" || hs11 == "Yearbook/Journalism") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub2=(sub2+1);
           	} else if (hs11 == "Mentoring" || hs11 == "Personal Finance") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub2=(sub2+0.5);
               }
         if (hs12 == "Intro to Journalism" || hs12 == "Yearbook/Journalism") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
+                sub2=(sub2+1);
           	} else if (hs12 == "Mentoring" || hs12 == "Personal Finance") {
                   hstotal11 = (0.5 + hstotal11);
                   unit11=(1+unit11);
+                  sub2=(sub2+0.5);
               }
         if (hs13 == "Intro to Journalism" || hs13 == "Yearbook/Journalism" || hs13 == "Youth Internships" || hs13 == "Senior Experience") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub2=(sub2+1);
           	} else if (hs13 == "Mentoring" || hs13 == "Personal Finance") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub2=(sub2+0.5);
               }
         if (hs14 == "Intro to Journalism" || hs14 == "Yearbook/Journalism" || hs14 == "Youth Internships" || hs14 == "Senior Experience") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
+                sub2=(sub2+1);
           	} else if (hs14 == "Mentoring" || hs14 == "Personal Finance") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
+                  sub2=(sub2+0.5);
               }
 
     localStorage.setItem('msclass', document.getElementById('msclass').checked);
     checked = JSON.parse(localStorage.getItem('msclass'));
     if (checked == true) {
     mscredit = mscredit+ 1
+    sub8=sub8+1
     }
     localStorage.setItem('msclass0', document.getElementById('msclass0').checked);
     checked0 = JSON.parse(localStorage.getItem('msclass0'));
     if (checked0 == true) {
     mscredit = mscredit+ 0.5
+    sub3=sub3+0.5
     }
     localStorage.setItem('msclass1', document.getElementById('msclass1').checked);
     checked1 = JSON.parse(localStorage.getItem('msclass1'));
     if (checked1 == true) {
     mscredit = mscredit+ 0.5
+    sub2=sub2+0.5
     }
     hstotal9 = mscredit + hstotal9
+  
+    total=hstotal9+hstotal10+hstotal11+hstotal12;
+    totalt=dctotal11+dctotal12;
+    totalu=unit9+unit10+unit11+unit12;
+  
+ if (endorsement == "Advanced Honors Endorsement") {
+		reqmath=4;
+        reqsci=4;
+        reqlang=1;
+    }
+    
+    if (hs9 != "English I" && hs9 != "Honors English I") {
+    req1ela="You do not have the required class: English I."
+    }
+    if (hs90 != "English II + Speech" && hs90 != "Honors English II + Speech") {
+    req2ela="You do not have the required class: English II."
+    }
+    if (hs91 !== "English III" && hs91 !== "Honors English III" && hs92 != "English III" && hs92 != "Honors English III") {
+    req3ela="You do not have the required class: English III."
+    }
+    if (hs11 !== "Personal Finance" && hs12 !== "Personal Finance" && hs13 != "Personal Finance" && hs14 != "Personal Finance") {
+    perf="You do not have the required class: Personal Finance."
+    }
+    if (hs80 !== "Algebra II" && hs81 !== "Algebra II" && hs82 !== "Algebra II" && hs83 != "Algebra II" && hs84 != "Algebra II" && hs80 !== "Accelerated Algebra II" && hs81 !== "Accelerated Algebra II" && hs82 !== "Accelerated Algebra II" && hs83 != "Accelerated Algebra II" && hs84 != "Accelerated Algebra II") {
+    reqmath1="You do not have the required class: Algebra II."
+    }
+	  if (hs8 !== "Geometry" && hs80 !== "Geometry" && hs81 !== "Geometry" && hs82 !== "Geometry" && hs83 != "Geometry" && hs84 != "Geometry" && hs8 !== "Accelerated Geometry" && hs80 !== "Accelerated Geometry" && hs81 !== "Accelerated Geometry" && hs82 !== "Accelerated Geometry" && hs83 != "Accelerated Geometry" && hs84 != "Accelerated Geometry") {
+    reqmath2="You do not have the required class: Geometry."
+    }
+    if (hs8 !== "Algebra I" && checked !== true) {
+    reqmath3="You do not have the required class: Algebra."
+    }
+    if (hs7 !== "Biology" && hs7 !== "Honors Biology" && hs7 !== "Physical Science") {
+    sci1req = "You do not have the required class: Biology."
+    }
+    if (hs70 !== "Chemistry" && hs70 !== "Honors Chemistry") {
+    sci2req = "You do not have the required class: Chemistry."
+    }
+    if (hs71 !== "Physics" && hs72 !== "Physics" && hs71 !== "Honors Physics" && hs72 !== "Honors Physics" && hs71 !== "AP Physics" && hs72 !== "AP Physics" && hs73 !== "AP Physics" && hs74 !== "AP Physics") {
+    sci3req = "You do not have the required class: Physics."
+    }
+    if (hs6 !== "World History/Geography" && hs6 !== "Honors World History/Geography") {
+    ss1req = "You do not have the required class: Honors World History/Geography."
+    }
+    if (hs60 !== "American History" && hs60 !== "AP American History" && hs61 !== "AP American History" && hs62 !== "AP American History") {
+    ss2req = "You do not have the required class: American History."
+    }
+    if (hs61 !== "Government" && hs62 !== "Government" && hs63 !== "Government" && hs64 !== "Government") {
+    ss3req = "You do not have the required class: Government."
+    } 
+    if (checked0 !== true && hs3 !== "Health" && hs30 !== "Health") {
+    healreq = "You do not have the required class: Health."
+    }
+    if (hs13 !== "Senior Experience" && hs14 !== "Senior Experience" && hs13 !== "Youth Internships" && hs14 !== "Youth Internships") {
+    capreq = "You do not have enough credits in the subject: Capstone."
+    }
+    
+    if (hs00== "Chemistry 106" || hs01== "Chemistry 106" || hs02== "Chemistry 106" || hs03== "Chemistry 106" || hs04== "Chemistry 106" || hs05== "Chemistry 106" || hs06== "Chemistry 106" || hs07== "Chemistry 106" || hs08== "Chemistry 106" || hs09== "Chemistry 106" || hs0== "Chemistry 106" || hs== "Chemistry 106") {
+    overflowsci=1
+    }
+    if (hs06== "English Composition" || hs07== "English Composition" || hs08== "English Composition" || hs09== "English Composition" || hs0== "English Composition" || hs== "English Composition") {
+    overflowela=1
+    }
+    overflowela=overflowela+sub9
+    overflowsci=overflowsci+sub7
+    
+    if (4 < sub9) {
+    	temp9 = sub9-4
+    	sub9 = sub9-temp9
+    	sub2 = sub2 + temp9
+    }
+    if (reqmath < sub8) {
+    	temp8 = sub8-reqmath
+    	sub8 = sub8-temp8
+    	sub2 = sub2 + temp8
+    }
+    if (reqsci < sub7) {
+    	temp7 = sub7-reqsci
+    	sub7 = sub7-temp7
+    	sub2 = sub2 + temp7
+    }
+    if (3 < sub6) {
+    	temp6 = sub6-3
+    	sub6 = sub6-temp6
+    	sub2 = sub2 + temp6
+    }
+    if (1 < sub5) {
+    	temp5 = sub5-1
+    	sub5 = sub5-temp5
+    	sub2 = sub2 + temp5
+    }
+    if (reqlang < sub4) {
+    	temp4 = sub4-reqlang
+    	sub4 = sub4-temp4
+    	sub2 = sub2 + temp4
+    }
+    if (1 < sub3) {
+    	temp3 = sub3-1
+    	sub3 = sub3-temp3
+    	sub2 = sub2 + temp3
+    }
+    
+    if (overflowela<4) {
+    reqsubela = "You do not meet the credit requirements for ELA (Unless you make up for it in Online/Other)."
+    }
+    if (sub8<reqmath) {
+    reqsubmath = "You do not meet the credit requirements for math (Unless you make up for it in Online/Other)."
+    }
+    if (overflowsci<reqsci) {
+    reqsubsci = "You do not meet the credit requirements for science (Unless you make up for it in Online/Other)."
+    }
+    if (sub6<3) {
+    reqsubss = "You do not meet the credit requirements for social studies (Unless you make up for it in Online/Other)."
+    }
+    if (sub5<1) {
+    reqsubart = "You do not meet the credit requirements for art."
+    }
+    if (sub4<reqlang) {
+    reqsublang = "You do not meet the credit requirements for language."
+    }
+    if (sub3<1) {
+    reqsubpe = "You do not meet the credit requirements for physical education."
+    }
 
+    if (unit9 !=14) {
+    req9 = "You have too much or too little units for grade 9."
+    }
+    if (unit10 !=14) {
+    req10 = "You have too much or too little units for grade 10."
+    }
+    if (unit11 !=14) {
+    req11 = "You have too much or too little units for grade 11."
+    } 
+    if (unit12 < 5 || unit12 > 14) {
+    req12 = "You have too much or too little units for grade 12."
+    }
+    if (total < 24) {
+    reqtotal = "You don't have enough credits to pass high school."
+    }
+   
     document.getElementById("total11dc").innerHTML = dctotal11;
     document.getElementById("total12dc").innerHTML = dctotal12;
     document.getElementById("total9hs").innerHTML = hstotal9;
@@ -3006,6 +3378,44 @@
     document.getElementById("10unit").innerHTML = unit10
     document.getElementById("11unit").innerHTML = unit11;
     document.getElementById("12unit").innerHTML = unit12;
+    document.getElementById("required9").innerHTML = req9;
+    document.getElementById("required10").innerHTML = req10;
+    document.getElementById("required11").innerHTML = req11;
+    document.getElementById("required12").innerHTML = req12;
+    document.getElementById("totes").innerHTML = total;
+    document.getElementById("totest").innerHTML = totalt;
+    document.getElementById("totesu").innerHTML = totalu;
+    document.getElementById("totesr").innerHTML = reqtotal;
+    document.getElementById("elareq1").innerHTML = req1ela;
+    document.getElementById("elareq2").innerHTML = req2ela;
+    document.getElementById("elareq3").innerHTML = req3ela;
+    document.getElementById("perfi").innerHTML = perf;
+    document.getElementById("req1math").innerHTML = reqmath1;
+    document.getElementById("req2math").innerHTML = reqmath2;
+    document.getElementById("req3math").innerHTML = reqmath3;
+    document.getElementById("scireq1").innerHTML = sci1req;
+    document.getElementById("scireq2").innerHTML = sci2req;
+    document.getElementById("scireq3").innerHTML = sci3req;
+    document.getElementById("ssreq1").innerHTML = ss1req;
+    document.getElementById("ssreq2").innerHTML = ss2req;
+    document.getElementById("ssreq3").innerHTML = ss3req;
+    document.getElementById("reqheal").innerHTML = healreq;
+    document.getElementById("reqcap").innerHTML = capreq;
+    document.getElementById("2sub").innerHTML = sub2;
+    document.getElementById("9sub").innerHTML = sub9;
+    document.getElementById("8sub").innerHTML = sub8;
+    document.getElementById("7sub").innerHTML = sub7;
+    document.getElementById("6sub").innerHTML = sub6;
+    document.getElementById("5sub").innerHTML = sub5;
+    document.getElementById("4sub").innerHTML = sub4;
+    document.getElementById("3sub").innerHTML = sub3;
+    document.getElementById("subela").innerHTML = reqsubela;
+    document.getElementById("submath").innerHTML = reqsubmath;
+    document.getElementById("subsci").innerHTML = reqsubsci;
+    document.getElementById("subss").innerHTML = reqsubss;
+    document.getElementById("subart").innerHTML = reqsubart;
+    document.getElementById("sublang").innerHTML = reqsublang;
+    document.getElementById("subpe").innerHTML = reqsubpe;
     }
   </script>
 </html>
@@ -3022,6 +3432,11 @@ Wednesday: Finished the save function and started applying the adding section.
 Thursday: Continued adding columns section and made the html website.
 Friday: (4/2) Finished adding columns section, added extra credits for MS classes, polished everything.
 
+Monday: Save endorsements, test out recommendations, overflows, requirements, etc so it’s easier.
+Tuesday: Make recommendations for not having enough/too much units per year. Also polish the gui and add the endorsement requirements.
+Wednesday: Make recommendations on not having required classes and finish adding the endorsements. 
+Thursday: Make recommendations for not enough credits for subjects.
+Friday (4/16): Make overflows and add a class link. Over the weekend, you can finish up if needed.
+
 Version 1.0 features the master table, the use of google sites, a catalog of classes, localstorage saves, using credits, dual credits, and units, and has a checklist for ms classes. 
 Version 1.1 will have requirements for grades, some classes, and columns, use endorsements to change requirements, use overflows, and have a more graphical interface.
--->
