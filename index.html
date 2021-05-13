@@ -4,7 +4,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Sarala&family=Sofia&display=swap" rel="stylesheet">
     <title>Project BCC</title>    
     <style>
-      body { background-color: #333344; 
+      body { 
+      background-color: #333344; 
       font-family: Sarala, sans-serif;
       color: #222233;
       }
@@ -65,7 +66,8 @@ a:link, a:visited, a:hover, a:active{
         </td>
         <td>
           <button class="button" type="button" onclick="calc()">Apply Changes</button>
-          <button class="button" type="button" onclick="deleteItems()">Erase Changes</button>
+          <button class="button" type="button" onclick="deleteItems()">Erase Info</button>
+          <button class="button" type="button" onclick="aaa()">Download Info</button>
         </td>
       </tr>
     </table>
@@ -1439,29 +1441,26 @@ a:link, a:visited, a:hover, a:active{
           <input list="class_1" name="class1" id="class1" />
           <datalist id="class_1">
             <option value="Intro to Journalism">Intro to Journalism</option>
+            <option value="Study Hall">Study Hall</option>
           </datalist>
-        </td>
-        <td>
           <input list="class_10" name="class10" id="class10" />
           <datalist id="class_10">
             <option value="Intro to Journalism">Intro to Journalism</option>
-            <option value="Yearbook/Journalism">Yearbook/Journalism</option>
+            <option value="Study Hall">Study Hall</option>
           </datalist>
         </td>
         <td>
           <input list="class_11" name="class11" id="class11" />
           <datalist id="class_11">
-            <option value="Personal Finance">Personal Finance</option>
             <option value="Intro to Journalism">Intro to Journalism</option>
             <option value="Yearbook/Journalism">Yearbook/Journalism</option>
-            <option value="Mentoring">Mentoring</option>
+            <option value="Study Hall">Study Hall</option>
           </datalist>
           <input list="class_12" name="class12" id="class12" />
           <datalist id="class_12">
-            <option value="Personal Finance">Personal Finance</option>
             <option value="Intro to Journalism">Intro to Journalism</option>
             <option value="Yearbook/Journalism">Yearbook/Journalism</option>
-            <option value="Mentoring">Mentoring</option>
+            <option value="Study Hall">Study Hall</option>
           </datalist>
         </td>
         <td>
@@ -1471,8 +1470,7 @@ a:link, a:visited, a:hover, a:active{
             <option value="Intro to Journalism">Intro to Journalism</option>
             <option value="Yearbook/Journalism">Yearbook/Journalism</option>
             <option value="Mentoring">Mentoring</option>
-            <option value="Youth Internships">Youth Internships</option>
-            <option value="Senior Experience">Senior Experience</option>
+            <option value="Study Hall">Study Hall</option>
           </datalist>
           <input list="class_14" name="class14" id="class14" />
           <datalist id="class_14">
@@ -1480,6 +1478,27 @@ a:link, a:visited, a:hover, a:active{
             <option value="Intro to Journalism">Intro to Journalism</option>
             <option value="Yearbook/Journalism">Yearbook/Journalism</option>
             <option value="Mentoring">Mentoring</option>
+            <option value="Study Hall">Study Hall</option>
+          </datalist>
+        </td>
+        <td>
+          <input list="class_15" name="class15" id="class15" />
+          <datalist id="class_15">
+            <option value="Personal Finance">Personal Finance</option>
+            <option value="Intro to Journalism">Intro to Journalism</option>
+            <option value="Yearbook/Journalism">Yearbook/Journalism</option>
+            <option value="Mentoring">Mentoring</option>
+            <option value="Study Hall">Study Hall</option>
+            <option value="Youth Internships">Youth Internships</option>
+            <option value="Senior Experience">Senior Experience</option>
+          </datalist>
+          <input list="class_16" name="class16" id="class16" />
+          <datalist id="class_16">
+            <option value="Personal Finance">Personal Finance</option>
+            <option value="Intro to Journalism">Intro to Journalism</option>
+            <option value="Yearbook/Journalism">Yearbook/Journalism</option>
+            <option value="Mentoring">Mentoring</option>
+            <option value="Study Hall">Study Hall</option>
             <option value="Youth Internships">Youth Internships</option>
             <option value="Senior Experience">Senior Experience</option>
           </datalist>
@@ -1626,7 +1645,7 @@ a:link, a:visited, a:hover, a:active{
     <p class = "warn" id = "required11"></p>
     <p class = "warn" id = "required12"></p>
     <p class = "warn" id = "totesr"></p>
-    <p class = "info">This is version 1.1 - Meant to run on a Chromebook or PC.</p>
+    <p class = "info">This is version 1.2 - Meant to run on a Chromebook or PC.</p>
     <p class = "info"><a href="https://sites.google.com/k12.sd.us/brookes-class-calculator/">Go back to Brooke's website</a></p>
   </body>
   <script>
@@ -1638,6 +1657,37 @@ a:link, a:visited, a:hover, a:active{
       localStorage.clear();
       location.reload();
     }
+    function aaa() {
+    var texty = JSON.stringify(localStorage)
+    Download.save(texty,"BCC.txt");
+    }
+
+    var Download = 
+    {
+        click : function(node) {
+            var ev = document.createEvent("MouseEvents");
+            ev.initMouseEvent("click", true, false, self, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+            return node.dispatchEvent(ev);
+        },
+        encode : function(data) {
+                return 'data:application/octet-stream;base64,' + btoa( data );
+        },
+        link : function(data, name){
+            var a = document.createElement('a');
+            a.download = name || self.location.pathname.slice(self.location.pathname.lastIndexOf('/')+1);
+            a.href = data || self.location.href;
+            return a;
+        }
+    };
+    Download.save = function(data, name)
+    {
+        this.click(
+            this.link(
+                this.encode( data ),
+                name
+            )
+        );
+    }; // I didn't write this; thanks to Khalid from StackOverflow for providing it.
 
     document.addEventListener('DOMContentLoaded', function () {
       document.getElementById("msclass").checked = checked;
@@ -1662,6 +1712,8 @@ a:link, a:visited, a:hover, a:active{
        input12 = document.getElementById('class12'),
        input13 = document.getElementById('class13'),
        input14 = document.getElementById('class14'),
+       input15 = document.getElementById('class15'),
+       input16 = document.getElementById('class16'),
        input2 = document.getElementById('class2'),
        input20 = document.getElementById('class20'),
        input21 = document.getElementById('class21'),
@@ -1795,6 +1847,12 @@ a:link, a:visited, a:hover, a:active{
        }
        if (localStorage['class14']) {
            input14.value = localStorage['class14'];
+       }
+       if (localStorage['class15']) {
+           input15.value = localStorage['class15'];
+       }
+       if (localStorage['class16']) {
+           input16.value = localStorage['class16'];
        }
        if (localStorage['class2']) {
            input2.value = localStorage['class2'];
@@ -2082,6 +2140,12 @@ a:link, a:visited, a:hover, a:active{
        input14.onchange = function () {
             localStorage['class14'] = this.value;
        }
+       input15.onchange = function () {
+            localStorage['class15'] = this.value;
+       }
+       input16.onchange = function () {
+            localStorage['class16'] = this.value;
+       }
        input2.onchange = function () {
             localStorage['class2'] = this.value;
        }
@@ -2368,7 +2432,9 @@ a:link, a:visited, a:hover, a:active{
         hs12 = document.getElementById("class12").value,
         hs13 = document.getElementById("class13").value,
         hs14 = document.getElementById("class14").value,
-     	  hs5 = document.getElementById("class5").value,
+        hs15 = document.getElementById("class15").value,
+        hs16 = document.getElementById("class16").value,
+     	hs5 = document.getElementById("class5").value,
         hs50 = document.getElementById("class50").value,
         hs51 = document.getElementById("class51").value,
         hs52 = document.getElementById("class52").value,
@@ -3166,48 +3232,74 @@ a:link, a:visited, a:hover, a:active{
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
                 sub2=(sub2+1);
-          	}
-		if (hs10 == "Intro to Journalism" || hs10 == "Yearbook/Journalism") {
+          	} else if (hs1 == "Study Hall") {
+            	unit9=(1+unit9);
+            }
+		if (hs10 == "Intro to Journalism") {
+              	hstotal9 =(1 + hstotal9);
+                unit9=(2+unit9);
+                sub2=(sub2+1);
+          	} else if (hs10 == "Study Hall") {
+            	unit9=(1+unit9);
+            }
+		if (hs11 == "Intro to Journalism" || hs11 == "Yearbook/Journalism") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
                 sub2=(sub2+1);
-          	}
-        if (hs11 == "Intro to Journalism" || hs11 == "Yearbook/Journalism") {
-              	hstotal11 =(1 + hstotal11);
-                unit11=(2+unit11);
-                sub2=(sub2+1);
-          	} else if (hs11 == "Mentoring" || hs11 == "Personal Finance") {
-                  hstotal11 = (0.5 + hstotal11);
-                  unit11=(1+unit11);
-                  sub2=(sub2+0.5);
-              }
+          	} else if (hs11 == "Study Hall") {
+            	unit10=(1+unit10);
+            }
         if (hs12 == "Intro to Journalism" || hs12 == "Yearbook/Journalism") {
+              	hstotal10 =(1 + hstotal10);
+                unit10=(2+unit10);
+                sub2=(sub2+1);
+          	} else if (hs12 == "Study Hall") {
+            	unit10=(1+unit10);
+            }
+        if (hs13 == "Intro to Journalism" || hs13 == "Yearbook/Journalism") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
-                sub2=(sub2+1);
-          	} else if (hs12 == "Mentoring" || hs12 == "Personal Finance") {
-                  hstotal11 = (0.5 + hstotal11);
-                  unit11=(1+unit11);
-                  sub2=(sub2+0.5);
-              }
-        if (hs13 == "Intro to Journalism" || hs13 == "Yearbook/Journalism" || hs13 == "Youth Internships" || hs13 == "Senior Experience") {
-              	hstotal12 =(1 + hstotal12);
-                unit12=(2+unit12);
                 sub2=(sub2+1);
           	} else if (hs13 == "Mentoring" || hs13 == "Personal Finance") {
-                  hstotal12 = (0.5 + hstotal12);
-                  unit12=(1+unit12);
+                  hstotal11 = (0.5 + hstotal11);
+                  unit11=(1+unit11);
                   sub2=(sub2+0.5);
-              }
-        if (hs14 == "Intro to Journalism" || hs14 == "Yearbook/Journalism" || hs14 == "Youth Internships" || hs14 == "Senior Experience") {
+              } else if (hs13 == "Study Hall") {
+            		unit11=(1+unit11);
+                    }
+        if (hs14 == "Intro to Journalism" || hs14 == "Yearbook/Journalism") {
+              	hstotal11 =(1 + hstotal11);
+                unit11=(2+unit11);
+                sub2=(sub2+1);
+          	} else if (hs14 == "Mentoring" || hs14 == "Personal Finance") {
+                  hstotal11 = (0.5 + hstotal11);
+                  unit11=(1+unit11);
+                  sub2=(sub2+0.5);
+              } else if (hs12 == "Study Hall") {
+            	unit11=(1+unit11);
+                }
+        if (hs15 == "Intro to Journalism" || hs15 == "Yearbook/Journalism" || hs15 == "Youth Internships" || hs15 == "Senior Experience") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
                 sub2=(sub2+1);
-          	} else if (hs14 == "Mentoring" || hs14 == "Personal Finance") {
+          	} else if (hs15 == "Mentoring" || hs15 == "Personal Finance") {
                   hstotal12 = (0.5 + hstotal12);
                   unit12=(1+unit12);
                   sub2=(sub2+0.5);
-              }
+              } else if (hs15 == "Study Hall") {
+            	unit12=(1+unit12);
+                }
+        if (hs16 == "Intro to Journalism" || hs16 == "Yearbook/Journalism" || hs16 == "Youth Internships" || hs16 == "Senior Experience") {
+              	hstotal12 =(1 + hstotal12);
+                unit12=(2+unit12);
+                sub2=(sub2+1);
+          	} else if (hs16 == "Mentoring" || hs16 == "Personal Finance") {
+                  hstotal12 = (0.5 + hstotal12);
+                  unit12=(1+unit12);
+                  sub2=(sub2+0.5);
+              } else if (hs16 == "Study Hall") {
+            	unit12=(1+unit12);
+                }
 
     localStorage.setItem('msclass', document.getElementById('msclass').checked);
     checked = JSON.parse(localStorage.getItem('msclass'));
@@ -3248,7 +3340,7 @@ a:link, a:visited, a:hover, a:active{
     if (hs91 !== "English III" && hs91 !== "Honors English III" && hs92 != "English III" && hs92 != "Honors English III") {
     req3ela="You do not have the required class: English III."
     }
-    if (hs11 !== "Personal Finance" && hs12 !== "Personal Finance" && hs13 != "Personal Finance" && hs14 != "Personal Finance") {
+    if (hs15 !== "Personal Finance" && hs16 !== "Personal Finance" && hs13 != "Personal Finance" && hs14 != "Personal Finance") {
     perf="You do not have the required class: Personal Finance."
     }
     if (hs80 !== "Algebra II" && hs81 !== "Algebra II" && hs82 !== "Algebra II" && hs83 != "Algebra II" && hs84 != "Algebra II" && hs80 !== "Accelerated Algebra II" && hs81 !== "Accelerated Algebra II" && hs82 !== "Accelerated Algebra II" && hs83 != "Accelerated Algebra II" && hs84 != "Accelerated Algebra II") {
@@ -3281,7 +3373,7 @@ a:link, a:visited, a:hover, a:active{
     if (checked0 !== true && hs3 !== "Health" && hs30 !== "Health") {
     healreq = "You do not have the required class: Health."
     }
-    if (hs13 !== "Senior Experience" && hs14 !== "Senior Experience" && hs13 !== "Youth Internships" && hs14 !== "Youth Internships") {
+    if (hs15 !== "Senior Experience" && hs16 !== "Senior Experience" && hs15 !== "Youth Internships" && hs16 !== "Youth Internships") {
     capreq = "You do not have enough credits in the subject: Capstone."
     }
     
@@ -3440,3 +3532,4 @@ Friday (4/16): Make overflows and add a class link. Over the weekend, you can fi
 
 Version 1.0 features the master table, the use of google sites, a catalog of classes, localstorage saves, using credits, dual credits, and units, and has a checklist for ms classes. 
 Version 1.1 will have requirements for grades, some classes, and columns, use endorsements to change requirements, use overflows, and have a more graphical interface.
+Verson 1.2 doesn;t add as much as the others. It was a quick release that added study halls and the ability to download your classes that are saved in your brower.
