@@ -23,8 +23,11 @@ body {
 }
       .info {
 	color: #dde0ef;
-    font-size: 11px;
+    font-size: 16px;
     text-align: center;
+}
+      .pad {
+    font-size: 5px;
 }
 a:link, a:visited, a:hover, a:active{
   color: #dde0ef;
@@ -32,8 +35,13 @@ a:link, a:visited, a:hover, a:active{
 }
       .warn {
 	color: #f2c7c7;
+	padding-left: 10%
 }
 table.center {
   margin-left: auto; 
   margin-right: auto;
 }
+.lesspad {
+  line-height: 10px;  
+  margin: 10px 0;
+  }
