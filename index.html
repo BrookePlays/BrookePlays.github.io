@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 			<body>
+			<p class="pad">&nbsp</p>
 				<table class="center">
 					<colgroup>
 						<col width="33%" />
@@ -34,6 +35,7 @@
 												<td>
 													<button class="button" type="button" onclick="calc()">Apply Changes</button>
 													<button class="button" type="button" onclick="deleteItems()">Erase Changes</button>
+													<p></p><input type="checkbox" id="rec" onclick="show()"value="1" Checked> Show recommendations
 												</td>
 											</tr>
 										</table>
@@ -1744,6 +1746,116 @@
 												<td id="totesu"></td>
 											</tr>
 										</table>
+										<p></p>
+										<table class="center">
+										<tr><td>Filler classes - For advanced users only</td></tr>
+										</table>
+										<table class="center">
+											<colgroup>
+												<col width="20%" />
+												<col width="20%" />
+												<col width="20%" />
+												<col width="20%" />
+												<col width="20%" />
+											</colgroup>
+											<tr>
+												<td>
+												<p class = "lesspad">Grade</p>
+												<p class = "lesspad">Subject</p>
+												<p class = "lesspad">Credits</p>
+												</td>
+												<td>
+													<input list="filler_00" name="filler00" id="filler00" />
+														<datalist id="filler_00">
+															<option value="9th grade">9th grade</option>
+															<option value="10th grade">10th grade</option>
+															<option value="11th grade">11th grade</option>
+															<option value="12th grade">12th grade</option>
+														</datalist>
+													<input list="filler_01" name="filler01" id="filler01" />
+														<datalist id="filler_01">
+															<option value="CTE / Other">CTE / Other</option>
+															<option value="Language">Language</option>
+															<option value="Arts">Arts</option>
+														</datalist>
+													<input list="filler_02" name="filler02" id="filler02" />
+														<datalist id="filler_02">
+															<option value="1 unit / 0.5 credits">1 unit / 0.5 credits</option>
+															<option value="2 units / 1 credit">2 units / 1 credit</option>
+															<option value="0 units / 0.5 credits">0 units / 0.5 credits</option>
+															<option value="0 units / 1 credit">0 units / 1 credit</option>
+														</datalist>
+												</td>
+												<td>
+													<input list="filler_10" name="filler10" id="filler10" />
+														<datalist id="filler_10">
+															<option value="9th grade">9th grade</option>
+															<option value="10th grade">10th grade</option>
+															<option value="11th grade">11th grade</option>
+															<option value="12th grade">12th grade</option>
+														</datalist>
+													<input list="filler_11" name="filler11" id="filler11" />
+														<datalist id="filler_11">
+															<option value="CTE / Other">CTE / Other</option>
+															<option value="Language">Language</option>
+															<option value="Arts">Arts</option>
+														</datalist>
+													<input list="filler_12" name="filler12" id="filler12" />
+														<datalist id="filler_12">
+															<option value="1 unit / 0.5 credits">1 unit / 0.5 credits</option>
+															<option value="2 units / 1 credit">2 units / 1 credit</option>
+															<option value="0 units / 0.5 credits">0 units / 0.5 credits</option>
+															<option value="0 units / 1 credit">0 units / 1 credit</option>
+														</datalist>
+												</td>
+												<td>
+													<input list="filler_20" name="filler20" id="filler20" />
+														<datalist id="filler_20">
+															<option value="9th grade">9th grade</option>
+															<option value="10th grade">10th grade</option>
+															<option value="11th grade">11th grade</option>
+															<option value="12th grade">12th grade</option>
+														</datalist>
+													<input list="filler_21" name="filler21" id="filler21" />
+														<datalist id="filler_21">
+															<option value="CTE / Other">CTE / Other</option>
+															<option value="Language">Language</option>
+															<option value="Arts">Arts</option>
+														</datalist>
+													<input list="filler_22" name="filler22" id="filler22" />
+														<datalist id="filler_22">
+															<option value="1 unit / 0.5 credits">1 unit / 0.5 credits</option>
+															<option value="2 units / 1 credit">2 units / 1 credit</option>
+															<option value="0 units / 0.5 credits">0 units / 0.5 credits</option>
+															<option value="0 units / 1 credit">0 units / 1 credit</option>
+														</datalist>
+												</td>
+												<td>
+													<input list="filler_30" name="filler30" id="filler30" />
+														<datalist id="filler_30">
+															<option value="9th grade">9th grade</option>
+															<option value="10th grade">10th grade</option>
+															<option value="11th grade">11th grade</option>
+															<option value="12th grade">12th grade</option>
+														</datalist>
+													<input list="filler_31" name="filler31" id="filler31" />
+														<datalist id="filler_31">
+															<option value="CTE / Other">CTE / Other</option>
+															<option value="Language">Language</option>
+															<option value="Arts">Arts</option>
+														</datalist>
+													<input list="filler_32" name="filler32" id="filler32" />
+														<datalist id="filler_32">
+															<option value="1 unit / 0.5 credits">1 unit / 0.5 credits</option>
+															<option value="2 units / 1 credit">2 units / 1 credit</option>
+															<option value="0 units / 0.5 credits">0 units / 0.5 credits</option>
+															<option value="0 units / 1 credit">0 units / 1 credit</option>
+														</datalist>
+												</td>
+											</tr>
+										</table>
+										<p>
+										</p>
 										<p class = "warn" id = "elareq1"></p>
 										<p class = "warn" id = "elareq2"></p>
 										<p class = "warn" id = "elareq3"></p>
@@ -1771,10 +1883,7 @@
 										<p class = "warn" id = "required11"></p>
 										<p class = "warn" id = "required12"></p>
 										<p class = "warn" id = "totesr"></p>
-										<p class = "info">This is version 1.3 - Made by Brooklyn Hallvin</p>
-										<p class = "info">
-											<a href="https://sites.google.com/k12.sd.us/brookes-class-calculator/">Go back to Brooke's website</a>
-										</p>
+										<p class = "info">v1.3 by Brooklyn Hallvin&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href="https://sites.google.com/k12.sd.us/brookes-class-calculator/">Go back to Brooke's website</a></p>
 									</body>
 									<script>
     var checked = JSON.parse(localStorage.getItem('msclass')), classms=0,
@@ -1886,10 +1995,58 @@
        input91 = document.getElementById('class91'),
        input92 = document.getElementById('class92'),
        input93 = document.getElementById('class93'),
-       input94 = document.getElementById('class94');
+       input94 = document.getElementById('class94'),
+	   fill00 = document.getElementById('filler00'),
+       fill01 = document.getElementById('filler01'),
+       fill02 = document.getElementById('filler02'),
+	   fill10 = document.getElementById('filler10'),
+       fill11 = document.getElementById('filler11'),
+       fill12 = document.getElementById('filler12'),
+	   fill20 = document.getElementById('filler20'),
+       fill21 = document.getElementById('filler21'),
+       fill22 = document.getElementById('filler22'),
+	   fill30 = document.getElementById('filler30'),
+       fill31 = document.getElementById('filler31'),
+       fill32 = document.getElementById('filler32');
 
 		if (localStorage['selection']) {
            inputs.value = localStorage['selection'];
+       }
+	   if (localStorage['filler00']) {
+           fill00.value = localStorage['filler00'];
+       }
+	   if (localStorage['filler01']) {
+           fill01.value = localStorage['filler01'];
+       }
+	   if (localStorage['filler02']) {
+           fill02.value = localStorage['filler02'];
+       }
+	   if (localStorage['filler10']) {
+           fill10.value = localStorage['filler10'];
+       }
+	   if (localStorage['filler11']) {
+           fill11.value = localStorage['filler11'];
+       }
+	   if (localStorage['filler12']) {
+           fill12.value = localStorage['filler12'];
+       }
+	   if (localStorage['filler20']) {
+           fill20.value = localStorage['filler20'];
+       }
+	   if (localStorage['filler21']) {
+           fill21.value = localStorage['filler21'];
+       }
+	   if (localStorage['filler22']) {
+           fill22.value = localStorage['filler22'];
+       }
+	   if (localStorage['filler30']) {
+           fill30.value = localStorage['filler30'];
+       }
+	   if (localStorage['filler31']) {
+           fill31.value = localStorage['filler31'];
+       }
+	   if (localStorage['filler32']) {
+           fill32.value = localStorage['filler32'];
        }
        if (localStorage['class']) {
            input.value = localStorage['class'];
@@ -2183,6 +2340,42 @@
        inputs.onchange = function () {
             localStorage['selection'] = this.value;
        }
+	   fill00.onchange = function () {
+            localStorage['filler00'] = this.value;
+       }
+	   fill01.onchange = function () {
+            localStorage['filler01'] = this.value;
+       }
+	   fill02.onchange = function () {
+            localStorage['filler02'] = this.value;
+       }
+	   fill10.onchange = function () {
+            localStorage['filler10'] = this.value;
+       }
+	   fill11.onchange = function () {
+            localStorage['filler11'] = this.value;
+       }
+	   fill12.onchange = function () {
+            localStorage['filler12'] = this.value;
+       }
+	   fill20.onchange = function () {
+            localStorage['filler20'] = this.value;
+       }
+	   fill21.onchange = function () {
+            localStorage['filler21'] = this.value;
+       }
+	   fill22.onchange = function () {
+            localStorage['filler22'] = this.value;
+       }
+	   fill30.onchange = function () {
+            localStorage['filler30'] = this.value;
+       }
+	   fill31.onchange = function () {
+            localStorage['filler31'] = this.value;
+       }
+	   fill32.onchange = function () {
+            localStorage['filler32'] = this.value;
+       }
        input.onchange = function () {
             localStorage['class'] = this.value;
        }
@@ -2471,6 +2664,7 @@
        input94.onchange = function () {
             localStorage['class94'] = this.value;
        }
+	document.getElementById("rec").defaultChecked;
  	calc()
     });
 
@@ -2571,8 +2765,20 @@
         hs2k = document.getElementById("class2k").value,
         hs2l = document.getElementById("class2l").value,
         hs2m = document.getElementById("class2m").value,
+		f00 = document.getElementById("filler00").value,
+		f01 = document.getElementById("filler01").value,
+		f02 = document.getElementById("filler02").value,
+		f10 = document.getElementById("filler10").value,
+		f11 = document.getElementById("filler11").value,
+		f12 = document.getElementById("filler12").value,
+		f20 = document.getElementById("filler20").value,
+		f21 = document.getElementById("filler21").value,
+		f22 = document.getElementById("filler22").value,
+		f30 = document.getElementById("filler30").value,
+		f31 = document.getElementById("filler31").value,
+		f32 = document.getElementById("filler32").value,
         dctotal12 = 0 , hstotal12 = 0, unit12 = 0, dctotal11 = 0 , hstotal11 = 0, unit11 = 0, dctotal10 = 0 , hstotal10 = 0, unit10 = 0, dctotal9 = 0 , hstotal9 = 0, unit9 = 0,//totals for grades
-        req9 = "", req10 = "",req11 = "",req12 = "", reqtotal="", req1ela="", req2ela="", req3ela="", perf="", reqmath1="", reqmath2="", reqmath3="", sci1req="",sci3req="",sci2req="", ss1req="", ss2req="", ss3req="", healreq="", capreq="", reqsubela="", reqsubmath="", reqsubsci="", reqsubss="", reqsubpe="", reqsublang="", reqsubart="",//reccommendations
+        req9 = "", req10 = "",req11 = "",req12 = "", reqtotal="", req1ela="", req2ela="", req3ela="", perf="", reqmath1="", reqmath2="", reqmath3="", sci1req="",sci3req="",sci2req="", ss1req="", ss2req="", ss3req="", healreq="", capreq="", reqsubela="", reqsubmath="", reqsubsci="", reqsubss="", reqsubpe="", reqsublang="", reqsubart="",//recommendations
         reqmath = 3, reqsci = 3, reqlang = 0, sub9=0, sub8=0, sub7=0, sub6=0, sub5=0, sub4=0, sub3=0, sub2=0, overflowsci=0, overflowela=0,//requirements for endorsements and all the subject totals
         temp9=0, temp8=0, temp7=0, temp6=0, temp5=0, temp4=0, temp3=0, //overflows
         endorsement = document.getElementById("selection").value, mscredit = 0, total = 0, totalu = 0, totalt = 0; //more totals, etc
@@ -3381,6 +3587,846 @@
               } else if (hs16 == "Study Hall") {
             	unit12=(1+unit12);
                 }
+		
+		if (f02 == "1 unit / 0.5 credits") {
+              	if (f00 == "9th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub2=(sub2+0.5);
+					} else if (f01 == "Language") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub4=(sub4+0.5);
+					} else if (f01 == "Arts") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub5=(sub5+0.5);
+						}
+				} else if (f00 == "10th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub2=(sub2+0.5);
+					} else if (f01 == "Language") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub4=(sub4+0.5);
+					} else if (f01 == "Arts") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub5=(sub5+0.5);
+						}
+				} else if (f00 == "11th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub2=(sub2+0.5);
+					} else if (f01 == "Language") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub4=(sub4+0.5);
+					} else if (f01 == "Arts") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub5=(sub5+0.5);
+						}
+				} else if (f00 == "12th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub2=(sub2+0.5);
+					} else if (f01 == "Language") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub4=(sub4+0.5);
+					} else if (f01 == "Arts") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub5=(sub5+0.5);
+				}
+				}
+        } else if (f02 == "2 units / 1 credit") {
+      		if (f00 == "9th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub2=(sub2+1);
+					} else if (f01 == "Language") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub4=(sub4+1);
+					} else if (f01 == "Arts") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub5=(sub5+1);
+						}
+				} else if (f00 == "10th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub2=(sub2+1);
+					} else if (f01 == "Language") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub4=(sub4+1);
+					} else if (f01 == "Arts") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub5=(sub5+1);
+						}
+				} else if (f00 == "11th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub2=(sub2+1);
+					} else if (f01 == "Language") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub4=(sub4+1);
+					} else if (f01 == "Arts") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub5=(sub5+1);
+						}
+				} else if (f00 == "12th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub2=(sub2+1);
+					} else if (f01 == "Language") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub4=(sub4+1);
+					} else if (f01 == "Arts") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub5=(sub5+1);
+				}
+				}
+        } else if (f02 == "0 units / 0.5 credits") {
+            if (f00 == "9th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal9 = (0.5 + hstotal9);
+						sub2=(sub2+0.5);
+					} else if (f01 == "Language") {
+						hstotal9 = (0.5 + hstotal9);
+						sub4=(sub4+0.5);
+					} else if (f01 == "Arts") {
+						hstotal9 = (0.5 + hstotal9);
+						sub5=(sub5+0.5);
+						}
+				} else if (f00 == "10th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal10 = (0.5 + hstotal10);
+						sub2=(sub2+0.5);
+					} else if (f01 == "Language") {
+						hstotal10 = (0.5 + hstotal10);
+						sub4=(sub4+0.5);
+					} else if (f01 == "Arts") {
+						hstotal10 = (0.5 + hstotal10);
+						sub5=(sub5+0.5);
+						}
+				} else if (f00 == "11th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal11 = (0.5 + hstotal11);
+						sub2=(sub2+0.5);
+					} else if (f01 == "Language") {
+						hstotal11 = (0.5 + hstotal11);
+						sub4=(sub4+0.5);
+					} else if (f01 == "Arts") {
+						hstotal11 = (0.5 + hstotal11);
+						sub5=(sub5+0.5);
+						}
+				} else if (f00 == "12th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal12 = (0.5 + hstotal12);
+						sub2=(sub2+0.5);
+					} else if (f01 == "Language") {
+						hstotal12 = (0.5 + hstotal12);
+						sub4=(sub4+0.5);
+					} else if (f01 == "Arts") {
+						hstotal12 = (0.5 + hstotal12);
+						sub5=(sub5+0.5);
+				}
+				}
+        } else if (f02 == "0 units / 1 credit") {
+            if (f00 == "9th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal9 = (1 + hstotal9);
+						sub2=(sub2+1);
+					} else if (f01 == "Language") {
+						hstotal9 = (1 + hstotal9);
+						sub4=(sub4+1);
+					} else if (f01 == "Arts") {
+						hstotal9 = (1 + hstotal9);
+						sub5=(sub5+1);
+						}
+				} else if (f00 == "10th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal10 = (1 + hstotal10);
+						sub2=(sub2+1);
+					} else if (f01 == "Language") {
+						hstotal10 = (1 + hstotal10);
+						sub4=(sub4+1);
+					} else if (f01 == "Arts") {
+						hstotal10 = (1 + hstotal10);
+						sub5=(sub5+1);
+						}
+				} else if (f00 == "11th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal11 = (1 + hstotal11);
+						sub2=(sub2+1);
+					} else if (f01 == "Language") {
+						hstotal11 = (1 + hstotal11);
+						sub4=(sub4+1);
+					} else if (f01 == "Arts") {
+						hstotal11 = (1 + hstotal11);
+						sub5=(sub5+1);
+						}
+				} else if (f00 == "12th grade") {
+					if (f01 == "CTE / Other") {
+						hstotal12 = (1 + hstotal12);
+						sub2=(sub2+1);
+					} else if (f01 == "Language") {
+						hstotal12 = (1 + hstotal12);
+						sub4=(sub4+1);
+					} else if (f01 == "Arts") {
+						hstotal12 = (1 + hstotal12);
+						sub5=(sub5+1);
+				}
+        }
+		}
+		
+		if (f12 == "1 unit / 0.5 credits") {
+              	if (f10 == "9th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub2=(sub2+0.5);
+					} else if (f11 == "Language") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub4=(sub4+0.5);
+					} else if (f11 == "Arts") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub5=(sub5+0.5);
+						}
+				} else if (f10 == "10th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub2=(sub2+0.5);
+					} else if (f11 == "Language") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub4=(sub4+0.5);
+					} else if (f11 == "Arts") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub5=(sub5+0.5);
+						}
+				} else if (f10 == "11th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub2=(sub2+0.5);
+					} else if (f11 == "Language") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub4=(sub4+0.5);
+					} else if (f11 == "Arts") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub5=(sub5+0.5);
+						}
+				} else if (f10 == "12th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub2=(sub2+0.5);
+					} else if (f11 == "Language") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub4=(sub4+0.5);
+					} else if (f11 == "Arts") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub5=(sub5+0.5);
+				}
+				}
+        } else if (f12 == "2 units / 1 credit") {
+      		if (f10 == "9th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub2=(sub2+1);
+					} else if (f11 == "Language") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub4=(sub4+1);
+					} else if (f11 == "Arts") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub5=(sub5+1);
+						}
+				} else if (f10 == "10th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub2=(sub2+1);
+					} else if (f11 == "Language") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub4=(sub4+1);
+					} else if (f11 == "Arts") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub5=(sub5+1);
+						}
+				} else if (f10 == "11th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub2=(sub2+1);
+					} else if (f11 == "Language") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub4=(sub4+1);
+					} else if (f11 == "Arts") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub5=(sub5+1);
+						}
+				} else if (f10 == "12th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub2=(sub2+1);
+					} else if (f11 == "Language") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub4=(sub4+1);
+					} else if (f11 == "Arts") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub5=(sub5+1);
+				}
+				}
+        } else if (f12 == "0 units / 0.5 credits") {
+            if (f10 == "9th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal9 = (0.5 + hstotal9);
+						sub2=(sub2+0.5);
+					} else if (f11 == "Language") {
+						hstotal9 = (0.5 + hstotal9);
+						sub4=(sub4+0.5);
+					} else if (f11 == "Arts") {
+						hstotal9 = (0.5 + hstotal9);
+						sub5=(sub5+0.5);
+						}
+				} else if (f10 == "10th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal10 = (0.5 + hstotal10);
+						sub2=(sub2+0.5);
+					} else if (f11 == "Language") {
+						hstotal10 = (0.5 + hstotal10);
+						sub4=(sub4+0.5);
+					} else if (f11 == "Arts") {
+						hstotal10 = (0.5 + hstotal10);
+						sub5=(sub5+0.5);
+						}
+				} else if (f10 == "11th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal11 = (0.5 + hstotal11);
+						sub2=(sub2+0.5);
+					} else if (f11 == "Language") {
+						hstotal11 = (0.5 + hstotal11);
+						sub4=(sub4+0.5);
+					} else if (f11 == "Arts") {
+						hstotal11 = (0.5 + hstotal11);
+						sub5=(sub5+0.5);
+						}
+				} else if (f10 == "12th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal12 = (0.5 + hstotal12);
+						sub2=(sub2+0.5);
+					} else if (f11 == "Language") {
+						hstotal12 = (0.5 + hstotal12);
+						sub4=(sub4+0.5);
+					} else if (f11 == "Arts") {
+						hstotal12 = (0.5 + hstotal12);
+						sub5=(sub5+0.5);
+				}
+				}
+        } else if (f12 == "0 units / 1 credit") {
+            if (f10 == "9th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal9 = (1 + hstotal9);
+						sub2=(sub2+1);
+					} else if (f11 == "Language") {
+						hstotal9 = (1 + hstotal9);
+						sub4=(sub4+1);
+					} else if (f11 == "Arts") {
+						hstotal9 = (1 + hstotal9);
+						sub5=(sub5+1);
+						}
+				} else if (f10 == "10th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal10 = (1 + hstotal10);
+						sub2=(sub2+1);
+					} else if (f11 == "Language") {
+						hstotal10 = (1 + hstotal10);
+						sub4=(sub4+1);
+					} else if (f11 == "Arts") {
+						hstotal10 = (1 + hstotal10);
+						sub5=(sub5+1);
+						}
+				} else if (f10 == "11th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal11 = (1 + hstotal11);
+						sub2=(sub2+1);
+					} else if (f11 == "Language") {
+						hstotal11 = (1 + hstotal11);
+						sub4=(sub4+1);
+					} else if (f11 == "Arts") {
+						hstotal11 = (1 + hstotal11);
+						sub5=(sub5+1);
+						}
+				} else if (f10 == "12th grade") {
+					if (f11 == "CTE / Other") {
+						hstotal12 = (1 + hstotal12);
+						sub2=(sub2+1);
+					} else if (f11 == "Language") {
+						hstotal12 = (1 + hstotal12);
+						sub4=(sub4+1);
+					} else if (f11 == "Arts") {
+						hstotal12 = (1 + hstotal12);
+						sub5=(sub5+1);
+				}
+        }
+		}
+		
+		if (f22 == "1 unit / 0.5 credits") {
+              	if (f20 == "9th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub2=(sub2+0.5);
+					} else if (f21 == "Language") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub4=(sub4+0.5);
+					} else if (f21 == "Arts") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub5=(sub5+0.5);
+						}
+				} else if (f20 == "10th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub2=(sub2+0.5);
+					} else if (f21 == "Language") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub4=(sub4+0.5);
+					} else if (f21 == "Arts") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub5=(sub5+0.5);
+						}
+				} else if (f20 == "11th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub2=(sub2+0.5);
+					} else if (f21 == "Language") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub4=(sub4+0.5);
+					} else if (f21 == "Arts") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub5=(sub5+0.5);
+						}
+				} else if (f20 == "12th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub2=(sub2+0.5);
+					} else if (f21 == "Language") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub4=(sub4+0.5);
+					} else if (f21 == "Arts") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub5=(sub5+0.5);
+				}
+				}
+        } else if (f22 == "2 units / 1 credit") {
+      		if (f20 == "9th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub2=(sub2+1);
+					} else if (f21 == "Language") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub4=(sub4+1);
+					} else if (f21 == "Arts") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub5=(sub5+1);
+						}
+				} else if (f20 == "10th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub2=(sub2+1);
+					} else if (f21 == "Language") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub4=(sub4+1);
+					} else if (f21 == "Arts") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub5=(sub5+1);
+						}
+				} else if (f20 == "11th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub2=(sub2+1);
+					} else if (f21 == "Language") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub4=(sub4+1);
+					} else if (f21 == "Arts") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub5=(sub5+1);
+						}
+				} else if (f20 == "12th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub2=(sub2+1);
+					} else if (f21 == "Language") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub4=(sub4+1);
+					} else if (f21 == "Arts") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub5=(sub5+1);
+				}
+				}
+        } else if (f22 == "0 units / 0.5 credits") {
+            if (f20 == "9th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal9 = (0.5 + hstotal9);
+						sub2=(sub2+0.5);
+					} else if (f21 == "Language") {
+						hstotal9 = (0.5 + hstotal9);
+						sub4=(sub4+0.5);
+					} else if (f21 == "Arts") {
+						hstotal9 = (0.5 + hstotal9);
+						sub5=(sub5+0.5);
+						}
+				} else if (f20 == "10th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal10 = (0.5 + hstotal10);
+						sub2=(sub2+0.5);
+					} else if (f21 == "Language") {
+						hstotal10 = (0.5 + hstotal10);
+						sub4=(sub4+0.5);
+					} else if (f21 == "Arts") {
+						hstotal10 = (0.5 + hstotal10);
+						sub5=(sub5+0.5);
+						}
+				} else if (f20 == "11th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal11 = (0.5 + hstotal11);
+						sub2=(sub2+0.5);
+					} else if (f21 == "Language") {
+						hstotal11 = (0.5 + hstotal11);
+						sub4=(sub4+0.5);
+					} else if (f21 == "Arts") {
+						hstotal11 = (0.5 + hstotal11);
+						sub5=(sub5+0.5);
+						}
+				} else if (f20 == "12th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal12 = (0.5 + hstotal12);
+						sub2=(sub2+0.5);
+					} else if (f21 == "Language") {
+						hstotal12 = (0.5 + hstotal12);
+						sub4=(sub4+0.5);
+					} else if (f21 == "Arts") {
+						hstotal12 = (0.5 + hstotal12);
+						sub5=(sub5+0.5);
+				}
+				}
+        } else if (f22 == "0 units / 1 credit") {
+            if (f20 == "9th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal9 = (1 + hstotal9);
+						sub2=(sub2+1);
+					} else if (f21 == "Language") {
+						hstotal9 = (1 + hstotal9);
+						sub4=(sub4+1);
+					} else if (f21 == "Arts") {
+						hstotal9 = (1 + hstotal9);
+						sub5=(sub5+1);
+						}
+				} else if (f20 == "10th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal10 = (1 + hstotal10);
+						sub2=(sub2+1);
+					} else if (f21 == "Language") {
+						hstotal10 = (1 + hstotal10);
+						sub4=(sub4+1);
+					} else if (f21 == "Arts") {
+						hstotal10 = (1 + hstotal10);
+						sub5=(sub5+1);
+						}
+				} else if (f20 == "11th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal11 = (1 + hstotal11);
+						sub2=(sub2+1);
+					} else if (f21 == "Language") {
+						hstotal11 = (1 + hstotal11);
+						sub4=(sub4+1);
+					} else if (f21 == "Arts") {
+						hstotal11 = (1 + hstotal11);
+						sub5=(sub5+1);
+						}
+				} else if (f20 == "12th grade") {
+					if (f21 == "CTE / Other") {
+						hstotal12 = (1 + hstotal12);
+						sub2=(sub2+1);
+					} else if (f21 == "Language") {
+						hstotal12 = (1 + hstotal12);
+						sub4=(sub4+1);
+					} else if (f21 == "Arts") {
+						hstotal12 = (1 + hstotal12);
+						sub5=(sub5+1);
+				}
+        }
+		}
+		
+		if (f32 == "1 unit / 0.5 credits") {
+              	if (f30 == "9th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub2=(sub2+0.5);
+					} else if (f31 == "Language") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub4=(sub4+0.5);
+					} else if (f31 == "Arts") {
+						hstotal9 = (0.5 + hstotal9);
+						unit9=(1+unit9);
+						sub5=(sub5+0.5);
+						}
+				} else if (f30 == "10th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub2=(sub2+0.5);
+					} else if (f31 == "Language") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub4=(sub4+0.5);
+					} else if (f31 == "Arts") {
+						hstotal10 = (0.5 + hstotal10);
+						unit10=(1+unit10);
+						sub5=(sub5+0.5);
+						}
+				} else if (f30 == "11th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub2=(sub2+0.5);
+					} else if (f31 == "Language") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub4=(sub4+0.5);
+					} else if (f31 == "Arts") {
+						hstotal11 = (0.5 + hstotal11);
+						unit11=(1+unit11);
+						sub5=(sub5+0.5);
+						}
+				} else if (f30 == "12th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub2=(sub2+0.5);
+					} else if (f31 == "Language") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub4=(sub4+0.5);
+					} else if (f31 == "Arts") {
+						hstotal12 = (0.5 + hstotal12);
+						unit12=(1+unit12);
+						sub5=(sub5+0.5);
+				}
+				}
+        } else if (f32 == "2 units / 1 credit") {
+      		if (f30 == "9th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub2=(sub2+1);
+					} else if (f31 == "Language") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub4=(sub4+1);
+					} else if (f31 == "Arts") {
+						hstotal9 = (1 + hstotal9);
+						unit9=(2+unit9);
+						sub5=(sub5+1);
+						}
+				} else if (f30 == "10th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub2=(sub2+1);
+					} else if (f31 == "Language") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub4=(sub4+1);
+					} else if (f31 == "Arts") {
+						hstotal10 = (1 + hstotal10);
+						unit10=(2+unit10);
+						sub5=(sub5+1);
+						}
+				} else if (f30 == "11th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub2=(sub2+1);
+					} else if (f31 == "Language") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub4=(sub4+1);
+					} else if (f31 == "Arts") {
+						hstotal11 = (1 + hstotal11);
+						unit11=(2+unit11);
+						sub5=(sub5+1);
+						}
+				} else if (f30 == "12th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub2=(sub2+1);
+					} else if (f31 == "Language") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub4=(sub4+1);
+					} else if (f31 == "Arts") {
+						hstotal12 = (1 + hstotal12);
+						unit12=(2+unit12);
+						sub5=(sub5+1);
+				}
+				}
+        } else if (f32 == "0 units / 0.5 credits") {
+            if (f30 == "9th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal9 = (0.5 + hstotal9);
+						sub2=(sub2+0.5);
+					} else if (f31 == "Language") {
+						hstotal9 = (0.5 + hstotal9);
+						sub4=(sub4+0.5);
+					} else if (f31 == "Arts") {
+						hstotal9 = (0.5 + hstotal9);
+						sub5=(sub5+0.5);
+						}
+				} else if (f30 == "10th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal10 = (0.5 + hstotal10);
+						sub2=(sub2+0.5);
+					} else if (f31 == "Language") {
+						hstotal10 = (0.5 + hstotal10);
+						sub4=(sub4+0.5);
+					} else if (f31 == "Arts") {
+						hstotal10 = (0.5 + hstotal10);
+						sub5=(sub5+0.5);
+						}
+				} else if (f30 == "11th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal11 = (0.5 + hstotal11);
+						sub2=(sub2+0.5);
+					} else if (f31 == "Language") {
+						hstotal11 = (0.5 + hstotal11);
+						sub4=(sub4+0.5);
+					} else if (f31 == "Arts") {
+						hstotal11 = (0.5 + hstotal11);
+						sub5=(sub5+0.5);
+						}
+				} else if (f30 == "12th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal12 = (0.5 + hstotal12);
+						sub2=(sub2+0.5);
+					} else if (f31 == "Language") {
+						hstotal12 = (0.5 + hstotal12);
+						sub4=(sub4+0.5);
+					} else if (f31 == "Arts") {
+						hstotal12 = (0.5 + hstotal12);
+						sub5=(sub5+0.5);
+				}
+				}
+        } else if (f32 == "0 units / 1 credit") {
+            if (f30 == "9th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal9 = (1 + hstotal9);
+						sub2=(sub2+1);
+					} else if (f31 == "Language") {
+						hstotal9 = (1 + hstotal9);
+						sub4=(sub4+1);
+					} else if (f31 == "Arts") {
+						hstotal9 = (1 + hstotal9);
+						sub5=(sub5+1);
+						}
+				} else if (f30 == "10th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal10 = (1 + hstotal10);
+						sub2=(sub2+1);
+					} else if (f31 == "Language") {
+						hstotal10 = (1 + hstotal10);
+						sub4=(sub4+1);
+					} else if (f31 == "Arts") {
+						hstotal10 = (1 + hstotal10);
+						sub5=(sub5+1);
+						}
+				} else if (f30 == "11th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal11 = (1 + hstotal11);
+						sub2=(sub2+1);
+					} else if (f31 == "Language") {
+						hstotal11 = (1 + hstotal11);
+						sub4=(sub4+1);
+					} else if (f31 == "Arts") {
+						hstotal11 = (1 + hstotal11);
+						sub5=(sub5+1);
+						}
+				} else if (f30 == "12th grade") {
+					if (f31 == "CTE / Other") {
+						hstotal12 = (1 + hstotal12);
+						sub2=(sub2+1);
+					} else if (f31 == "Language") {
+						hstotal12 = (1 + hstotal12);
+						sub4=(sub4+1);
+					} else if (f31 == "Arts") {
+						hstotal12 = (1 + hstotal12);
+						sub5=(sub5+1);
+				}
+        }
+		}
 
     localStorage.setItem('msclass', document.getElementById('msclass').checked);
     checked = JSON.parse(localStorage.getItem('msclass'));
@@ -3551,13 +4597,21 @@
     document.getElementById("10unit").innerHTML = unit10
     document.getElementById("11unit").innerHTML = unit11;
     document.getElementById("12unit").innerHTML = unit12;
-    document.getElementById("required9").innerHTML = req9;
-    document.getElementById("required10").innerHTML = req10;
-    document.getElementById("required11").innerHTML = req11;
-    document.getElementById("required12").innerHTML = req12;
     document.getElementById("totes").innerHTML = total;
     document.getElementById("totest").innerHTML = totalt;
     document.getElementById("totesu").innerHTML = totalu;
+    document.getElementById("9sub").innerHTML = sub9;
+    document.getElementById("8sub").innerHTML = sub8;
+    document.getElementById("7sub").innerHTML = sub7;
+    document.getElementById("6sub").innerHTML = sub6;
+    document.getElementById("5sub").innerHTML = sub5;
+    document.getElementById("4sub").innerHTML = sub4;
+    document.getElementById("3sub").innerHTML = sub3;
+	document.getElementById("2sub").innerHTML = sub2;
+	document.getElementById("required9").innerHTML = req9;
+    document.getElementById("required10").innerHTML = req10;
+    document.getElementById("required11").innerHTML = req11;
+    document.getElementById("required12").innerHTML = req12;
     document.getElementById("totesr").innerHTML = reqtotal;
     document.getElementById("elareq1").innerHTML = req1ela;
     document.getElementById("elareq2").innerHTML = req2ela;
@@ -3590,6 +4644,101 @@
     document.getElementById("sublang").innerHTML = reqsublang;
     document.getElementById("subpe").innerHTML = reqsubpe;
     }
+function show() {
+  var checkBox = document.getElementById("rec"),
+  requ9 = document.getElementById("required9"),
+  requ10 = document.getElementById("required10"),
+  requ11 = document.getElementById("required11"),
+  requ12 = document.getElementById("required12"),
+  textr = document.getElementById("totesr"),
+  ela1 = document.getElementById("elareq1"),
+  ela2 = document.getElementById("elareq2"),
+  ela3 = document.getElementById("elareq3"),
+  textfi = document.getElementById("perfi"),
+  math1 = document.getElementById("req1math"),
+  math2 = document.getElementById("req2math"),
+  math3 = document.getElementById("req3math"),
+  sci1 = document.getElementById("scireq1"),
+  sci2 = document.getElementById("scireq2"),
+  sci3 = document.getElementById("scireq3"),
+  ss1 = document.getElementById("ssreq1"),
+  ss2 = document.getElementById("ssreq2"),
+  ss3 = document.getElementById("ssreq3"),
+  heal = document.getElementById("reqheal"),
+  cap = document.getElementById("reqcap"),
+  ela = document.getElementById("subela"),
+  math = document.getElementById("submath"),
+  sci = document.getElementById("subsci"),
+  ss = document.getElementById("subss"),
+  art = document.getElementById("subart"),
+  lang = document.getElementById("sublang"),
+  pe = document.getElementById("subpe"),
+  two = document.getElementById("2sub"),
+  three = document.getElementById("3sub"),
+  four = document.getElementById("4sub"),
+  five = document.getElementById("5sub"),
+  six = document.getElementById("6sub"),
+  seven = document.getElementById("7sub"),
+  eight = document.getElementById("8sub"),
+  nine = document.getElementById("9sub");
+  if (checkBox.checked == true){
+    requ9.style.display = "block";
+	requ10.style.display = "block";
+	requ11.style.display = "block";
+	requ12.style.display = "block";
+	textr.style.display = "block";
+	ela1.style.display = "block";
+	ela2.style.display = "block";
+	ela3.style.display = "block";
+	textfi.style.display = "block";
+	math1.style.display = "block";
+	math2.style.display = "block";
+	math3.style.display = "block";
+	sci1.style.display = "block";
+	sci2.style.display = "block";
+	sci3.style.display = "block";
+	ss1.style.display = "block";
+	ss2.style.display = "block";
+	ss3.style.display = "block";
+	heal.style.display = "block";
+	cap.style.display = "block";
+	ela.style.display = "block";
+	math.style.display = "block";
+	sci.style.display = "block";
+	ss.style.display = "block";
+	art.style.display = "block";
+	lang.style.display = "block";
+	pe.style.display = "block";
+  } else {
+  	requ9.style.display = "none";
+	requ10.style.display = "none";
+	requ11.style.display = "none";
+	requ12.style.display = "none";
+	textr.style.display = "none";
+	ela1.style.display = "none";
+	ela2.style.display = "none";
+	ela3.style.display = "none";
+	textfi.style.display = "none";
+	math1.style.display = "none";
+	math2.style.display = "none";
+	math3.style.display = "none";
+	sci1.style.display = "none";
+	sci2.style.display = "none";
+	sci3.style.display = "none";
+	ss1.style.display = "none";
+	ss2.style.display = "none";
+	ss3.style.display = "none";
+	heal.style.display = "none";
+	cap.style.display = "none";
+	ela.style.display = "none";
+	math.style.display = "none";
+	sci.style.display = "none";
+	ss.style.display = "none";
+	art.style.display = "none";
+	lang.style.display = "none";
+	pe.style.display = "none";
+  }
+}
   
 																</script>
 															</html>
@@ -3597,11 +4746,9 @@
 Version 1.0 features the master table, the use of google sites, a catalog of classes, localstorage saves, using credits, dual credits, and units, and has a checklist for ms classes. 
 Version 1.1 will have requirements for grades, some classes, and columns, use endorsements to change requirements, use overflows, and have a more graphical interface.
 Verson 1.2 doesn't add as much as the others. It was a quick release that added study halls and the ability to download your classes that are saved in your brower.
-Version 1.3 includes two major overhauls. The introduction of filler classes makes it easy for you to include classes that may not be in the catalog of options, with the ability to assign how many units, credits, dual credits, and categories it can go in. The second overhaul is simplifacation, the UI should be a lot more clean. And, of course, the selection of classes has been updated.
+Version 1.3 includes two major updates. The first one being the additon of filler classes, in case you take online classes or something. Second, the catalog has been updated for 22-23 yearbook. I also included the option to hide recommendations if it was too scary to look at and changed some of the colors.
 
 If version 1.4 ever comes out I'd hope that I would be able to get access to the master teacher schedule and be able to create an ai that would be able to sort a schedule out.
 
-To do Friday: Change css, update website, update calculator.
-To do Saturday: Learning how to make subpages, migrating everything over
 To do Sunday: Create filler options. Add selection boxes to core classses in 9th/10th
 --!>
