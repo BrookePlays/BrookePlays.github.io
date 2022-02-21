@@ -66,10 +66,22 @@
 														<option value="Honors English I">Honors English I</option>
 														<option value="Strategic Reading">Strategic Reading</option>
 													</datalist>
+													<input list="class_95" name="class95" id="class95" />
+													<datalist id="class_95">
+														<option value="English I">English I</option>
+														<option value="Honors English I">Honors English I</option>
+														<option value="Strategic Reading">Strategic Reading</option>
+													</datalist>
 												</td>
 												<td>
 													<input list="class_90" name="class90" id="class90" />
 													<datalist id="class_90">
+														<option value="English II + Speech">English II + Speech</option>
+														<option value="Honors English II + Speech">Honors English II + Speech</option>
+														<option value="Strategic Reading">Strategic Reading</option>
+													</datalist>
+													<input list="class_96" name="class96" id="class96" />
+													<datalist id="class_96">
 														<option value="English II + Speech">English II + Speech</option>
 														<option value="Honors English II + Speech">Honors English II + Speech</option>
 														<option value="Strategic Reading">Strategic Reading</option>
@@ -123,10 +135,27 @@
 														<option value="Algebra II">Algebra II</option>
 														<option value="Accelerated Algebra II">Accelerated Algebra II</option>
 													</datalist>
+													<input list="class_85" name="class85" id="class85" />
+													<datalist id="class_85">
+														<option value="Algebra I Lab">Algebra I Lab</option>
+														<option value="Algebra I">Algebra I</option>
+														<option value="Geometry">Geometry</option>
+														<option value="Accelerated Geometry">Accelerated Geometry</option>
+														<option value="Algebra II">Algebra II</option>
+														<option value="Accelerated Algebra II">Accelerated Algebra II</option>
+													</datalist>
 												</td>
 												<td>
 													<input list="class_80" name="class80" id="class80" />
 													<datalist id="class_80">
+														<option value="Algebra I">Algebra I</option>
+														<option value="Geometry">Geometry</option>
+														<option value="Accelerated Geometry">Accelerated Geometry</option>
+														<option value="Algebra II">Algebra II</option>
+														<option value="Accelerated Algebra II">Accelerated Algebra II</option>
+													</datalist>
+													<input list="class_86" name="class86" id="class86" />
+													<datalist id="class_86">
 														<option value="Algebra I">Algebra I</option>
 														<option value="Geometry">Geometry</option>
 														<option value="Accelerated Geometry">Accelerated Geometry</option>
@@ -201,10 +230,22 @@
 														<option value="Biology">Biology</option>
 														<option value="Honors Biology">Honors Biology</option>
 													</datalist>
+													<input list="class_75" name="class75" id="class75" />
+													<datalist id="class_75">
+														<option value="Physical Science">Physical Science</option>
+														<option value="Biology">Biology</option>
+														<option value="Honors Biology">Honors Biology</option>
+													</datalist>
 												</td>
 												<td>
 													<input list="class_70" name="class70" id="class70" />
 													<datalist id="class_70">
+														<option value="Chemistry">Chemistry</option>
+														<option value="Honors Chemistry">Honors Chemistry</option>
+														<option value="Biology">Biology</option>
+													</datalist>
+													<input list="class_76" name="class76" id="class76" />
+													<datalist id="class_76">
 														<option value="Chemistry">Chemistry</option>
 														<option value="Honors Chemistry">Honors Chemistry</option>
 														<option value="Biology">Biology</option>
@@ -256,12 +297,24 @@
 													<input list="class_6" name="class6" id="class6" />
 													<datalist id="class_6">
 														<option value="World History/Geography">World History/Geography</option>
-														<option value="Honors World History/Geography">Honors World History/Geography</option>
+														<option value="Honors World History/Geography">Honors World History/Geography</option>					
+													</datalist>
+													<input list="class_65" name="class65" id="class65" />
+													<datalist id="class_65">
+														<option value="World History/Geography">World History/Geography</option>
+														<option value="Honors World History/Geography">Honors World History/Geography</option>					
 													</datalist>
 												</td>
 												<td>
 													<input list="class_60" name="class60" id="class60" />
 													<datalist id="class_60">
+														<option value="American History">American History</option>
+														<option value="Criminal Justice Today">Criminal Justice Today</option>
+														<option value="African American History">African American History</option>
+														<option value="AP American History">AP American History</option>
+													</datalist>
+													<input list="class_66" name="class66" id="class66" />
+													<datalist id="class_66">
 														<option value="American History">American History</option>
 														<option value="Criminal Justice Today">Criminal Justice Today</option>
 														<option value="African American History">African American History</option>
@@ -1973,25 +2026,33 @@
        input5d = document.getElementById('class5d'),
        input5e = document.getElementById('class5e'),
        input6 = document.getElementById('class6'),
+	   input65 = document.getElementById('class65'),
        input60 = document.getElementById('class60'),
+	   input66 = document.getElementById('class66'),
        input61 = document.getElementById('class61'),
        input62 = document.getElementById('class62'),
        input63 = document.getElementById('class63'),
        input64 = document.getElementById('class64'),
        input7 = document.getElementById('class7'),
+	   input75 = document.getElementById('class75'),
        input70 = document.getElementById('class70'),
+	   input76 = document.getElementById('class76'),
        input71 = document.getElementById('class71'),
        input72 = document.getElementById('class72'),
        input73 = document.getElementById('class73'),
        input74 = document.getElementById('class74'),
        input8 = document.getElementById('class8'),
+	   input85 = document.getElementById('class85'),
        input80 = document.getElementById('class80'),
+	   input86 = document.getElementById('class86'),
        input81 = document.getElementById('class81'),
        input82 = document.getElementById('class82'),
        input83 = document.getElementById('class83'),
        input84 = document.getElementById('class84'),
        input9 = document.getElementById('class9'),
+	   input95 = document.getElementById('class95'),
        input90 = document.getElementById('class90'),
+	   input96 = document.getElementById('class96'),
        input91 = document.getElementById('class91'),
        input92 = document.getElementById('class92'),
        input93 = document.getElementById('class93'),
@@ -2267,8 +2328,14 @@
        if (localStorage['class6']) {
            input6.value = localStorage['class6'];
        }
+	   if (localStorage['class65']) {
+           input65.value = localStorage['class65'];
+       }
        if (localStorage['class60']) {
            input60.value = localStorage['class60'];
+       }
+	   if (localStorage['class66']) {
+           input66.value = localStorage['class66'];
        }
        if (localStorage['class61']) {
            input61.value = localStorage['class61'];
@@ -2285,8 +2352,14 @@
        if (localStorage['class7']) {
            input7.value = localStorage['class7'];
        }
+	   if (localStorage['class75']) {
+           input75.value = localStorage['class75'];
+       }
        if (localStorage['class70']) {
            input70.value = localStorage['class70'];
+       }
+	   if (localStorage['class76']) {
+           input76.value = localStorage['class76'];
        }
        if (localStorage['class71']) {
            input71.value = localStorage['class71'];
@@ -2303,8 +2376,14 @@
        if (localStorage['class8']) {
            input8.value = localStorage['class8'];
        }
+	   if (localStorage['class85']) {
+           input85.value = localStorage['class85'];
+       }
        if (localStorage['class80']) {
            input80.value = localStorage['class80'];
+       }
+	   if (localStorage['class86']) {
+           input86.value = localStorage['class86'];
        }
        if (localStorage['class81']) {
            input81.value = localStorage['class81'];
@@ -2321,8 +2400,14 @@
        if (localStorage['class9']) {
            input9.value = localStorage['class9'];
        }
+	   if (localStorage['class95']) {
+           input95.value = localStorage['class95'];
+       }
        if (localStorage['class90']) {
            input90.value = localStorage['class90'];
+       }
+	   if (localStorage['class96']) {
+           input96.value = localStorage['class96'];
        }
        if (localStorage['class91']) {
            input91.value = localStorage['class91'];
@@ -2595,8 +2680,14 @@
        input6.onchange = function () {
             localStorage['class6'] = this.value;
        }
+	   input65.onchange = function () {
+            localStorage['class65'] = this.value;
+       }
        input60.onchange = function () {
             localStorage['class60'] = this.value;
+       }
+	   input66.onchange = function () {
+            localStorage['class66'] = this.value;
        }
        input61.onchange = function () {
             localStorage['class61'] = this.value;
@@ -2613,8 +2704,14 @@
        input7.onchange = function () {
             localStorage['class7'] = this.value;
        }
+	   input75.onchange = function () {
+            localStorage['class75'] = this.value;
+       }
        input70.onchange = function () {
             localStorage['class70'] = this.value;
+       }
+	   input76.onchange = function () {
+            localStorage['class76'] = this.value;
        }
        input71.onchange = function () {
             localStorage['class71'] = this.value;
@@ -2631,8 +2728,14 @@
        input8.onchange = function () {
             localStorage['class8'] = this.value;
        }
+	   input85.onchange = function () {
+            localStorage['class85'] = this.value;
+       }
        input80.onchange = function () {
             localStorage['class80'] = this.value;
+       }
+	   input86.onchange = function () {
+            localStorage['class86'] = this.value;
        }
        input81.onchange = function () {
             localStorage['class81'] = this.value;
@@ -2649,8 +2752,14 @@
        input9.onchange = function () {
             localStorage['class9'] = this.value;
        }
+	   input95.onchange = function () {
+            localStorage['class95'] = this.value;
+       }
        input90.onchange = function () {
             localStorage['class90'] = this.value;
+       }
+	   input96.onchange = function () {
+            localStorage['class96'] = this.value;
        }
        input91.onchange = function () {
             localStorage['class91'] = this.value;
@@ -2687,24 +2796,32 @@
         hs92 = document.getElementById("class92").value,
         hs93 = document.getElementById("class93").value,
         hs94 = document.getElementById("class94").value,
+		hs95 = document.getElementById("class95").value,
+		hs96 = document.getElementById("class96").value,
         hs8 = document.getElementById("class8").value,
         hs80 = document.getElementById("class80").value,
         hs81 = document.getElementById("class81").value,
         hs82 = document.getElementById("class82").value,
         hs83 = document.getElementById("class83").value,
         hs84 = document.getElementById("class84").value,
+		hs85 = document.getElementById("class85").value,
+		hs86 = document.getElementById("class86").value,
         hs7 = document.getElementById("class7").value,
         hs70 = document.getElementById("class70").value,
         hs71 = document.getElementById("class71").value,
         hs72 = document.getElementById("class72").value,
         hs73 = document.getElementById("class73").value,
         hs74 = document.getElementById("class74").value,
+		hs75 = document.getElementById("class75").value,
+		hs76 = document.getElementById("class76").value,
         hs6 = document.getElementById("class6").value,
         hs60 = document.getElementById("class60").value,
         hs61 = document.getElementById("class61").value,
         hs62 = document.getElementById("class62").value,
         hs63 = document.getElementById("class63").value,
         hs64 = document.getElementById("class64").value,
+		hs65 = document.getElementById("class65").value,
+		hs66 = document.getElementById("class66").value,
         hs4 = document.getElementById("class4").value,
         hs40 = document.getElementById("class40").value,
         hs41 = document.getElementById("class41").value,
@@ -2920,7 +3037,17 @@
                 unit9=(2+unit9);
                 sub9=(sub9+1);
           	}
+			if (hs95 == "English I" || hs95 == "Honors English I" || hs95 == "Strategic Reading") {
+              	hstotal9 =(1 + hstotal9);
+                unit9=(2+unit9);
+                sub9=(sub9+1);
+          	}
     		if (hs90 == "English II + Speech" || hs90 == "Honors English II + Speech" || hs90 == "Strategic Reading") {
+              	hstotal10 =(1 + hstotal10);
+                unit10=(2+unit10);
+                sub9=(sub9+1);
+          	}
+			if (hs96 == "English II + Speech" || hs96 == "Honors English II + Speech" || hs96 == "Strategic Reading") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
                 sub9=(sub9+1);
@@ -2945,12 +3072,22 @@
                 unit12=(2+unit12);
                 sub9=(sub9+1);
           	}
-        if (hs8 == "Algebra I Lab" || hs8 == "Algebra I" || hs8 == "Geometry" || hs8 == "Accelerated Geometry" || hs8 == "Algebra II" || hs8 == "Accelerated Algebra II") {
+        	if (hs8 == "Algebra I Lab" || hs8 == "Algebra I" || hs8 == "Geometry" || hs8 == "Accelerated Geometry" || hs8 == "Algebra II" || hs8 == "Accelerated Algebra II") {
+              	hstotal9 =(1 + hstotal9);
+                unit9=(2+unit9);
+                sub8=(sub8+1);
+          	}
+			if (hs85 == "Algebra I Lab" || hs85 == "Algebra I" || hs85 == "Geometry" || hs85 == "Accelerated Geometry" || hs85 == "Algebra II" || hs85 == "Accelerated Algebra II") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
                 sub8=(sub8+1);
           	}
     		if (hs80 == "Algebra I" || hs80 == "Geometry" || hs80 == "Accelerated Geometry" || hs80 == "Algebra II" || hs80 == "Accelerated Algebra II") {
+              	hstotal10 =(1 + hstotal10);
+                unit10=(2+unit10);
+                sub8=(sub8+1);
+          	}
+			if (hs86 == "Algebra I" || hs86 == "Geometry" || hs86 == "Accelerated Geometry" || hs86 == "Algebra II" || hs86 == "Accelerated Algebra II") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
                 sub8=(sub8+1);
@@ -2991,12 +3128,22 @@
                   unit12=(1+unit12);
                   sub8=(sub8+0.5);
               }
-        if (hs7 == "Physical Science" || hs7 == "Biology" || hs7 == "Honors Biology") {
+        	if (hs7 == "Physical Science" || hs7 == "Biology" || hs7 == "Honors Biology") {
+              	hstotal9 =(1 + hstotal9);
+                unit9=(2+unit9);
+                sub7=(sub7+1);
+          	}
+			if (hs75 == "Physical Science" || hs75 == "Biology" || hs75 == "Honors Biology") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
                 sub7=(sub7+1);
           	}
     		if (hs70 == "Chemistry" || hs70 == "Honors Chemistry" || hs70 == "Biology") {
+              	hstotal10 =(1 + hstotal10);
+                unit10=(2+unit10);
+                sub7=(sub7+1);
+          	}
+			if (hs76 == "Chemistry" || hs76 == "Honors Chemistry" || hs76 == "Biology") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
                 sub7=(sub7+1);
@@ -3042,11 +3189,25 @@
                 unit9=(2+unit9);
                 sub6=(sub6+1);
           	}
+			if (hs65 == "World History/Geography" || hs65 == "Honors World History/Geography") {
+              	hstotal9 =(1 + hstotal9);
+                unit9=(2+unit9);
+                sub6=(sub6+1);
+          	}
     		if (hs60 == "American History" || hs60 == "AP American History") {
               	hstotal10 =(1 + hstotal10);
                 unit10=(2+unit10);
                 sub6=(sub6+1);
           	} else if (hs60 == "Criminal Justice Today" || hs60 == "African American History") {
+                  hstotal10 = (0.5 + hstotal10);
+                  unit10=(1+unit10);
+                  sub6=(sub6+0.5);
+              }
+			  if (hs66 == "American History" || hs66 == "AP American History") {
+              	hstotal10 =(1 + hstotal10);
+                unit10=(2+unit10);
+                sub6=(sub6+1);
+          	} else if (hs66 == "Criminal Justice Today" || hs66 == "African American History") {
                   hstotal10 = (0.5 + hstotal10);
                   unit10=(1+unit10);
                   sub6=(sub6+0.5);
@@ -4749,6 +4910,4 @@ Verson 1.2 doesn't add as much as the others. It was a quick release that added 
 Version 1.3 includes two major updates. The first one being the additon of filler classes, in case you take online classes or something. Second, the catalog has been updated for 22-23 yearbook. I also included the option to hide recommendations if it was too scary to look at and changed some of the colors.
 
 If version 1.4 ever comes out I'd hope that I would be able to get access to the master teacher schedule and be able to create an ai that would be able to sort a schedule out.
-
-To do Sunday: Create filler options. Add selection boxes to core classses in 9th/10th
 --!>
