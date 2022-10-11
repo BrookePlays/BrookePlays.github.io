@@ -3052,26 +3052,42 @@
                 unit10=(2+unit10);
                 sub9=(sub9+1);
           	}
-    		if (hs91 == "English III" || hs91 == "Honors English III" || hs91 == "Strategic Reading" || hs91 == "Creative Writing") {
+    		if (hs91 == "English III" || hs91 == "Honors English III" || hs91 == "Strategic Reading") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
                 sub9=(sub9+1);
-          	}
-    		if (hs92 == "English III" || hs92 == "Honors English III" || hs92 == "Strategic Reading" || hs92 == "Creative Writing") {
+          	} else if (hs91 == "Creative Writing") {
+			hstotal12 =(0.5 + hstotal11);
+                	unit12=(1+unit11);
+                	sub9=(sub9+0.5);
+		}
+    		if (hs92 == "English III" || hs92 == "Honors English III" || hs92 == "Strategic Reading") {
               	hstotal11 =(1 + hstotal11);
                 unit11=(2+unit11);
                 sub9=(sub9+1);
-          	}
+          	} else if (hs91 == "Creative Writing") {
+			hstotal12 =(0.5 + hstotal11);
+                	unit12=(1+unit11);
+                	sub9=(sub9+0.5);
+		}
     		if (hs93 == "English IV" || hs93 == "Senior Literature" || hs93 == "Strategic Reading" || hs93 == "Research and Communications Writing") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
                 sub9=(sub9+1);
-          	}
+          	} else if (hs93 == "Creative Writing") {
+			hstotal12 =(0.5 + hstotal12);
+                	unit12=(1+unit12);
+                	sub9=(sub9+0.5);
+		}
     		if (hs94 == "English IV" || hs94 == "Senior Literature" || hs94 == "Strategic Reading" || hs93 == "Research and Communications Writing") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
                 sub9=(sub9+1);
-          	}
+          	} else if (hs94 == "Creative Writing") {
+			hstotal12 =(0.5 + hstotal12);
+                	unit12=(1+unit12);
+                	sub9=(sub9+0.5);
+		}
         	if (hs8 == "Algebra I Lab" || hs8 == "Algebra I" || hs8 == "Geometry" || hs8 == "Accelerated Geometry" || hs8 == "Algebra II" || hs8 == "Accelerated Algebra II") {
               	hstotal9 =(1 + hstotal9);
                 unit9=(2+unit9);
