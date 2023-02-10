@@ -963,7 +963,7 @@ function calc() {
               } else if (hs12 == "Study Hall") {
             	unit11=(1+unit11);
                 }
-        if (hs15 == "Intro to Journalism" || hs15 == "Yearbook/Journalism" || hs15 == "Youth Internships" || hs15 == "Senior Experience") {
+        if (hs15 == "Intro to Journalism" || hs15 == "Yearbook/Journalism" || hs15 == "Youth Internships") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
                 sub2=(sub2+1);
