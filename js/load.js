@@ -76,49 +76,57 @@
        input5d = document.getElementById('class5d'),
        input5e = document.getElementById('class5e'),
        input6 = document.getElementById('class6'),
-	   input65 = document.getElementById('class65'),
+	input65 = document.getElementById('class65'),
        input60 = document.getElementById('class60'),
-	   input66 = document.getElementById('class66'),
+	input66 = document.getElementById('class66'),
        input61 = document.getElementById('class61'),
        input62 = document.getElementById('class62'),
        input63 = document.getElementById('class63'),
        input64 = document.getElementById('class64'),
        input7 = document.getElementById('class7'),
-	   input75 = document.getElementById('class75'),
+	input75 = document.getElementById('class75'),
        input70 = document.getElementById('class70'),
-	   input76 = document.getElementById('class76'),
+	input76 = document.getElementById('class76'),
        input71 = document.getElementById('class71'),
        input72 = document.getElementById('class72'),
        input73 = document.getElementById('class73'),
        input74 = document.getElementById('class74'),
        input8 = document.getElementById('class8'),
-	   input85 = document.getElementById('class85'),
+	input85 = document.getElementById('class85'),
        input80 = document.getElementById('class80'),
-	   input86 = document.getElementById('class86'),
+	input86 = document.getElementById('class86'),
        input81 = document.getElementById('class81'),
        input82 = document.getElementById('class82'),
        input83 = document.getElementById('class83'),
        input84 = document.getElementById('class84'),
        input9 = document.getElementById('class9'),
-	   input95 = document.getElementById('class95'),
+	input95 = document.getElementById('class95'),
        input90 = document.getElementById('class90'),
-	   input96 = document.getElementById('class96'),
+	input96 = document.getElementById('class96'),
        input91 = document.getElementById('class91'),
        input92 = document.getElementById('class92'),
        input93 = document.getElementById('class93'),
        input94 = document.getElementById('class94'),
-	   fill00 = document.getElementById('filler00'),
+	fill00 = document.getElementById('filler00'),
        fill01 = document.getElementById('filler01'),
        fill02 = document.getElementById('filler02'),
-	   fill10 = document.getElementById('filler10'),
+	fill03 = document.getElementById('filler03'),
+       fill04 = document.getElementById('filler04'),
+	fill10 = document.getElementById('filler10'),
        fill11 = document.getElementById('filler11'),
        fill12 = document.getElementById('filler12'),
-	   fill20 = document.getElementById('filler20'),
+	fill13 = document.getElementById('filler13'),
+       fill14 = document.getElementById('filler14'),
+	fill20 = document.getElementById('filler20'),
        fill21 = document.getElementById('filler21'),
        fill22 = document.getElementById('filler22'),
-	   fill30 = document.getElementById('filler30'),
+	fill23 = document.getElementById('filler23'),
+       fill24 = document.getElementById('filler24'),
+	fill30 = document.getElementById('filler30'),
        fill31 = document.getElementById('filler31'),
-       fill32 = document.getElementById('filler32');
+       fill32 = document.getElementById('filler32'),
+	fill33 = document.getElementById('filler33'),
+       fill34 = document.getElementById('filler34');
 
 		if (localStorage['selection']) {
            inputs.value = localStorage['selection'];
@@ -132,6 +140,12 @@
 	   if (localStorage['filler02']) {
            fill02.value = localStorage['filler02'];
        }
+	 if (localStorage['filler03']) {
+           fill03.value = localStorage['filler03'];
+       }
+	   if (localStorage['filler04']) {
+           fill04.value = localStorage['filler04'];
+       }
 	   if (localStorage['filler10']) {
            fill10.value = localStorage['filler10'];
        }
@@ -140,6 +154,12 @@
        }
 	   if (localStorage['filler12']) {
            fill12.value = localStorage['filler12'];
+       }
+	 if (localStorage['filler13']) {
+           fill13.value = localStorage['filler13'];
+       }
+	   if (localStorage['filler14']) {
+           fill14.value = localStorage['filler14'];
        }
 	   if (localStorage['filler20']) {
            fill20.value = localStorage['filler20'];
@@ -150,6 +170,12 @@
 	   if (localStorage['filler22']) {
            fill22.value = localStorage['filler22'];
        }
+	 if (localStorage['filler23']) {
+           fill23.value = localStorage['filler23'];
+       }
+	   if (localStorage['filler24']) {
+           fill24.value = localStorage['filler24'];
+       }
 	   if (localStorage['filler30']) {
            fill30.value = localStorage['filler30'];
        }
@@ -158,6 +184,12 @@
        }
 	   if (localStorage['filler32']) {
            fill32.value = localStorage['filler32'];
+       }
+	 if (localStorage['filler33']) {
+           fill33.value = localStorage['filler33'];
+       }
+	   if (localStorage['filler34']) {
+           fill34.value = localStorage['filler34'];
        }
        if (localStorage['class']) {
            input.value = localStorage['class'];
