@@ -788,37 +788,37 @@ function calc() {
         unit12 = (2 + unit12);
         sub3 = (sub3 + 1);
     }
-    if (hs2 == "Introduction to Building Trades" || hs2 == "Intro to Business" || hs2 == "Nutrition and Wellness" || hs2 == "Nutrition Sciences" || hs2 == "Human Development I" || hs2 == "Human Development II" || hs2 == "Business Computer Applications" || hs2 == "Exploration of Information Technology" || hs2 == "Computer Science Principles I" || hs2 == "Computer Science Principles II" || hs2 == "Exploration of Media Arts I" || hs2 == "Exploration of Media Arts II" || hs2 == "Interior Design I" || hs2 == "Interior Design II" || hs2 == "Welding Tech I" || hs2 == "Welding Tech II" || hs2 == "Intro to Construction" || hs2 == "Intro to AFNR" || hs2 == "Fundamental Plant Science" || hs2 == "Advanced Plant Science" || hs2 == "Fundamental Animal Science" || hs2 == "Advanced Animal Science") {
+    if (hs2 == "Introduction to Building Trades" || hs2 == "Intro to Business" || hs2 == "Nutrition and Wellness" || hs2 == "Nutrition Sciences" || hs2 == "Human Development I" || hs2 == "Human Development II" || hs2 == "Business Computer Applications" || hs2 == "Exploration of Information Technology" || hs2 == "Computer Science Principles I" || hs2 == "Computer Science Principles II" || hs2 == "Exploration of Media Arts I" || hs2 == "Exploration of Media Arts II" || hs2 == "Interior Design I" || hs2 == "Interior Design II" || hs2 == "Welding Tech I" || hs2 == "Welding Tech II" || hs2 == "Intro to Construction" || hs2 == "Intro to AFNR" || hs2 == "Fundamental Plant Science" || hs2 == "Advanced Plant Science" || hs2 == "Fundamental Animal Science" || hs2 == "Advanced Animal Science" || hs2 == "Wildlife and Fisheries" || hs2 == "Fundamental Ag Mechanical Technologies" || hs2 == "Agribusiness Management" || hs2 == "Carrer Explorations" || hs2 == "Principles of Marketing" || hs2 == "Sports Marketing Strategies" || hs2 == "Fundamental Horticulture" || hs2 == "Advanced Horticulture") {
         hstotal9 = (0.5 + hstotal9);
         unit9 = (1 + unit9);
         sub2 = (sub2 + 0.5);
     }
-    if (hs20 == "Introduction to Building Trades" || hs20 == "Intro to Business" || hs20 == "Nutrition and Wellness" || hs20 == "Nutrition Sciences" || hs20 == "Human Development I" || hs20 == "Human Development II" || hs20 == "Business Computer Applications" || hs20 == "Exploration of Information Technology" || hs20 == "Computer Science Principles I" || hs20 == "Computer Science Principles II" || hs20 == "Exploration of Media Arts I" || hs20 == "Exploration of Media Arts II" || hs20 == "Interior Design I" || hs20 == "Interior Design II" || hs20 == "Welding Tech I" || hs20 == "Welding Tech II" || hs20 == "Intro to Construction" || hs20 == "Intro to AFNR" || hs20 == "Fundamental Plant Science" || hs20 == "Advanced Plant Science" || hs20 == "Fundamental Animal Science" || hs20 == "Advanced Animal Science") {
+    if (hs20 == "Introduction to Building Trades" || hs20 == "Intro to Business" || hs20 == "Nutrition and Wellness" || hs20 == "Nutrition Sciences" || hs20 == "Human Development I" || hs20 == "Human Development II" || hs20 == "Business Computer Applications" || hs20 == "Exploration of Information Technology" || hs20 == "Computer Science Principles I" || hs20 == "Computer Science Principles II" || hs20 == "Exploration of Media Arts I" || hs20 == "Exploration of Media Arts II" || hs20 == "Interior Design I" || hs20 == "Interior Design II" || hs20 == "Welding Tech I" || hs20 == "Welding Tech II" || hs20 == "Intro to Construction" || hs20 == "Intro to AFNR" || hs20 == "Fundamental Plant Science" || hs20 == "Advanced Plant Science" || hs20 == "Fundamental Animal Science" || hs20 == "Advanced Animal Science" || hs2 == "Wildlife and Fisheries" || hs20 == "Fundamental Ag Mechanical Technologies" || hs20 == "Agribusiness Management" || hs20 == "Carrer Explorations" || hs20 == "Principles of Marketing" || hs20 == "Sports Marketing Strategies" || hs20 == "Fundamental Horticulture" || hs20 == "Advanced Horticulture") {
         hstotal9 = (0.5 + hstotal9);
         unit9 = (1 + unit9);
         sub2 = (sub2 + 0.5);
     }
-    if (hs21 == "Introduction to Building Trades" || hs21 == "Intro to Business" || hs21 == "Nutrition and Wellness" || hs21 == "Nutrition Sciences" || hs21 == "Human Development I" || hs21 == "Human Development II" || hs21 == "Business Computer Applications" || hs21 == "Exploration of Information Technology" || hs21 == "Computer Science Principles I" || hs21 == "Computer Science Principles II" || hs21 == "Exploration of Media Arts I" || hs21 == "Exploration of Media Arts II" || hs21 == "Interior Design I" || hs21 == "Interior Design II" || hs21 == "Welding Tech I" || hs21 == "Welding Tech II" || hs21 == "Intro to Construction" || hs21 == "Intro to AFNR" || hs21 == "Fundamental Plant Science" || hs21 == "Advanced Plant Science" || hs21 == "Fundamental Animal Science" || hs21 == "Advanced Animal Science") {
+    if (hs21 == "Introduction to Building Trades" || hs21 == "Intro to Business" || hs21 == "Nutrition and Wellness" || hs21 == "Nutrition Sciences" || hs21 == "Human Development I" || hs21 == "Human Development II" || hs21 == "Business Computer Applications" || hs21 == "Exploration of Information Technology" || hs21 == "Computer Science Principles I" || hs21 == "Computer Science Principles II" || hs21 == "Exploration of Media Arts I" || hs21 == "Exploration of Media Arts II" || hs21 == "Interior Design I" || hs21 == "Interior Design II" || hs21 == "Welding Tech I" || hs21 == "Welding Tech II" || hs21 == "Intro to Construction" || hs21 == "Intro to AFNR" || hs21 == "Fundamental Plant Science" || hs21 == "Advanced Plant Science" || hs21 == "Fundamental Animal Science" || hs21 == "Advanced Animal Science" || hs2 == "Wildlife and Fisheries" || hs21 == "Fundamental Ag Mechanical Technologies" || hs21 == "Agribusiness Management" || hs21 == "Carrer Explorations" || hs21 == "Principles of Marketing" || hs21 == "Sports Marketing Strategies" || hs21 == "Fundamental Horticulture" || hs21 == "Advanced Horticulture") {
         hstotal9 = (0.5 + hstotal9);
         unit9 = (1 + unit9);
         sub2 = (sub2 + 0.5);
     }
-    if (hs22 == "Introduction to Building Trades" || hs22 == "Intro to Business" || hs22 == "Nutrition and Wellness" || hs22 == "Nutrition Sciences" || hs22 == "Human Development I" || hs22 == "Human Development II" || hs22 == "Business Computer Applications" || hs22 == "Exploration of Information Technology" || hs22 == "Computer Science Principles I" || hs22 == "Computer Science Principles II" || hs22 == "Exploration of Media Arts I" || hs22 == "Exploration of Media Arts II" || hs22 == "Interior Design I" || hs22 == "Interior Design II" || hs22 == "Welding Tech I" || hs22 == "Welding Tech II" || hs22 == "Intro to Construction" || hs22 == "Intro to AFNR" || hs22 == "Fundamental Plant Science" || hs22 == "Advanced Plant Science" || hs22 == "Fundamental Animal Science" || hs22 == "Advanced Animal Science") {
+    if (hs22 == "Introduction to Building Trades" || hs22 == "Intro to Business" || hs22 == "Nutrition and Wellness" || hs22 == "Nutrition Sciences" || hs22 == "Human Development I" || hs22 == "Human Development II" || hs22 == "Business Computer Applications" || hs22 == "Exploration of Information Technology" || hs22 == "Computer Science Principles I" || hs22 == "Computer Science Principles II" || hs22 == "Exploration of Media Arts I" || hs22 == "Exploration of Media Arts II" || hs22 == "Interior Design I" || hs22 == "Interior Design II" || hs22 == "Welding Tech I" || hs22 == "Welding Tech II" || hs22 == "Intro to Construction" || hs22 == "Intro to AFNR" || hs22 == "Fundamental Plant Science" || hs22 == "Advanced Plant Science" || hs22 == "Fundamental Animal Science" || hs22 == "Advanced Animal Science" || hs2 == "Wildlife and Fisheries" || hs22 == "Fundamental Ag Mechanical Technologies" || hs22 == "Agribusiness Management" || hs22 == "Carrer Explorations" || hs22 == "Principles of Marketing" || hs22 == "Sports Marketing Strategies" || hs22 == "Fundamental Horticulture" || hs22 == "Advanced Horticulture") {
         hstotal9 = (0.5 + hstotal9);
         unit9 = (1 + unit9);
         sub2 = (sub2 + 0.5);
     }
-    if (hs23 == "Introduction to Building Trades" || hs23 == "Intro to Business" || hs23 == "Nutrition and Wellness" || hs23 == "Nutrition Sciences" || hs23 == "Human Development I" || hs23 == "Human Development II" || hs23 == "Business Computer Applications" || hs23 == "Exploration of Information Technology" || hs23 == "Computer Science Principles I" || hs23 == "Computer Science Principles II" || hs23 == "Exploration of Media Arts I" || hs23 == "Exploration of Media Arts II" || hs23 == "Interior Design I" || hs23 == "Interior Design II" || hs23 == "Welding Tech I" || hs23 == "Welding Tech II" || hs23 == "Intro to Construction" || hs23 == "Intro to AFNR" || hs23 == "Fundamental Plant Science" || hs23 == "Advanced Plant Science" || hs23 == "Fundamental Animal Science" || hs23 == "Advanced Animal Science") {
+    if (hs23 == "Introduction to Building Trades" || hs23 == "Intro to Business" || hs23 == "Nutrition and Wellness" || hs23 == "Nutrition Sciences" || hs23 == "Human Development I" || hs23 == "Human Development II" || hs23 == "Business Computer Applications" || hs23 == "Exploration of Information Technology" || hs23 == "Computer Science Principles I" || hs23 == "Computer Science Principles II" || hs23 == "Exploration of Media Arts I" || hs23 == "Exploration of Media Arts II" || hs23 == "Interior Design I" || hs23 == "Interior Design II" || hs23 == "Welding Tech I" || hs23 == "Welding Tech II" || hs23 == "Intro to Construction" || hs23 == "Intro to AFNR" || hs23 == "Fundamental Plant Science" || hs23 == "Advanced Plant Science" || hs23 == "Fundamental Animal Science" || hs23 == "Advanced Animal Science" || hs2 == "Wildlife and Fisheries" || hs23 == "Fundamental Ag Mechanical Technologies" || hs23 == "Agribusiness Management" || hs23 == "Carrer Explorations" || hs23 == "Principles of Marketing" || hs32 == "Sports Marketing Strategies" || hs23 == "Fundamental Horticulture" || hs23 == "Advanced Horticulture") {
         hstotal9 = (0.5 + hstotal9);
         unit9 = (1 + unit9);
         sub2 = (sub2 + 0.5);
     }
-    if (hs24 == "Introduction to Building Trades" || hs24 == "Intro to Business" || hs24 == "Nutrition and Wellness" || hs24 == "Nutrition Sciences" || hs24 == "Human Development I" || hs24 == "Human Development II" || hs24 == "Business Computer Applications" || hs24 == "Exploration of Information Technology" || hs24 == "Computer Science Principles I" || hs24 == "Computer Science Principles II" || hs24 == "Exploration of Media Arts I" || hs24 == "Exploration of Media Arts II" || hs24 == "Interior Design I" || hs24 == "Interior Design II" || hs24 == "Welding Tech I" || hs24 == "Welding Tech II" || hs24 == "Intro to Construction" || hs24 == "Intro to AFNR" || hs24 == "Fundamental Plant Science" || hs24 == "Advanced Plant Science" || hs24 == "Fundamental Animal Science" || hs24 == "Advanced Animal Science") {
+    if (hs24 == "Introduction to Building Trades" || hs24 == "Intro to Business" || hs24 == "Nutrition and Wellness" || hs24 == "Nutrition Sciences" || hs24 == "Human Development I" || hs24 == "Human Development II" || hs24 == "Business Computer Applications" || hs24 == "Exploration of Information Technology" || hs24 == "Computer Science Principles I" || hs24 == "Computer Science Principles II" || hs24 == "Exploration of Media Arts I" || hs24 == "Exploration of Media Arts II" || hs24 == "Interior Design I" || hs24 == "Interior Design II" || hs24 == "Welding Tech I" || hs24 == "Welding Tech II" || hs24 == "Intro to Construction" || hs24 == "Intro to AFNR" || hs24 == "Fundamental Plant Science" || hs24 == "Advanced Plant Science" || hs24 == "Fundamental Animal Science" || hs24 == "Advanced Animal Science" || hs2 == "Wildlife and Fisheries" || hs24 == "Fundamental Ag Mechanical Technologies" || hs24 == "Agribusiness Management" || hs24 == "Carrer Explorations" || hs24 == "Principles of Marketing" || hs24 == "Sports Marketing Strategies" || hs24 == "Fundamental Horticulture" || hs24 == "Advanced Horticulture") {
         hstotal9 = (0.5 + hstotal9);
         unit9 = (1 + unit9);
         sub2 = (sub2 + 0.5);
     }
-    if (hs25 == "Intro to Business" || hs25 == "Nutrition and Wellness" || hs25 == "Nutrition Sciences" || hs25 == "Human Development I" || hs25 == "Human Development II" || hs25 == "Business Computer Applications" || hs25 == "Exploration of Information Technology" || hs25 == "Computer Science Principles I" || hs25 == "Computer Science Principles II" || hs25 == "Exploration of Media Arts I" || hs25 == "Exploration of Media Arts II" || hs25 == "Interior Design I" || hs25 == "Interior Design II" || hs25 == "Welding Tech I" || hs25 == "Welding Tech II" || hs25 == "Cybersecurity I" || hs25 == "Cybersecurity II" || hs25 == "Accounting I" || hs25 == "Business Law" || hs25 == "Media Design and Broadcasting I" || hs25 == "Media Design and Broadcasting II" || hs25 == "Welding Tech III" || hs25 == "Introduction to Building Trades" || hs25 == "Entrepreneurship" || hs25 == "Intro to Construction" || hs25 == "Intro to AFNR" || hs25 == "Fundamental Plant Science" || hs25 == "Advanced Plant Science" || hs25 == "Fundamental Animal Science" || hs25 == "Advanced Animal Science") {
+    if (hs25 == "Intro to Business" || hs25 == "Nutrition and Wellness" || hs25 == "Nutrition Sciences" || hs25 == "Human Development I" || hs25 == "Human Development II" || hs25 == "Business Computer Applications" || hs25 == "Exploration of Information Technology" || hs25 == "Computer Science Principles I" || hs25 == "Computer Science Principles II" || hs25 == "Exploration of Media Arts I" || hs25 == "Exploration of Media Arts II" || hs25 == "Interior Design I" || hs25 == "Interior Design II" || hs25 == "Welding Tech I" || hs25 == "Welding Tech II" || hs25 == "Cybersecurity I" || hs25 == "Cybersecurity II" || hs25 == "Accounting I" || hs25 == "Business Law" || hs25 == "Media Design and Broadcasting I" || hs25 == "Media Design and Broadcasting II" || hs25 == "Welding Tech III" || hs25 == "Introduction to Building Trades" || hs25 == "Entrepreneurship" || hs25 == "Intro to Construction" || hs25 == "Intro to AFNR" || hs25 == "Fundamental Plant Science" || hs25 == "Advanced Plant Science" || hs25 == "Fundamental Animal Science" || hs25 == "Advanced Animal Science" || hs25 == "Wildlife and Fisheries" || hs25 == "Fundamental Ag Mechanical Technologies" || hs25 == "Agribusiness Management" || hs25 == "Carrer Explorations" || hs25 == "Principles of Marketing" || hs25 == "Sports Marketing Strategies" || hs25 == "Fundamental Horticulture" || hs25 == "Advanced Horticulture" || hs25 == "Agricultural Leadership and Communications") {
         hstotal10 = (0.5 + hstotal10);
         unit10 = (1 + unit10);
         sub2 = (sub2 + 0.5);
@@ -827,7 +827,7 @@ function calc() {
         unit10 = (2 + unit10);
         sub2 = (sub2 + 1);
     }
-    if (hs26 == "Intro to Business" || hs26 == "Nutrition and Wellness" || hs26 == "Nutrition Sciences" || hs26 == "Human Development I" || hs26 == "Human Development II" || hs26 == "Business Computer Applications" || hs26 == "Exploration of Information Technology" || hs26 == "Computer Science Principles I" || hs26 == "Computer Science Principles II" || hs26 == "Exploration of Media Arts I" || hs26 == "Exploration of Media Arts II" || hs26 == "Interior Design I" || hs26 == "Interior Design II" || hs26 == "Welding Tech I" || hs26 == "Welding Tech II" || hs26 == "Cybersecurity I" || hs26 == "Cybersecurity II" || hs26 == "Accounting I" || hs26 == "Business Law" || hs26 == "Media Design and Broadcasting I" || hs26 == "Media Design and Broadcasting II" || hs26 == "Welding Tech III" || hs26 == "Introduction to Building Trades" || hs26 == "Entrepreneurship" || hs26 == "Intro to Construction" || hs26 == "Intro to AFNR" || hs26 == "Fundamental Plant Science" || hs26 == "Advanced Plant Science" || hs26 == "Fundamental Animal Science" || hs26 == "Advanced Animal Science") {
+    if (hs26 == "Intro to Business" || hs26 == "Nutrition and Wellness" || hs26 == "Nutrition Sciences" || hs26 == "Human Development I" || hs26 == "Human Development II" || hs26 == "Business Computer Applications" || hs26 == "Exploration of Information Technology" || hs26 == "Computer Science Principles I" || hs26 == "Computer Science Principles II" || hs26 == "Exploration of Media Arts I" || hs26 == "Exploration of Media Arts II" || hs26 == "Interior Design I" || hs26 == "Interior Design II" || hs26 == "Welding Tech I" || hs26 == "Welding Tech II" || hs26 == "Cybersecurity I" || hs26 == "Cybersecurity II" || hs26 == "Accounting I" || hs26 == "Business Law" || hs26 == "Media Design and Broadcasting I" || hs26 == "Media Design and Broadcasting II" || hs26 == "Welding Tech III" || hs26 == "Introduction to Building Trades" || hs26 == "Entrepreneurship" || hs26 == "Intro to Construction" || hs26 == "Intro to AFNR" || hs26 == "Fundamental Plant Science" || hs26 == "Advanced Plant Science" || hs26 == "Fundamental Animal Science" || hs26 == "Advanced Animal Science" || hs26 == "Wildlife and Fisheries" || hs26 == "Fundamental Ag Mechanical Technologies" || hs26 == "Agribusiness Management" || hs26 == "Carrer Explorations" || hs26 == "Principles of Marketing" || hs26 == "Sports Marketing Strategies" || hs26 == "Fundamental Horticulture" || hs26 == "Advanced Horticulture" || hs26 == "Agricultural Leadership and Communications") {
         hstotal10 = (0.5 + hstotal10);
         unit10 = (1 + unit10);
         sub2 = (sub2 + 0.5);
@@ -836,7 +836,7 @@ function calc() {
         unit10 = (2 + unit10);
         sub2 = (sub2 + 1);
     }
-    if (hs27 == "Intro to Business" || hs27 == "Nutrition and Wellness" || hs27 == "Nutrition Sciences" || hs27 == "Human Development I" || hs27 == "Human Development II" || hs27 == "Business Computer Applications" || hs27 == "Exploration of Information Technology" || hs27 == "Computer Science Principles I" || hs27 == "Computer Science Principles II" || hs27 == "Exploration of Media Arts I" || hs27 == "Exploration of Media Arts II" || hs27 == "Interior Design I" || hs27 == "Interior Design II" || hs27 == "Welding Tech I" || hs27 == "Welding Tech II" || hs27 == "Cybersecurity I" || hs27 == "Cybersecurity II" || hs27 == "Accounting I" || hs27 == "Business Law" || hs27 == "Media Design and Broadcasting I" || hs27 == "Media Design and Broadcasting II" || hs27 == "Welding Tech III" || hs27 == "Introduction to Building Trades" || hs27 == "Entrepreneurship" || hs27 == "Intro to Construction" || hs27 == "Intro to AFNR" || hs27 == "Fundamental Plant Science" || hs27 == "Advanced Plant Science" || hs27 == "Fundamental Animal Science" || hs27 == "Advanced Animal Science") {
+    if (hs27 == "Intro to Business" || hs27 == "Nutrition and Wellness" || hs27 == "Nutrition Sciences" || hs27 == "Human Development I" || hs27 == "Human Development II" || hs27 == "Business Computer Applications" || hs27 == "Exploration of Information Technology" || hs27 == "Computer Science Principles I" || hs27 == "Computer Science Principles II" || hs27 == "Exploration of Media Arts I" || hs27 == "Exploration of Media Arts II" || hs27 == "Interior Design I" || hs27 == "Interior Design II" || hs27 == "Welding Tech I" || hs27 == "Welding Tech II" || hs27 == "Cybersecurity I" || hs27 == "Cybersecurity II" || hs27 == "Accounting I" || hs27 == "Business Law" || hs27 == "Media Design and Broadcasting I" || hs27 == "Media Design and Broadcasting II" || hs27 == "Welding Tech III" || hs27 == "Introduction to Building Trades" || hs27 == "Entrepreneurship" || hs27 == "Intro to Construction" || hs27 == "Intro to AFNR" || hs27 == "Fundamental Plant Science" || hs27 == "Advanced Plant Science" || hs27 == "Fundamental Animal Science" || hs27 == "Advanced Animal Science" || hs27 == "Wildlife and Fisheries" || hs27 == "Fundamental Ag Mechanical Technologies" || hs27 == "Agribusiness Management" || hs27 == "Carrer Explorations" || hs27 == "Principles of Marketing" || hs27 == "Sports Marketing Strategies" || hs27 == "Fundamental Horticulture" || hs27 == "Advanced Horticulture" || hs27 == "Agricultural Leadership and Communications") {
         hstotal10 = (0.5 + hstotal10);
         unit10 = (1 + unit10);
         sub2 = (sub2 + 0.5);
@@ -845,7 +845,7 @@ function calc() {
         unit10 = (2 + unit10);
         sub2 = (sub2 + 1);
     }
-    if (hs28 == "Intro to Business" || hs28 == "Nutrition and Wellness" || hs28 == "Nutrition Sciences" || hs28 == "Human Development I" || hs28 == "Human Development II" || hs28 == "Business Computer Applications" || hs28 == "Exploration of Information Technology" || hs28 == "Computer Science Principles I" || hs28 == "Computer Science Principles II" || hs28 == "Exploration of Media Arts I" || hs28 == "Exploration of Media Arts II" || hs28 == "Interior Design I" || hs28 == "Interior Design II" || hs28 == "Welding Tech I" || hs28 == "Welding Tech II" || hs28 == "Cybersecurity I" || hs28 == "Cybersecurity II" || hs28 == "Accounting I" || hs28 == "Business Law" || hs28 == "Media Design and Broadcasting I" || hs28 == "Media Design and Broadcasting II" || hs28 == "Welding Tech III" || hs28 == "Introduction to Building Trades" || hs28 == "Entrepreneurship" || hs28 == "Intro to Construction" || hs28 == "Intro to AFNR" || hs28 == "Fundamental Plant Science" || hs28 == "Advanced Plant Science" || hs28 == "Fundamental Animal Science" || hs28 == "Advanced Animal Science") {
+    if (hs28 == "Intro to Business" || hs28 == "Nutrition and Wellness" || hs28 == "Nutrition Sciences" || hs28 == "Human Development I" || hs28 == "Human Development II" || hs28 == "Business Computer Applications" || hs28 == "Exploration of Information Technology" || hs28 == "Computer Science Principles I" || hs28 == "Computer Science Principles II" || hs28 == "Exploration of Media Arts I" || hs28 == "Exploration of Media Arts II" || hs28 == "Interior Design I" || hs28 == "Interior Design II" || hs28 == "Welding Tech I" || hs28 == "Welding Tech II" || hs28 == "Cybersecurity I" || hs28 == "Cybersecurity II" || hs28 == "Accounting I" || hs28 == "Business Law" || hs28 == "Media Design and Broadcasting I" || hs28 == "Media Design and Broadcasting II" || hs28 == "Welding Tech III" || hs28 == "Introduction to Building Trades" || hs28 == "Entrepreneurship" || hs28 == "Intro to Construction" || hs28 == "Intro to AFNR" || hs28 == "Fundamental Plant Science" || hs28 == "Advanced Plant Science" || hs28 == "Fundamental Animal Science" || hs28 == "Advanced Animal Science" || hs28 == "Wildlife and Fisheries" || hs28 == "Fundamental Ag Mechanical Technologies" || hs28 == "Agribusiness Management" || hs28 == "Carrer Explorations" || hs28 == "Principles of Marketing" || hs28 == "Sports Marketing Strategies" || hs28 == "Fundamental Horticulture" || hs28 == "Advanced Horticulture" || hs28 == "Agricultural Leadership and Communications") {
         hstotal10 = (0.5 + hstotal10);
         unit10 = (1 + unit10);
         sub2 = (sub2 + 0.5);
@@ -854,7 +854,7 @@ function calc() {
         unit10 = (2 + unit10);
         sub2 = (sub2 + 1);
     }
-    if (hs29 == "Intro to Business" || hs29 == "Nutrition and Wellness" || hs29 == "Nutrition Sciences" || hs29 == "Human Development I" || hs29 == "Human Development II" || hs29 == "Business Computer Applications" || hs29 == "Exploration of Information Technology" || hs29 == "Computer Science Principles I" || hs29 == "Computer Science Principles II" || hs29 == "Exploration of Media Arts I" || hs29 == "Exploration of Media Arts II" || hs29 == "Interior Design I" || hs29 == "Interior Design II" || hs29 == "Welding Tech I" || hs29 == "Welding Tech II" || hs29 == "Cybersecurity I" || hs29 == "Cybersecurity II" || hs29 == "Accounting I" || hs29 == "Business Law" || hs29 == "Media Design and Broadcasting I" || hs29 == "Media Design and Broadcasting II" || hs29 == "Welding Tech III" || hs29 == "Introduction to Building Trades" || hs29 == "Entrepreneurship" || hs29 == "Intro to Construction" || hs29 == "Intro to AFNR" || hs29 == "Fundamental Plant Science" || hs29 == "Advanced Plant Science" || hs29 == "Fundamental Animal Science" || hs29 == "Advanced Animal Science") {
+    if (hs29 == "Intro to Business" || hs29 == "Nutrition and Wellness" || hs29 == "Nutrition Sciences" || hs29 == "Human Development I" || hs29 == "Human Development II" || hs29 == "Business Computer Applications" || hs29 == "Exploration of Information Technology" || hs29 == "Computer Science Principles I" || hs29 == "Computer Science Principles II" || hs29 == "Exploration of Media Arts I" || hs29 == "Exploration of Media Arts II" || hs29 == "Interior Design I" || hs29 == "Interior Design II" || hs29 == "Welding Tech I" || hs29 == "Welding Tech II" || hs29 == "Cybersecurity I" || hs29 == "Cybersecurity II" || hs29 == "Accounting I" || hs29 == "Business Law" || hs29 == "Media Design and Broadcasting I" || hs29 == "Media Design and Broadcasting II" || hs29 == "Welding Tech III" || hs29 == "Introduction to Building Trades" || hs29 == "Entrepreneurship" || hs29 == "Intro to Construction" || hs29 == "Intro to AFNR" || hs29 == "Fundamental Plant Science" || hs29 == "Advanced Plant Science" || hs29 == "Fundamental Animal Science" || hs29 == "Advanced Animal Science" || hs29 == "Wildlife and Fisheries" || hs29 == "Fundamental Ag Mechanical Technologies" || hs29 == "Agribusiness Management" || hs29 == "Carrer Explorations" || hs29 == "Principles of Marketing" || hs29 == "Sports Marketing Strategies" || hs29 == "Fundamental Horticulture" || hs29 == "Advanced Horticulture" || hs29 == "Agricultural Leadership and Communications") {
         hstotal10 = (0.5 + hstotal10);
         unit10 = (1 + unit10);
         sub2 = (sub2 + 0.5);
@@ -863,7 +863,7 @@ function calc() {
         unit10 = (2 + unit10);
         sub2 = (sub2 + 1);
     }
-    if (hs2a == "Intro to Business" || hs2a == "Nutrition and Wellness" || hs2a == "Nutrition Sciences" || hs2a == "Human Development I" || hs2a == "Human Development II" || hs2a == "Business Computer Applications" || hs2a == "Exploration of Information Technology" || hs2a == "Computer Science Principles I" || hs2a == "Computer Science Principles II" || hs2a == "Exploration of Media Arts I" || hs2a == "Exploration of Media Arts II" || hs2a == "Interior Design I" || hs2a == "Interior Design II" || hs2a == "Welding Tech I" || hs2a == "Welding Tech II" || hs2a == "Cybersecurity I" || hs2a == "Cybersecurity II" || hs2a == "Accounting I" || hs2a == "Business Law" || hs2a == "Media Design and Broadcasting I" || hs2a == "Media Design and Broadcasting II" || hs2a == "Welding Tech III" || hs2a == "Introduction to Building Trades" || hs2a == "Entrepreneurship" || hs2a == "Intro to Construction" || hs2a == "Intro to AFNR" || hs2a == "Fundamental Plant Science" || hs2a == "Advanced Plant Science" || hs2a == "Fundamental Animal Science" || hs2a == "Advanced Animal Science") {
+    if (hs2a == "Intro to Business" || hs2a == "Nutrition and Wellness" || hs2a == "Nutrition Sciences" || hs2a == "Human Development I" || hs2a == "Human Development II" || hs2a == "Business Computer Applications" || hs2a == "Exploration of Information Technology" || hs2a == "Computer Science Principles I" || hs2a == "Computer Science Principles II" || hs2a == "Exploration of Media Arts I" || hs2a == "Exploration of Media Arts II" || hs2a == "Interior Design I" || hs2a == "Interior Design II" || hs2a == "Welding Tech I" || hs2a == "Welding Tech II" || hs2a == "Cybersecurity I" || hs2a == "Cybersecurity II" || hs2a == "Accounting I" || hs2a == "Business Law" || hs2a == "Media Design and Broadcasting I" || hs2a == "Media Design and Broadcasting II" || hs2a == "Welding Tech III" || hs2a == "Introduction to Building Trades" || hs2a == "Entrepreneurship" || hs2a == "Intro to Construction" || hs2a == "Intro to AFNR" || hs2a == "Fundamental Plant Science" || hs2a == "Advanced Plant Science" || hs2a == "Fundamental Animal Science" || hs2a == "Advanced Animal Science" || hs2a == "Wildlife and Fisheries" || hs2a == "Fundamental Ag Mechanical Technologies" || hs2a == "Agribusiness Management" || hs2a == "Carrer Explorations" || hs2a == "Principles of Marketing" || hs2a == "Sports Marketing Strategies" || hs2a == "Fundamental Horticulture" || hs2a == "Advanced Horticulture" || hs2a == "Agricultural Leadership and Communications") {
         hstotal10 = (0.5 + hstotal10);
         unit10 = (1 + unit10);
         sub2 = (sub2 + 0.5);
@@ -872,7 +872,7 @@ function calc() {
         unit10 = (2 + unit10);
         sub2 = (sub2 + 1);
     }
-    if (hs2b == "Intro to Business" || hs2b == "Nutrition and Wellness" || hs2b == "Nutrition Sciences" || hs2b == "Human Development I" || hs2b == "Human Development II" || hs2b == "Business Computer Applications" || hs2b == "Exploration of Information Technology" || hs2b == "Computer Science Principles I" || hs2b == "Computer Science Principles II" || hs2b == "Exploration of Media Arts I" || hs2b == "Exploration of Media Arts II" || hs2b == "Interior Design I" || hs2b == "Interior Design II" || hs2b == "Welding Tech I" || hs2b == "Welding Tech II" || hs2b == "Cybersecurity I" || hs2b == "Cybersecurity II" || hs2b == "Accounting I" || hs2b == "Business Law" || hs2b == "Media Design and Broadcasting I" || hs2b == "Media Design and Broadcasting II" || hs2b == "Welding Tech III" || hs2b == "Introduction to Building Trades" || hs2b == "Entrepreneurship" || hs2b == "Medical Interventions" || hs2b == "Intro to Construction" || hs2b == "Welding Tech V" || hs2b == "Intro to AFNR" || hs2b == "Fundamental Plant Science" || hs2b == "Advanced Plant Science" || hs2b == "Fundamental Animal Science" || hs2b == "Advanced Animal Science") {
+    if (hs2b == "Intro to Business" || hs2b == "Nutrition and Wellness" || hs2b == "Nutrition Sciences" || hs2b == "Human Development I" || hs2b == "Human Development II" || hs2b == "Business Computer Applications" || hs2b == "Exploration of Information Technology" || hs2b == "Computer Science Principles I" || hs2b == "Computer Science Principles II" || hs2b == "Exploration of Media Arts I" || hs2b == "Exploration of Media Arts II" || hs2b == "Interior Design I" || hs2b == "Interior Design II" || hs2b == "Welding Tech I" || hs2b == "Welding Tech II" || hs2b == "Cybersecurity I" || hs2b == "Cybersecurity II" || hs2b == "Accounting I" || hs2b == "Business Law" || hs2b == "Media Design and Broadcasting I" || hs2b == "Media Design and Broadcasting II" || hs2b == "Welding Tech III" || hs2b == "Introduction to Building Trades" || hs2b == "Entrepreneurship" || hs2b == "Medical Interventions" || hs2b == "Intro to Construction" || hs2b == "Welding Tech V" || hs2b == "Intro to AFNR" || hs2b == "Fundamental Plant Science" || hs2b == "Advanced Plant Science" || hs2b == "Fundamental Animal Science" || hs2b == "Advanced Animal Science" || hs2b == "Wildlife and Fisheries" || hs2b == "Fundamental Ag Mechanical Technologies" || hsb2 == "Agribusiness Management" || hs2b == "Carrer Explorations" || hs2b == "Principles of Marketing" || hs2b == "Sports Marketing Strategies" || hs2b == "Fundamental Horticulture" || hs2b == "Advanced Horticulture" || hs2b == "Agricultural Leadership and Communications" || hs2b == "Welding VI") {
         hstotal11 = (0.5 + hstotal11);
         unit11 = (1 + unit11);
         sub2 = (sub2 + 0.5);
@@ -881,7 +881,7 @@ function calc() {
         unit11 = (2 + unit11);
         sub2 = (sub2 + 1);
     }
-    if (hs2c == "Intro to Business" || hs2c == "Nutrition and Wellness" || hs2c == "Nutrition Sciences" || hs2c == "Human Development I" || hs2c == "Human Development II" || hs2c == "Business Computer Applications" || hs2c == "Exploration of Information Technology" || hs2c == "Computer Science Principles I" || hs2c == "Computer Science Principles II" || hs2c == "Exploration of Media Arts I" || hs2c == "Exploration of Media Arts II" || hs2c == "Interior Design I" || hs2c == "Interior Design II" || hs2c == "Welding Tech I" || hs2c == "Welding Tech II" || hs2c == "Cybersecurity I" || hs2c == "Cybersecurity II" || hs2c == "Accounting I" || hs2c == "Business Law" || hs2c == "Media Design and Broadcasting I" || hs2c == "Media Design and Broadcasting II" || hs2c == "Welding Tech III" || hs2c == "Introduction to Building Trades" || hs2c == "Entrepreneurship" || hs2c == "Medical Interventions" || hs2c == "Intro to Construction" || hs2c == "Welding Tech V" || hs2c == "Intro to AFNR" || hs2c == "Fundamental Plant Science" || hs2c == "Advanced Plant Science" || hs2c == "Fundamental Animal Science" || hs2c == "Advanced Animal Science") {
+    if (hs2c == "Intro to Business" || hs2c == "Nutrition and Wellness" || hs2c == "Nutrition Sciences" || hs2c == "Human Development I" || hs2c == "Human Development II" || hs2c == "Business Computer Applications" || hs2c == "Exploration of Information Technology" || hs2c == "Computer Science Principles I" || hs2c == "Computer Science Principles II" || hs2c == "Exploration of Media Arts I" || hs2c == "Exploration of Media Arts II" || hs2c == "Interior Design I" || hs2c == "Interior Design II" || hs2c == "Welding Tech I" || hs2c == "Welding Tech II" || hs2c == "Cybersecurity I" || hs2c == "Cybersecurity II" || hs2c == "Accounting I" || hs2c == "Business Law" || hs2c == "Media Design and Broadcasting I" || hs2c == "Media Design and Broadcasting II" || hs2c == "Welding Tech III" || hs2c == "Introduction to Building Trades" || hs2c == "Entrepreneurship" || hs2c == "Medical Interventions" || hs2c == "Intro to Construction" || hs2c == "Welding Tech V" || hs2c == "Intro to AFNR" || hs2c == "Fundamental Plant Science" || hs2c == "Advanced Plant Science" || hs2c == "Fundamental Animal Science" || hs2c == "Advanced Animal Science"  || hs2c == "Wildlife and Fisheries" || hs2c == "Fundamental Ag Mechanical Technologies" || hs2c == "Agribusiness Management" || hs2c == "Carrer Explorations" || hs2c == "Principles of Marketing" || hs2c == "Sports Marketing Strategies" || hs2c == "Fundamental Horticulture" || hs2c == "Advanced Horticulture" || hs2c == "Agricultural Leadership and Communications" || hs2c == "Welding VI") {
         hstotal11 = (0.5 + hstotal11);
         unit11 = (1 + unit11);
         sub2 = (sub2 + 0.5);
@@ -890,7 +890,7 @@ function calc() {
         unit11 = (2 + unit11);
         sub2 = (sub2 + 1);
     }
-    if (hs2d == "Intro to Business" || hs2d == "Nutrition and Wellness" || hs2d == "Nutrition Sciences" || hs2d == "Human Development I" || hs2d == "Human Development II" || hs2d == "Business Computer Applications" || hs2d == "Exploration of Information Technology" || hs2d == "Computer Science Principles I" || hs2d == "Computer Science Principles II" || hs2d == "Exploration of Media Arts I" || hs2d == "Exploration of Media Arts II" || hs2d == "Interior Design I" || hs2d == "Interior Design II" || hs2d == "Welding Tech I" || hs2d == "Welding Tech II" || hs2d == "Cybersecurity I" || hs2d == "Cybersecurity II" || hs2d == "Accounting I" || hs2d == "Business Law" || hs2d == "Media Design and Broadcasting I" || hs2d == "Media Design and Broadcasting II" || hs2d == "Welding Tech III" || hs2d == "Introduction to Building Trades" || hs2d == "Entrepreneurship" || hs2d == "Medical Interventions" || hs2d == "Intro to Construction" || hs2d == "Welding Tech V" || hs2d == "Intro to AFNR" || hs2d == "Fundamental Plant Science" || hs2d == "Advanced Plant Science" || hs2d == "Fundamental Animal Science" || hs2d == "Advanced Animal Science") {
+    if (hs2d == "Intro to Business" || hs2d == "Nutrition and Wellness" || hs2d == "Nutrition Sciences" || hs2d == "Human Development I" || hs2d == "Human Development II" || hs2d == "Business Computer Applications" || hs2d == "Exploration of Information Technology" || hs2d == "Computer Science Principles I" || hs2d == "Computer Science Principles II" || hs2d == "Exploration of Media Arts I" || hs2d == "Exploration of Media Arts II" || hs2d == "Interior Design I" || hs2d == "Interior Design II" || hs2d == "Welding Tech I" || hs2d == "Welding Tech II" || hs2d == "Cybersecurity I" || hs2d == "Cybersecurity II" || hs2d == "Accounting I" || hs2d == "Business Law" || hs2d == "Media Design and Broadcasting I" || hs2d == "Media Design and Broadcasting II" || hs2d == "Welding Tech III" || hs2d == "Introduction to Building Trades" || hs2d == "Entrepreneurship" || hs2d == "Medical Interventions" || hs2d == "Intro to Construction" || hs2d == "Welding Tech V" || hs2d == "Intro to AFNR" || hs2d == "Fundamental Plant Science" || hs2d == "Advanced Plant Science" || hs2d == "Fundamental Animal Science" || hs2d == "Advanced Animal Science" || hs2d == "Wildlife and Fisheries" || hs2d == "Fundamental Ag Mechanical Technologies" || hs2d == "Agribusiness Management" || hs2d == "Carrer Explorations" || hs2d == "Principles of Marketing" || hs2d == "Sports Marketing Strategies" || hs2d == "Fundamental Horticulture" || hs2d == "Advanced Horticulture" || hs2d == "Agricultural Leadership and Communications" || hs2d == "Welding VI") {
         hstotal11 = (0.5 + hstotal11);
         unit11 = (1 + unit11);
         sub2 = (sub2 + 0.5);
@@ -899,7 +899,7 @@ function calc() {
         unit11 = (2 + unit11);
         sub2 = (sub2 + 1);
     }
-    if (hs2e == "Intro to Business" || hs2e == "Nutrition and Wellness" || hs2e == "Nutrition Sciences" || hs2e == "Human Development I" || hs2e == "Human Development II" || hs2e == "Business Computer Applications" || hs2e == "Exploration of Information Technology" || hs2e == "Computer Science Principles I" || hs2e == "Computer Science Principles II" || hs2e == "Exploration of Media Arts I" || hs2e == "Exploration of Media Arts II" || hs2e == "Interior Design I" || hs2e == "Interior Design II" || hs2e == "Welding Tech I" || hs2e == "Welding Tech II" || hs2e == "Cybersecurity I" || hs2e == "Cybersecurity II" || hs2e == "Accounting I" || hs2e == "Business Law" || hs2e == "Media Design and Broadcasting I" || hs2e == "Media Design and Broadcasting II" || hs2e == "Welding Tech III" || hs2e == "Introduction to Building Trades" || hs2e == "Entrepreneurship" || hs2e == "Medical Interventions" || hs2e == "Intro to Construction" || hs2e == "Welding Tech V" || hs2e == "Intro to AFNR" || hs2e == "Fundamental Plant Science" || hs2e == "Advanced Plant Science" || hs2e == "Fundamental Animal Science" || hs2e == "Advanced Animal Science") {
+    if (hs2e == "Intro to Business" || hs2e == "Nutrition and Wellness" || hs2e == "Nutrition Sciences" || hs2e == "Human Development I" || hs2e == "Human Development II" || hs2e == "Business Computer Applications" || hs2e == "Exploration of Information Technology" || hs2e == "Computer Science Principles I" || hs2e == "Computer Science Principles II" || hs2e == "Exploration of Media Arts I" || hs2e == "Exploration of Media Arts II" || hs2e == "Interior Design I" || hs2e == "Interior Design II" || hs2e == "Welding Tech I" || hs2e == "Welding Tech II" || hs2e == "Cybersecurity I" || hs2e == "Cybersecurity II" || hs2e == "Accounting I" || hs2e == "Business Law" || hs2e == "Media Design and Broadcasting I" || hs2e == "Media Design and Broadcasting II" || hs2e == "Welding Tech III" || hs2e == "Introduction to Building Trades" || hs2e == "Entrepreneurship" || hs2e == "Medical Interventions" || hs2e == "Intro to Construction" || hs2e == "Welding Tech V" || hs2e == "Intro to AFNR" || hs2e == "Fundamental Plant Science" || hs2e == "Advanced Plant Science" || hs2e == "Fundamental Animal Science" || hs2e == "Advanced Animal Science" || hs2e == "Wildlife and Fisheries" || hs2e == "Fundamental Ag Mechanical Technologies" || hs2e == "Agribusiness Management" || hs2e == "Carrer Explorations" || hs2e == "Principles of Marketing" || hs2e == "Sports Marketing Strategies" || hs2e == "Fundamental Horticulture" || hs2e == "Advanced Horticulture" || hs2e == "Agricultural Leadership and Communications" || hs2e == "Welding VI") {
         hstotal11 = (0.5 + hstotal11);
         unit11 = (1 + unit11);
         sub2 = (sub2 + 0.5);
@@ -908,7 +908,7 @@ function calc() {
         unit11 = (2 + unit11);
         sub2 = (sub2 + 1);
     }
-    if (hs2f == "Intro to Business" || hs2f == "Nutrition and Wellness" || hs2f == "Nutrition Sciences" || hs2f == "Human Development I" || hs2f == "Human Development II" || hs2f == "Business Computer Applications" || hs2f == "Exploration of Information Technology" || hs2f == "Computer Science Principles I" || hs2f == "Computer Science Principles II" || hs2f == "Exploration of Media Arts I" || hs2f == "Exploration of Media Arts II" || hs2f == "Interior Design I" || hs2f == "Interior Design II" || hs2f == "Welding Tech I" || hs2f == "Welding Tech II" || hs2f == "Cybersecurity I" || hs2f == "Cybersecurity II" || hs2f == "Accounting I" || hs2f == "Business Law" || hs2f == "Media Design and Broadcasting I" || hs2f == "Media Design and Broadcasting II" || hs2f == "Welding Tech III" || hs2f == "Introduction to Building Trades" || hs2f == "Entrepreneurship" || hs2f == "Medical Interventions" || hs2f == "Intro to Construction" || hs2f == "Welding Tech V" || hs2f == "Intro to AFNR" || hs2f == "Fundamental Plant Science" || hs2f == "Advanced Plant Science" || hs2f == "Fundamental Animal Science" || hs2f == "Advanced Animal Science") {
+    if (hs2f == "Intro to Business" || hs2f == "Nutrition and Wellness" || hs2f == "Nutrition Sciences" || hs2f == "Human Development I" || hs2f == "Human Development II" || hs2f == "Business Computer Applications" || hs2f == "Exploration of Information Technology" || hs2f == "Computer Science Principles I" || hs2f == "Computer Science Principles II" || hs2f == "Exploration of Media Arts I" || hs2f == "Exploration of Media Arts II" || hs2f == "Interior Design I" || hs2f == "Interior Design II" || hs2f == "Welding Tech I" || hs2f == "Welding Tech II" || hs2f == "Cybersecurity I" || hs2f == "Cybersecurity II" || hs2f == "Accounting I" || hs2f == "Business Law" || hs2f == "Media Design and Broadcasting I" || hs2f == "Media Design and Broadcasting II" || hs2f == "Welding Tech III" || hs2f == "Introduction to Building Trades" || hs2f == "Entrepreneurship" || hs2f == "Medical Interventions" || hs2f == "Intro to Construction" || hs2f == "Welding Tech V" || hs2f == "Intro to AFNR" || hs2f == "Fundamental Plant Science" || hs2f == "Advanced Plant Science" || hs2f == "Fundamental Animal Science" || hs2f == "Advanced Animal Science" || hs2f == "Wildlife and Fisheries" || hs2f == "Fundamental Ag Mechanical Technologies" || hs2f == "Agribusiness Management" || hs2f == "Carrer Explorations" || hs2f == "Principles of Marketing" || hs2f == "Sports Marketing Strategies" || hs2f == "Fundamental Horticulture" || hs2f == "Advanced Horticulture" || hs2f == "Agricultural Leadership and Communications" || hs2f == "Welding VI") {
         hstotal11 = (0.5 + hstotal11);
         unit11 = (1 + unit11);
         sub2 = (sub2 + 0.5);
@@ -917,7 +917,7 @@ function calc() {
         unit11 = (2 + unit11);
         sub2 = (sub2 + 1);
     }
-    if (hs2g == "Intro to Business" || hs2g == "Nutrition and Wellness" || hs2g == "Nutrition Sciences" || hs2g == "Human Development I" || hs2g == "Human Development II" || hs2g == "Business Computer Applications" || hs2g == "Exploration of Information Technology" || hs2g == "Computer Science Principles I" || hs2g == "Computer Science Principles II" || hs2g == "Exploration of Media Arts I" || hs2g == "Exploration of Media Arts II" || hs2g == "Interior Design I" || hs2g == "Interior Design II" || hs2g == "Welding Tech I" || hs2g == "Welding Tech II" || hs2g == "Cybersecurity I" || hs2g == "Cybersecurity II" || hs2g == "Accounting I" || hs2g == "Business Law" || hs2g == "Media Design and Broadcasting I" || hs2g == "Media Design and Broadcasting II" || hs2g == "Welding Tech III" || hs2g == "Introduction to Building Trades" || hs2g == "Entrepreneurship" || hs2g == "Medical Interventions" || hs2g == "Intro to Construction" || hs2g == "Welding Tech V" || hs2g == "Intro to AFNR" || hs2g == "Fundamental Plant Science" || hs2g == "Advanced Plant Science" || hs2g == "Fundamental Animal Science" || hs2g == "Advanced Animal Science") {
+    if (hs2g == "Intro to Business" || hs2g == "Nutrition and Wellness" || hs2g == "Nutrition Sciences" || hs2g == "Human Development I" || hs2g == "Human Development II" || hs2g == "Business Computer Applications" || hs2g == "Exploration of Information Technology" || hs2g == "Computer Science Principles I" || hs2g == "Computer Science Principles II" || hs2g == "Exploration of Media Arts I" || hs2g == "Exploration of Media Arts II" || hs2g == "Interior Design I" || hs2g == "Interior Design II" || hs2g == "Welding Tech I" || hs2g == "Welding Tech II" || hs2g == "Cybersecurity I" || hs2g == "Cybersecurity II" || hs2g == "Accounting I" || hs2g == "Business Law" || hs2g == "Media Design and Broadcasting I" || hs2g == "Media Design and Broadcasting II" || hs2g == "Welding Tech III" || hs2g == "Introduction to Building Trades" || hs2g == "Entrepreneurship" || hs2g == "Medical Interventions" || hs2g == "Intro to Construction" || hs2g == "Welding Tech V" || hs2g == "Intro to AFNR" || hs2g == "Fundamental Plant Science" || hs2g == "Advanced Plant Science" || hs2g == "Fundamental Animal Science" || hs2g == "Advanced Animal Science" || hs2g == "Wildlife and Fisheries" || hs2g == "Fundamental Ag Mechanical Technologies" || hs2g == "Agribusiness Management" || hs2g == "Carrer Explorations" || hs2g == "Principles of Marketing" || hs2g == "Sports Marketing Strategies" || hs2g == "Fundamental Horticulture" || hs2g == "Advanced Horticulture" || hs2g == "Agricultural Leadership and Communications" || hs2g == "Welding VI") {
         hstotal11 = (0.5 + hstotal11);
         unit11 = (1 + unit11);
         sub2 = (sub2 + 0.5);
@@ -926,7 +926,7 @@ function calc() {
         unit11 = (2 + unit11);
         sub2 = (sub2 + 1);
     }
-    if (hs2h == "Intro to Business" || hs2h == "Nutrition and Wellness" || hs2h == "Nutrition Sciences" || hs2h == "Human Development I" || hs2h == "Human Development II" || hs2h == "Business Computer Applications" || hs2h == "Exploration of Information Technology" || hs2h == "Computer Science Principles I" || hs2h == "Computer Science Principles II" || hs2h == "Exploration of Media Arts I" || hs2h == "Exploration of Media Arts II" || hs2h == "Interior Design I" || hs2h == "Interior Design II" || hs2h == "Welding Tech I" || hs2h == "Welding Tech II" || hs2h == "Cybersecurity I" || hs2h == "Cybersecurity II" || hs2h == "Accounting I" || hs2h == "Business Law" || hs2h == "Media Design and Broadcasting I" || hs2h == "Media Design and Broadcasting II" || hs2h == "Welding Tech III" || hs2h == "Introduction to Building Trades" || hs2h == "Entrepreneurship" || hs2h == "Medical Interventions" || hs2h == "Intro to Construction" || hs2h == "Welding Tech V" || hs2h == "Intro to AFNR" || hs2h == "Fundamental Plant Science" || hs2h == "Advanced Plant Science" || hs2h == "Fundamental Animal Science" || hs2h == "Advanced Animal Science") {
+    if (hs2h == "Intro to Business" || hs2h == "Nutrition and Wellness" || hs2h == "Nutrition Sciences" || hs2h == "Human Development I" || hs2h == "Human Development II" || hs2h == "Business Computer Applications" || hs2h == "Exploration of Information Technology" || hs2h == "Computer Science Principles I" || hs2h == "Computer Science Principles II" || hs2h == "Exploration of Media Arts I" || hs2h == "Exploration of Media Arts II" || hs2h == "Interior Design I" || hs2h == "Interior Design II" || hs2h == "Welding Tech I" || hs2h == "Welding Tech II" || hs2h == "Cybersecurity I" || hs2h == "Cybersecurity II" || hs2h == "Accounting I" || hs2h == "Business Law" || hs2h == "Media Design and Broadcasting I" || hs2h == "Media Design and Broadcasting II" || hs2h == "Welding Tech III" || hs2h == "Introduction to Building Trades" || hs2h == "Entrepreneurship" || hs2h == "Medical Interventions" || hs2h == "Intro to Construction" || hs2h == "Welding Tech V" || hs2h == "Intro to AFNR" || hs2h == "Fundamental Plant Science" || hs2h == "Advanced Plant Science" || hs2h == "Fundamental Animal Science" || hs2h == "Advanced Animal Science" || hs2h == "Wildlife and Fisheries" || hs2h == "Fundamental Ag Mechanical Technologies" || hs2h == "Agribusiness Management" || hs2h == "Carrer Explorations" || hs2h == "Principles of Marketing" || hs2h == "Sports Marketing Strategies" || hs2h == "Fundamental Horticulture" || hs2h == "Advanced Horticulture" || hs2h == "Agricultural Leadership and Communications" || hs2h == "Welding VI") {
         hstotal12 = (0.5 + hstotal12);
         unit12 = (1 + unit12);
         sub2 = (sub2 + 0.5);
@@ -935,7 +935,7 @@ function calc() {
         unit12 = (2 + unit12);
         sub2 = (sub2 + 1);
     }
-    if (hs2i == "Intro to Business" || hs2i == "Nutrition and Wellness" || hs2i == "Nutrition Sciences" || hs2i == "Human Development I" || hs2i == "Human Development II" || hs2i == "Business Computer Applications" || hs2i == "Exploration of Information Technology" || hs2i == "Computer Science Principles I" || hs2i == "Computer Science Principles II" || hs2i == "Exploration of Media Arts I" || hs2i == "Exploration of Media Arts II" || hs2i == "Interior Design I" || hs2i == "Interior Design II" || hs2i == "Welding Tech I" || hs2i == "Welding Tech II" || hs2i == "Cybersecurity I" || hs2i == "Cybersecurity II" || hs2i == "Accounting I" || hs2i == "Business Law" || hs2i == "Media Design and Broadcasting I" || hs2i == "Media Design and Broadcasting II" || hs2i == "Welding Tech III" || hs2i == "Introduction to Building Trades" || hs2i == "Entrepreneurship" || hs2i == "Medical Interventions" || hs2i == "Intro to Construction" || hs2i == "Welding Tech V" || hs2i == "Intro to AFNR" || hs2i == "Fundamental Plant Science" || hs2i == "Advanced Plant Science" || hs2i == "Fundamental Animal Science" || hs2i == "Advanced Animal Science") {
+    if (hs2i == "Intro to Business" || hs2i == "Nutrition and Wellness" || hs2i == "Nutrition Sciences" || hs2i == "Human Development I" || hs2i == "Human Development II" || hs2i == "Business Computer Applications" || hs2i == "Exploration of Information Technology" || hs2i == "Computer Science Principles I" || hs2i == "Computer Science Principles II" || hs2i == "Exploration of Media Arts I" || hs2i == "Exploration of Media Arts II" || hs2i == "Interior Design I" || hs2i == "Interior Design II" || hs2i == "Welding Tech I" || hs2i == "Welding Tech II" || hs2i == "Cybersecurity I" || hs2i == "Cybersecurity II" || hs2i == "Accounting I" || hs2i == "Business Law" || hs2i == "Media Design and Broadcasting I" || hs2i == "Media Design and Broadcasting II" || hs2i == "Welding Tech III" || hs2i == "Introduction to Building Trades" || hs2i == "Entrepreneurship" || hs2i == "Medical Interventions" || hs2i == "Intro to Construction" || hs2i == "Welding Tech V" || hs2i == "Intro to AFNR" || hs2i == "Fundamental Plant Science" || hs2i == "Advanced Plant Science" || hs2i == "Fundamental Animal Science" || hs2i == "Advanced Animal Science" || hs2i == "Wildlife and Fisheries" || hs2i == "Fundamental Ag Mechanical Technologies" || hs2i == "Agribusiness Management" || hs2i == "Carrer Explorations" || hs2i == "Principles of Marketing" || hs2i == "Sports Marketing Strategies" || hs2i == "Fundamental Horticulture" || hs2i == "Advanced Horticulture" || hs2i == "Agricultural Leadership and Communications" || hs2i == "Welding VI") {
         hstotal12 = (0.5 + hstotal12);
         unit12 = (1 + unit12);
         sub2 = (sub2 + 0.5);
@@ -944,7 +944,7 @@ function calc() {
         unit12 = (2 + unit12);
         sub2 = (sub2 + 1);
     }
-    if (hs2j == "Intro to Business" || hs2j == "Nutrition and Wellness" || hs2j == "Nutrition Sciences" || hs2j == "Human Development I" || hs2j == "Human Development II" || hs2j == "Business Computer Applications" || hs2j == "Exploration of Information Technology" || hs2j == "Computer Science Principles I" || hs2j == "Computer Science Principles II" || hs2j == "Exploration of Media Arts I" || hs2j == "Exploration of Media Arts II" || hs2j == "Interior Design I" || hs2j == "Interior Design II" || hs2j == "Welding Tech I" || hs2j == "Welding Tech II" || hs2j == "Cybersecurity I" || hs2j == "Cybersecurity II" || hs2j == "Accounting I" || hs2j == "Business Law" || hs2j == "Media Design and Broadcasting I" || hs2j == "Media Design and Broadcasting II" || hs2j == "Welding Tech III" || hs2j == "Introduction to Building Trades" || hs2j == "Entrepreneurship" || hs2j == "Medical Interventions" || hs2j == "Intro to Construction" || hs2j == "Welding Tech V" || hs2j == "Intro to AFNR" || hs2j == "Fundamental Plant Science" || hs2j == "Advanced Plant Science" || hs2j == "Fundamental Animal Science" || hs2j == "Advanced Animal Science") {
+    if (hs2j == "Intro to Business" || hs2j == "Nutrition and Wellness" || hs2j == "Nutrition Sciences" || hs2j == "Human Development I" || hs2j == "Human Development II" || hs2j == "Business Computer Applications" || hs2j == "Exploration of Information Technology" || hs2j == "Computer Science Principles I" || hs2j == "Computer Science Principles II" || hs2j == "Exploration of Media Arts I" || hs2j == "Exploration of Media Arts II" || hs2j == "Interior Design I" || hs2j == "Interior Design II" || hs2j == "Welding Tech I" || hs2j == "Welding Tech II" || hs2j == "Cybersecurity I" || hs2j == "Cybersecurity II" || hs2j == "Accounting I" || hs2j == "Business Law" || hs2j == "Media Design and Broadcasting I" || hs2j == "Media Design and Broadcasting II" || hs2j == "Welding Tech III" || hs2j == "Introduction to Building Trades" || hs2j == "Entrepreneurship" || hs2j == "Medical Interventions" || hs2j == "Intro to Construction" || hs2j == "Welding Tech V" || hs2j == "Intro to AFNR" || hs2j == "Fundamental Plant Science" || hs2j == "Advanced Plant Science" || hs2j == "Fundamental Animal Science" || hs2j == "Advanced Animal Science" || hs2j == "Wildlife and Fisheries" || hs2j == "Fundamental Ag Mechanical Technologies" || hs2j == "Agribusiness Management" || hs2j == "Carrer Explorations" || hs2j == "Principles of Marketing" || hs2j == "Sports Marketing Strategies" || hs2j == "Fundamental Horticulture" || hs2j == "Advanced Horticulture" || hs2j == "Agricultural Leadership and Communications" || hs2j == "Welding VI") {
         hstotal12 = (0.5 + hstotal12);
         unit12 = (1 + unit12);
         sub2 = (sub2 + 0.5);
@@ -953,7 +953,7 @@ function calc() {
         unit12 = (2 + unit12);
         sub2 = (sub2 + 1);
     }
-    if (hs2k == "Intro to Business" || hs2k == "Nutrition and Wellness" || hs2k == "Nutrition Sciences" || hs2k == "Human Development I" || hs2k == "Human Development II" || hs2k == "Business Computer Applications" || hs2k == "Exploration of Information Technology" || hs2k == "Computer Science Principles I" || hs2k == "Computer Science Principles II" || hs2k == "Exploration of Media Arts I" || hs2k == "Exploration of Media Arts II" || hs2k == "Interior Design I" || hs2k == "Interior Design II" || hs2k == "Welding Tech I" || hs2k == "Welding Tech II" || hs2k == "Cybersecurity I" || hs2k == "Cybersecurity II" || hs2k == "Accounting I" || hs2k == "Business Law" || hs2k == "Media Design and Broadcasting I" || hs2k == "Media Design and Broadcasting II" || hs2k == "Welding Tech III" || hs2k == "Introduction to Building Trades" || hs2k == "Entrepreneurship" || hs2k == "Medical Interventions" || hs2k == "Intro to Construction" || hs2k == "Welding Tech V" || hs2k == "Intro to AFNR" || hs2k == "Fundamental Plant Science" || hs2k == "Advanced Plant Science" || hs2k == "Fundamental Animal Science" || hs2k == "Advanced Animal Science") {
+    if (hs2k == "Intro to Business" || hs2k == "Nutrition and Wellness" || hs2k == "Nutrition Sciences" || hs2k == "Human Development I" || hs2k == "Human Development II" || hs2k == "Business Computer Applications" || hs2k == "Exploration of Information Technology" || hs2k == "Computer Science Principles I" || hs2k == "Computer Science Principles II" || hs2k == "Exploration of Media Arts I" || hs2k == "Exploration of Media Arts II" || hs2k == "Interior Design I" || hs2k == "Interior Design II" || hs2k == "Welding Tech I" || hs2k == "Welding Tech II" || hs2k == "Cybersecurity I" || hs2k == "Cybersecurity II" || hs2k == "Accounting I" || hs2k == "Business Law" || hs2k == "Media Design and Broadcasting I" || hs2k == "Media Design and Broadcasting II" || hs2k == "Welding Tech III" || hs2k == "Introduction to Building Trades" || hs2k == "Entrepreneurship" || hs2k == "Medical Interventions" || hs2k == "Intro to Construction" || hs2k == "Welding Tech V" || hs2k == "Intro to AFNR" || hs2k == "Fundamental Plant Science" || hs2k == "Advanced Plant Science" || hs2k == "Fundamental Animal Science" || hs2k == "Advanced Animal Science" || hs2k == "Wildlife and Fisheries" || hs2k == "Fundamental Ag Mechanical Technologies" || hs2k == "Agribusiness Management" || hs2k == "Carrer Explorations" || hs2k == "Principles of Marketing" || hs2k == "Sports Marketing Strategies" || hs2k == "Fundamental Horticulture" || hs2k == "Advanced Horticulture" || hs2k == "Agricultural Leadership and Communications" || hs2k == "Welding VI") {
         hstotal12 = (0.5 + hstotal12);
         unit12 = (1 + unit12);
         sub2 = (sub2 + 0.5);
@@ -962,7 +962,7 @@ function calc() {
         unit12 = (2 + unit12);
         sub2 = (sub2 + 1);
     }
-    if (hs2l == "Intro to Business" || hs2l == "Nutrition and Wellness" || hs2l == "Nutrition Sciences" || hs2l == "Human Development I" || hs2l == "Human Development II" || hs2l == "Business Computer Applications" || hs2l == "Exploration of Information Technology" || hs2l == "Computer Science Principles I" || hs2l == "Computer Science Principles II" || hs2l == "Exploration of Media Arts I" || hs2l == "Exploration of Media Arts II" || hs2l == "Interior Design I" || hs2l == "Interior Design II" || hs2l == "Welding Tech I" || hs2l == "Welding Tech II" || hs2l == "Cybersecurity I" || hs2l == "Cybersecurity II" || hs2l == "Accounting I" || hs2l == "Business Law" || hs2l == "Media Design and Broadcasting I" || hs2l == "Media Design and Broadcasting II" || hs2l == "Welding Tech III" || hs2l == "Introduction to Building Trades" || hs2l == "Entrepreneurship" || hs2l == "Medical Interventions" || hs2l == "Intro to Construction" || hs2l == "Welding Tech V" || hs2l == "Intro to AFNR" || hs2l == "Fundamental Plant Science" || hs2l == "Advanced Plant Science" || hs2l == "Fundamental Animal Science" || hs2l == "Advanced Animal Science") {
+    if (hs2l == "Intro to Business" || hs2l == "Nutrition and Wellness" || hs2l == "Nutrition Sciences" || hs2l == "Human Development I" || hs2l == "Human Development II" || hs2l == "Business Computer Applications" || hs2l == "Exploration of Information Technology" || hs2l == "Computer Science Principles I" || hs2l == "Computer Science Principles II" || hs2l == "Exploration of Media Arts I" || hs2l == "Exploration of Media Arts II" || hs2l == "Interior Design I" || hs2l == "Interior Design II" || hs2l == "Welding Tech I" || hs2l == "Welding Tech II" || hs2l == "Cybersecurity I" || hs2l == "Cybersecurity II" || hs2l == "Accounting I" || hs2l == "Business Law" || hs2l == "Media Design and Broadcasting I" || hs2l == "Media Design and Broadcasting II" || hs2l == "Welding Tech III" || hs2l == "Introduction to Building Trades" || hs2l == "Entrepreneurship" || hs2l == "Medical Interventions" || hs2l == "Intro to Construction" || hs2l == "Welding Tech V" || hs2l == "Intro to AFNR" || hs2l == "Fundamental Plant Science" || hs2l == "Advanced Plant Science" || hs2l == "Fundamental Animal Science" || hs2l == "Advanced Animal Science" || hs2l == "Wildlife and Fisheries" || hs2l == "Fundamental Ag Mechanical Technologies" || hs2l == "Agribusiness Management" || hs2l == "Carrer Explorations" || hs2l == "Principles of Marketing" || hs2l == "Sports Marketing Strategies" || hs2l == "Fundamental Horticulture" || hs2l == "Advanced Horticulture" || hs2l == "Agricultural Leadership and Communications" || hs2l == "Welding VI") {
         hstotal12 = (0.5 + hstotal12);
         unit12 = (1 + unit12);
         sub2 = (sub2 + 0.5);
@@ -971,7 +971,7 @@ function calc() {
         unit12 = (2 + unit12);
         sub2 = (sub2 + 1);
     }
-    if (hs2m == "Intro to Business" || hs2m == "Nutrition and Wellness" || hs2m == "Nutrition Sciences" || hs2m == "Human Development I" || hs2m == "Human Development II" || hs2m == "Business Computer Applications" || hs2m == "Exploration of Information Technology" || hs2m == "Computer Science Principles I" || hs2m == "Computer Science Principles II" || hs2m == "Exploration of Media Arts I" || hs2m == "Exploration of Media Arts II" || hs2m == "Interior Design I" || hs2m == "Interior Design II" || hs2m == "Welding Tech I" || hs2m == "Welding Tech II" || hs2m == "Cybersecurity I" || hs2m == "Cybersecurity II" || hs2m == "Accounting I" || hs2m == "Business Law" || hs2m == "Media Design and Broadcasting I" || hs2m == "Media Design and Broadcasting II" || hs2m == "Welding Tech III" || hs2m == "Introduction to Building Trades" || hs2m == "Entrepreneurship" || hs2m == "Medical Interventions" || hs2m == "Intro to Construction" || hs2m == "Welding Tech V" || hs2m == "Intro to AFNR" || hs2m == "Fundamental Plant Science" || hs2m == "Advanced Plant Science" || hs2m == "Fundamental Animal Science" || hs2m == "Advanced Animal Science") {
+    if (hs2m == "Intro to Business" || hs2m == "Nutrition and Wellness" || hs2m == "Nutrition Sciences" || hs2m == "Human Development I" || hs2m == "Human Development II" || hs2m == "Business Computer Applications" || hs2m == "Exploration of Information Technology" || hs2m == "Computer Science Principles I" || hs2m == "Computer Science Principles II" || hs2m == "Exploration of Media Arts I" || hs2m == "Exploration of Media Arts II" || hs2m == "Interior Design I" || hs2m == "Interior Design II" || hs2m == "Welding Tech I" || hs2m == "Welding Tech II" || hs2m == "Cybersecurity I" || hs2m == "Cybersecurity II" || hs2m == "Accounting I" || hs2m == "Business Law" || hs2m == "Media Design and Broadcasting I" || hs2m == "Media Design and Broadcasting II" || hs2m == "Welding Tech III" || hs2m == "Introduction to Building Trades" || hs2m == "Entrepreneurship" || hs2m == "Medical Interventions" || hs2m == "Intro to Construction" || hs2m == "Welding Tech V" || hs2m == "Intro to AFNR" || hs2m == "Fundamental Plant Science" || hs2m == "Advanced Plant Science" || hs2m == "Fundamental Animal Science" || hs2m == "Advanced Animal Science" || hs2m == "Wildlife and Fisheries" || hs2m == "Fundamental Ag Mechanical Technologies" || hs2m == "Agribusiness Management" || hs2m == "Carrer Explorations" || hs2m == "Principles of Marketing" || hs2m == "Sports Marketing Strategies" || hs2m == "Fundamental Horticulture" || hs2m == "Advanced Horticulture" || hs2m == "Agricultural Leadership and Communications" || hs2m == "Welding VI") {
         hstotal12 = (0.5 + hstotal12);
         unit12 = (1 + unit12);
         sub2 = (sub2 + 0.5);
@@ -1264,199 +1264,199 @@ function calc() {
             dctotal12+=4
             }
     }
-    if (f00 == "9th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f30 == "9th grade") {
+        if (f31 == "CTE / Other") {
+            if (f33 == "0.25 hs credits") {
                 hstotal9 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal9 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal9 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal9++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f31 == "Language") {
+            if (f33 == "0.25 hs credits") {
                 hstotal9 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal9 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal9 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal9++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f31 == "Arts") {
+            if (f33 == "0.25 hs credits") {
                 hstotal9 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal9 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal9 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal9++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f34 == "3 dual credits") {
                 dctotal11+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f34 == "4 dual credits") {
                 dctotal11+=4
             }
     }
-    if (f00 == "10th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f30 == "10th grade") {
+        if (f31 == "CTE / Other") {
+            if (f33 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal10++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f31 == "Language") {
+            if (f33 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal10++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f31 == "Arts") {
+            if (f33 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal10++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f34 == "3 dual credits") {
             dctotal11+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f34 == "4 dual credits") {
             dctotal11+=4
             }
     }
-    if (f00 == "11th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f30 == "11th grade") {
+        if (f31 == "CTE / Other") {
+            if (f33 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal11++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f31 == "Language") {
+            if (f33 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal11++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f31 == "Arts") {
+            if (f33 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal11++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f34 == "3 dual credits") {
             dctotal11+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f34 == "4 dual credits") {
             dctotal11+=4
             }
     }
-    if (f00 == "12th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f30 == "12th grade") {
+        if (f31 == "CTE / Other") {
+            if (f33 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal10++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f31 == "Language") {
+            if (f33 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal10++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f31 == "Arts") {
+            if (f33 == "0.25 hs credits") {
                 hstotal12 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f33 == "0.5 hs credits") {
                 hstotal12 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f33 == "0.75 hs credits") {
                 hstotal12 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f33 == "1 hs credit") {
                 hstotal12++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f34 == "3 dual credits") {
             dctotal12+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f34 == "4 dual credits") {
             dctotal12+=4
             }
     }
@@ -1509,350 +1509,351 @@ function calc() {
                 dctotal11+=4
             }
     }
-    if (f00 == "10th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f10 == "10th grade") {
+        if (f11 == "CTE / Other") {
+            if (f13 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal10++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f11 == "Language") {
+            if (f13 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal10++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f11 == "Arts") {
+            if (f13 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal10++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f14 == "3 dual credits") {
             dctotal11+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f14 == "4 dual credits") {
             dctotal11+=4
             }
     }
-    if (f00 == "11th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f10 == "11th grade") {
+        if (f11 == "CTE / Other") {
+            if (f13 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal11++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f11 == "Language") {
+            if (f13 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal11++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f11 == "Arts") {
+            if (f13 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal11++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f14 == "3 dual credits") {
             dctotal11+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f14 == "4 dual credits") {
             dctotal11+=4
             }
     }
-    if (f00 == "12th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f10 == "12th grade") {
+        if (f11 == "CTE / Other") {
+            if (f13 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal10++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f11 == "Language") {
+            if (f13 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal10++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f11 == "Arts") {
+            if (f13 == "0.25 hs credits") {
                 hstotal12 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f13 == "0.5 hs credits") {
                 hstotal12 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f13 == "0.75 hs credits") {
                 hstotal12 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f13 == "1 hs credit") {
                 hstotal12++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f14 == "3 dual credits") {
             dctotal12+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f14 == "4 dual credits") {
             dctotal12+=4
             }
     }
-    if (f00 == "9th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f20 == "9th grade") {
+        if (f21 == "CTE / Other") {
+            if (f23 == "0.25 hs credits") {
                 hstotal9 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal9 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal9 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal9++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f21 == "Language") {
+            if (f23 == "0.25 hs credits") {
                 hstotal9 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal9 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal9 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal9++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
+        } if (f21 == "Arts") {
             if (f03 == "0.25 hs credits") {
                 hstotal9 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal9 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal9 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal9++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f24 == "3 dual credits") {
                 dctotal11+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f24 == "4 dual credits") {
                 dctotal11+=4
             }
     }
-    if (f00 == "10th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f20 == "10th grade") {
+        if (f21 == "CTE / Other") {
+            if (f23 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal10++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f21 == "Language") {
+            if (f23 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal10++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f21 == "Arts") {
+            if (f23 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal10++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f24 == "3 dual credits") {
             dctotal11+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f24 == "4 dual credits") {
             dctotal11+=4
             }
     }
-    if (f00 == "11th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f20 == "11th grade") {
+        if (f21 == "CTE / Other") {
+            if (f23 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal11++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f21 == "Language") {
+            if (f23 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal11++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f21 == "Arts") {
+            if (f23 == "0.25 hs credits") {
                 hstotal11 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal11 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal11 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal11++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f24 == "3 dual credits") {
             dctotal11+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f24 == "4 dual credits") {
             dctotal11+=4
             }
     }
-    if (f00 == "12th grade") {
-        if (f01 == "CTE / Other") {
-            if (f03 == "0.25 hs credits") {
+    if (f20 == "12th grade") {
+        if (f21 == "CTE / Other") {
+            if (f23 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub2 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub2 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub2 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal10++;
                 sub2++;
             }
-        } if (f01 == "Language") {
-            if (f03 == "0.25 hs credits") {
+        } if (f21 == "Language") {
+            if (f23 == "0.25 hs credits") {
                 hstotal10 += 0.25;
                 sub4 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal10 += 0.5;
                 sub4 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal10 += 0.75;
                 sub4 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal10++;
                 sub4++;
             }
-        } if (f01 == "Arts") {
-            if (f03 == "0.25 hs credits") {
+        } if (f21 == "Arts") {
+            if (f23 == "0.25 hs credits") {
                 hstotal12 += 0.25;
                 sub5 += 0.25;
-            } else if ( f03 == "0.5 hs credits") {
+            } else if ( f23 == "0.5 hs credits") {
                 hstotal12 += 0.5;
                 sub5 += 0.5;
-            } else if ( f03 == "0.75 hs credits") {
+            } else if ( f23 == "0.75 hs credits") {
                 hstotal12 += 0.75;
                 sub5 += 0.75;
-            } else if ( f03 == "1 hs credit") {
+            } else if ( f23 == "1 hs credit") {
                 hstotal12++;
                 sub5++;
             }
-        } if (f04 == "3 dual credits") {
+        } if (f24 == "3 dual credits") {
             dctotal12+=3
-            } else if (f04 == "4 dual credits") {
+            } else if (f24 == "4 dual credits") {
             dctotal12+=4
             }
     }
 
+    
     localStorage.setItem('msclass', document.getElementById('msclass').checked);
     checked = JSON.parse(localStorage.getItem('msclass'));
     if (checked == true) {
