@@ -973,8 +973,11 @@ function calc() {
                   sub2=(sub2+0.5);
               } else if (hs15 == "Study Hall") {
             	unit12=(1+unit12);
-                }
-        if (hs16 == "Intro to Journalism" || hs16 == "Yearbook/Journalism" || hs16 == "Youth Internships" || hs16 == "Senior Experience") {
+                } else if (hs15 == "Senior Experience") {
+			hstotal12 =(1 + hstotal12);
+                	sub2=(sub2+1);
+		}
+        if (hs16 == "Intro to Journalism" || hs16 == "Yearbook/Journalism" || hs16 == "Youth Internships") {
               	hstotal12 =(1 + hstotal12);
                 unit12=(2+unit12);
                 sub2=(sub2+1);
@@ -984,8 +987,11 @@ function calc() {
                   sub2=(sub2+0.5);
               } else if (hs16 == "Study Hall") {
             	unit12=(1+unit12);
-                }
-		
+                } else if (hs16 == "Senior Experience") {
+			hstotal12 =(1 + hstotal12);
+                	sub2=(sub2+1);
+		}
+	
 		if (f02 == "1 unit / 0.5 credits") {
               	if (f00 == "9th grade") {
 					if (f01 == "CTE / Other") {
