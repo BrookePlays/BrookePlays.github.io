@@ -1264,6 +1264,594 @@ function calc() {
             dctotal12+=4
             }
     }
+    if (f00 == "9th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal9++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal9++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal9++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+                dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+                dctotal11+=4
+            }
+    }
+    if (f00 == "10th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal11+=4
+            }
+    }
+    if (f00 == "11th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal11+=4
+            }
+    }
+    if (f00 == "12th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal12 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal12 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal12 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal12++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal12+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal12+=4
+            }
+    }
+    if (f10 == "9th grade") {
+        if (f11 == "CTE / Other") {
+            if (f13 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub2 += 0.25;
+            } else if ( f13 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub2 += 0.5;
+            } else if ( f13 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub2 += 0.75;
+            } else if ( f13 == "1 hs credit") {
+                hstotal9++;
+                sub2++;
+            }
+        } if (f11 == "Language") {
+            if (f13 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub4 += 0.25;
+            } else if ( f13 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub4 += 0.5;
+            } else if ( f13 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub4 += 0.75;
+            } else if ( f13 == "1 hs credit") {
+                hstotal9++;
+                sub4++;
+            }
+        } if (f11 == "Arts") {
+            if (f13 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub5 += 0.25;
+            } else if ( f13 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub5 += 0.5;
+            } else if ( f13 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub5 += 0.75;
+            } else if ( f13 == "1 hs credit") {
+                hstotal9++;
+                sub5++;
+            }
+        } if (f14 == "3 dual credits") {
+                dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+                dctotal11+=4
+            }
+    }
+    if (f00 == "10th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal11+=4
+            }
+    }
+    if (f00 == "11th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal11+=4
+            }
+    }
+    if (f00 == "12th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal12 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal12 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal12 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal12++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal12+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal12+=4
+            }
+    }
+    if (f00 == "9th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal9++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal9++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal9 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal9 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal9 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal9++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+                dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+                dctotal11+=4
+            }
+    }
+    if (f00 == "10th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal11+=4
+            }
+    }
+    if (f00 == "11th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal11 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal11 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal11 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal11++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal11+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal11+=4
+            }
+    }
+    if (f00 == "12th grade") {
+        if (f01 == "CTE / Other") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub2 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub2 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub2 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub2++;
+            }
+        } if (f01 == "Language") {
+            if (f03 == "0.25 hs credits") {
+                hstotal10 += 0.25;
+                sub4 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal10 += 0.5;
+                sub4 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal10 += 0.75;
+                sub4 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal10++;
+                sub4++;
+            }
+        } if (f01 == "Arts") {
+            if (f03 == "0.25 hs credits") {
+                hstotal12 += 0.25;
+                sub5 += 0.25;
+            } else if ( f03 == "0.5 hs credits") {
+                hstotal12 += 0.5;
+                sub5 += 0.5;
+            } else if ( f03 == "0.75 hs credits") {
+                hstotal12 += 0.75;
+                sub5 += 0.75;
+            } else if ( f03 == "1 hs credit") {
+                hstotal12++;
+                sub5++;
+            }
+        } if (f04 == "3 dual credits") {
+            dctotal12+=3
+            } else if (f04 == "4 dual credits") {
+            dctotal12+=4
+            }
+    }
 
     localStorage.setItem('msclass', document.getElementById('msclass').checked);
     checked = JSON.parse(localStorage.getItem('msclass'));
