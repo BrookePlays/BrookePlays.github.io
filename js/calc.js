@@ -2020,4 +2020,4 @@ function calc() {
     document.getElementById("sublang").innerHTML = reqsublang;
     document.getElementById("subpe").innerHTML = reqsubpe;
 }
-};
+}
