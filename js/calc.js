@@ -1,4 +1,4 @@
-function calc() {
+	function calc() {
 	var hs0 = document.getElementById("class0").value,
 		hs = document.getElementById("class").value,
 		hs09 = document.getElementById("class09").value,
@@ -1065,6 +1065,8 @@ function calc() {
 		hstotal12 = (1 + hstotal12);
 		sub2 = (sub2 + 1);
 	}
+    
+    
 	if (f00 == "9th grade") {
 		if (f01 == "CTE / Other") {
 			if (f03 == "0.25 hs credits") {
@@ -1784,6 +1786,7 @@ function calc() {
 				sub5++;
 			}
 		}
+    	}
 		if (f20 == "12th grade") {
 			if (f21 == "CTE / Other") {
 				if (f23 == "0.25 hs credits") {
@@ -1836,6 +1839,9 @@ function calc() {
 				dctotal12 += 4;
 			}
 		}
+        
+        
+
 		localStorage.setItem('msclass', document.getElementById('msclass').checked);
 		checked = JSON.parse(localStorage.getItem('msclass'));
 		if (checked == true) {
@@ -1986,6 +1992,7 @@ function calc() {
 		if (total < 24) {
 			reqtotal = "You don't have enough credits to pass high school.";
 		}
+        
 		document.getElementById("total11dc").innerHTML = dctotal11;
 		document.getElementById("total12dc").innerHTML = dctotal12;
 		document.getElementById("total9hs").innerHTML = hstotal9;
@@ -2043,4 +2050,3 @@ function calc() {
 		document.getElementById("sublang").innerHTML = reqsublang;
 		document.getElementById("subpe").innerHTML = reqsubpe;
 	}
-}
