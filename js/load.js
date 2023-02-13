@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-	document.getElementById("msclass").checked = checked;
+    document.getElementById("msclass").checked = checked;
 	document.getElementById("msclass0").checked = checked0;
 	document.getElementById("msclass1").checked = checked1;
 	var inputs = document.getElementById('selection'),
