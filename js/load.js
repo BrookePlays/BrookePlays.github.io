@@ -515,10 +515,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		localStorage['filler02'] = this.value;
 	}
 	fill03.onchange = function() {
-		localStorage['filler01'] = this.value;
+		localStorage['filler03'] = this.value;
 	}
 	fill04.onchange = function() {
-		localStorage['filler02'] = this.value;
+		localStorage['filler04'] = this.value;
 	}
 	fill10.onchange = function() {
 		localStorage['filler10'] = this.value;
@@ -530,10 +530,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		localStorage['filler12'] = this.value;
 	}
 	fill13.onchange = function() {
-		localStorage['filler01'] = this.value;
+		localStorage['filler13'] = this.value;
 	}
 	fill14.onchange = function() {
-		localStorage['filler02'] = this.value;
+		localStorage['filler14'] = this.value;
 	}
 	fill20.onchange = function() {
 		localStorage['filler20'] = this.value;
@@ -545,10 +545,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		localStorage['filler22'] = this.value;
 	}
 	fill23.onchange = function() {
-		localStorage['filler01'] = this.value;
+		localStorage['filler23'] = this.value;
 	}
 	fill24.onchange = function() {
-		localStorage['filler02'] = this.value;
+		localStorage['filler24'] = this.value;
 	}
 	fill30.onchange = function() {
 		localStorage['filler30'] = this.value;
@@ -560,10 +560,10 @@ document.addEventListener('DOMContentLoaded', function() {
 		localStorage['filler32'] = this.value;
 	}
 	fill33.onchange = function() {
-		localStorage['filler01'] = this.value;
+		localStorage['filler33'] = this.value;
 	}
 	fill34.onchange = function() {
-		localStorage['filler02'] = this.value;
+		localStorage['filler34'] = this.value;
 	}
 	input.onchange = function() {
 		localStorage['class'] = this.value;
