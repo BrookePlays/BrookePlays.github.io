@@ -1065,6 +1065,7 @@ function calc() {
 		hstotal12 = (1 + hstotal12);
 		sub2 = (sub2 + 1);
 	}
+	
 	if (f00 == "9th grade") {
 		if (f01 == "CTE / Other") {
 			if (f03 == "0.25 hs credits") {
@@ -1110,6 +1111,16 @@ function calc() {
 				hstotal9++;
 				sub5++;
 			}
+		}
+		if (f04 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f04 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f02 == "1 unit") {
+			unit9++;
+		} else if (f02 == "2 units") {
+			unit9 += 2;
 		}
 	}
 	if (f00 == "10th grade") {
@@ -1158,6 +1169,16 @@ function calc() {
 				sub5++;
 			}
 		}
+		if (f04 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f04 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f02 == "1 unit") {
+			unit10++;
+		} else if (f02 == "2 units") {
+			unit10 += 2;
+		}
 	}
 	if (f00 == "11th grade") {
 		if (f01 == "CTE / Other") {
@@ -1204,6 +1225,16 @@ function calc() {
 				hstotal11++;
 				sub5++;
 			}
+		}
+		if (f04 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f04 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f02 == "1 unit") {
+			unit11++;
+		} else if (f02 == "2 units") {
+			unit11 += 2;
 		}
 	}
 	if (f00 == "12th grade") {
@@ -1257,6 +1288,11 @@ function calc() {
 		} else if (f04 == "4 dual credits") {
 			dctotal12 += 4;
 		}
+		if (f02 == "1 unit") {
+			unit12++;
+		} else if (f02 == "2 units") {
+			unit12 += 2;
+		}
 	}
 	if (f30 == "9th grade") {
 		if (f31 == "CTE / Other") {
@@ -1303,6 +1339,16 @@ function calc() {
 				hstotal9++;
 				sub5++;
 			}
+		}
+		if (f34 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f34 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f32 == "1 unit") {
+			unit9++;
+		} else if (f32 == "2 units") {
+			unit9 += 2;
 		}
 	}
 	if (f30 == "10th grade") {
@@ -1351,6 +1397,16 @@ function calc() {
 				sub5++;
 			}
 		}
+		if (f34 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f34 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f32 == "1 unit") {
+			unit10++;
+		} else if (f32 == "2 units") {
+			unit10 += 2;
+		}
 	}
 	if (f30 == "11th grade") {
 		if (f31 == "CTE / Other") {
@@ -1397,6 +1453,16 @@ function calc() {
 				hstotal11++;
 				sub5++;
 			}
+		}
+		if (f34 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f34 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f32 == "1 unit") {
+			unit11++;
+		} else if (f32 == "2 units") {
+			unit11 += 2;
 		}
 	}
 	if (f30 == "12th grade") {
@@ -1450,6 +1516,11 @@ function calc() {
 		} else if (f34 == "4 dual credits") {
 			dctotal12 += 4;
 		}
+		if (f32 == "1 unit") {
+			unit12++;
+		} else if (f32 == "2 units") {
+			unit12 += 2;
+		}
 	}
 	if (f10 == "9th grade") {
 		if (f11 == "CTE / Other") {
@@ -1496,6 +1567,16 @@ function calc() {
 				hstotal9++;
 				sub5++;
 			}
+		}
+		if (f14 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f14 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f12 == "1 unit") {
+			unit9++;
+		} else if (f12 == "2 units") {
+			unit9 += 2;
 		}
 	}
 	if (f10 == "10th grade") {
@@ -1544,6 +1625,16 @@ function calc() {
 				sub5++;
 			}
 		}
+		if (f14 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f14 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f12 == "1 unit") {
+			unit10++;
+		} else if (f12 == "2 units") {
+			unit10 += 2;
+		}
 	}
 	if (f10 == "11th grade") {
 		if (f11 == "CTE / Other") {
@@ -1590,6 +1681,16 @@ function calc() {
 				hstotal11++;
 				sub5++;
 			}
+		}
+		if (f14 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f14 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f12 == "1 unit") {
+			unit11++;
+		} else if (f12 == "2 units") {
+			unit11 += 2;
 		}
 	}
 	if (f10 == "12th grade") {
@@ -1643,6 +1744,11 @@ function calc() {
 		} else if (f14 == "4 dual credits") {
 			dctotal12 += 4;
 		}
+		if (f12 == "1 unit") {
+			unit12++;
+		} else if (f12 == "2 units") {
+			unit12 += 2;
+		}
 	}
 	if (f20 == "9th grade") {
 		if (f21 == "CTE / Other") {
@@ -1689,6 +1795,16 @@ function calc() {
 				hstotal9++;
 				sub5++;
 			}
+		}
+		if (f24 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f24 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f22 == "1 unit") {
+			unit9++;
+		} else if (f22 == "2 units") {
+			unit9 += 2;
 		}
 	}
 	if (f20 == "10th grade") {
@@ -1737,6 +1853,16 @@ function calc() {
 				sub5++;
 			}
 		}
+		if (f24 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f24 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f22 == "1 unit") {
+			unit10++;
+		} else if (f22 == "2 units") {
+			unit10 += 2;
+		}
 	}
 	if (f20 == "11th grade") {
 		if (f21 == "CTE / Other") {
@@ -1783,6 +1909,16 @@ function calc() {
 				hstotal11++;
 				sub5++;
 			}
+		}
+		if (f24 == "3 dual credits") {
+			dctotal11 += 3;
+		} else if (f24 == "4 dual credits") {
+			dctotal11 += 4;
+		}
+		if (f22 == "1 unit") {
+			unit11++;
+		} else if (f22 == "2 units") {
+			unit11 += 2;
 		}
 	}
 	if (f20 == "12th grade") {
@@ -1836,24 +1972,29 @@ function calc() {
 		} else if (f24 == "4 dual credits") {
 			dctotal12 += 4;
 		}
+		if (f22 == "1 unit") {
+			unit12++;
+		} else if (f22 == "2 units") {
+			unit12 += 2;
+		}
 	}
 	localStorage.setItem('msclass', document.getElementById('msclass').checked);
 	checked = JSON.parse(localStorage.getItem('msclass'));
-	if (checked == true) {
-		mscredit = mscredit + 1;
-		sub8 = sub8 + 1;
+	if (checked) {
+		mscredit++;
+		sub8++;
 	}
 	localStorage.setItem('msclass0', document.getElementById('msclass0').checked);
 	checked0 = JSON.parse(localStorage.getItem('msclass0'));
-	if (checked0 == true) {
-		mscredit = mscredit + 0.5;
-		sub3 = sub3 + 0.5;
+	if (checked0) {
+		mscredit += 0.5;
+		sub3 += 0.5;
 	}
 	localStorage.setItem('msclass1', document.getElementById('msclass1').checked);
 	checked1 = JSON.parse(localStorage.getItem('msclass1'));
-	if (checked1 == true) {
-		mscredit = mscredit + 0.5;
-		sub2 = sub2 + 0.5;
+	if (checked1) {
+		mscredit += 0.5;
+		sub2 += 0.5;
 	}
 	total = hstotal9 + hstotal10 + hstotal11 + hstotal12 + mscredit;
 	totalt = dctotal11 + dctotal12;
@@ -1881,7 +2022,7 @@ function calc() {
 	if (hs8 !== "Geometry" && hs80 !== "Geometry" && hs81 !== "Geometry" && hs82 !== "Geometry" && hs83 != "Geometry" && hs84 != "Geometry" && hs8 !== "Accelerated Geometry" && hs80 !== "Accelerated Geometry" && hs81 !== "Accelerated Geometry" && hs82 !== "Accelerated Geometry" && hs83 != "Accelerated Geometry" && hs84 != "Accelerated Geometry") {
 		reqmath2 = "You do not have the required class: Geometry.";
 	}
-	if (hs8 !== "Algebra I" && checked !== true) {
+	if (hs8 !== "Algebra I" && !checked) {
 		reqmath3 = "You do not have the required class: Algebra.";
 	}
 	if (hs7 !== "Biology" && hs7 !== "Honors Biology" && hs7 !== "Physical Science") {
@@ -1902,7 +2043,7 @@ function calc() {
 	if (hs61 !== "Government" && hs62 !== "Government" && hs63 !== "Government" && hs64 !== "Government") {
 		ss3req = "You do not have the required class: Government.";
 	}
-	if (checked0 !== true && hs3 !== "Health" && hs30 !== "Health") {
+	if (!checked0 && hs3 !== "Health" && hs30 !== "Health") {
 		healreq = "You do not have the required class: Health.";
 	}
 	if (hs15 !== "Senior Experience" && hs16 !== "Senior Experience" && hs15 !== "Youth Internships" && hs16 !== "Youth Internships") {
@@ -1918,38 +2059,38 @@ function calc() {
 	overflowsci = overflowsci + sub7;
 	if (4 < sub9) {
 		temp9 = sub9 - 4;
-		sub9 = sub9 - temp9;
-		sub2 = sub2 + temp9;
+		sub9 -= temp9;
+		sub2 += temp9;
 	}
 	if (reqmath < sub8) {
 		temp8 = sub8 - reqmath;
-		sub8 = sub8 - temp8;
-		sub2 = sub2 + temp8;
+		sub8 -= temp8;
+		sub2 += temp8;
 	}
 	if (reqsci < sub7) {
 		temp7 = sub7 - reqsci;
-		sub7 = sub7 - temp7;
-		sub2 = sub2 + temp7;
+		sub7 -= temp7;
+		sub2 += temp7;
 	}
 	if (3 < sub6) {
 		temp6 = sub6 - 3;
-		sub6 = sub6 - temp6;
-		sub2 = sub2 + temp6;
+		sub6 -= temp6;
+		sub2 += temp6;
 	}
 	if (1 < sub5) {
 		temp5 = sub5 - 1;
-		sub5 = sub5 - temp5;
-		sub2 = sub2 + temp5;
+		sub5 -= temp5;
+		sub2 += temp5;
 	}
 	if (reqlang < sub4) {
-		temp4 = sub4 - reqlang;
-		sub4 = sub4 - temp4;
-		sub2 = sub2 + temp4;
+		temp4 = reqlang;
+		sub4 -= temp4;
+		sub2 += temp4;
 	}
 	if (1 < sub3) {
 		temp3 = sub3 - 1;
-		sub3 = sub3 - temp3;
-		sub2 = sub2 + temp3;
+		sub3 -= temp3;
+		sub2 += temp3;
 	}
 	if (overflowela < 4) {
 		reqsubela = "You do not meet the credit requirements for ELA (Unless you make up for it in Online/Other).";
