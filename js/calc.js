@@ -1676,7 +1676,7 @@ function calc() {
 			}
 		}
 		if (f21 == "Arts") {
-			if (f03 == "0.25 hs credits") {
+			if (f23 == "0.25 hs credits") {
 				hstotal9 += 0.25;
 				sub5 += 0.25;
 			} else if (f23 == "0.5 hs credits") {
