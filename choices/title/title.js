@@ -103,7 +103,7 @@ function openMessage() {
     let saved = JSON.parse(localStorage.getItem("key"));
 
     if ((saved[0] ==  true) || (saved[1] + saved[2] + saved[3] + saved[4] + saved[5] + saved[6] + saved[7] + saved[8] + saved[9] + saved[10]) == 10) {
-        window.location.href = "https://brookeplays.io/choices/message";
+        window.location.href = "https://brookeplays.github.io/choices/message";
     } else {
         alert("You need to collect all ten endings to unlock this.");
         console.log(saved);
@@ -111,5 +111,5 @@ function openMessage() {
 }
 
 function startGame() {
-	window.location.href = "https://brookeplays.io/choices/game";
+	window.location.href = "https://brookeplays.github.io/choices/game";
 }
