@@ -1,0 +1,12 @@
+video::-webkit-media-controls {
+	display: none;
+}
+
+video {
+  display: none;
+  pointer-events: none;
+}
+
+body {
+  background-color: black;
+}
