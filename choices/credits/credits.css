@@ -69,8 +69,8 @@ body {
  }
  
  100% { 
- -moz-transform: translateY(-100%); /* Browser bug fix */
- -webkit-transform: translateY(-100%); /* Browser bug fix */
+ -moz-transform: translateY(-1000%); /* Browser bug fix */
+ -webkit-transform: translateY(-1000%); /* Browser bug fix */
  transform: translateY(-1000%); /* looks to be (10320 / 1172 * 200%) + 200% */
  }
 
