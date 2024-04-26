@@ -27,8 +27,8 @@ body {
 .scroll-up {
 	height: 92%;	
 	overflow: hidden;
-	position: relative;
-	background: black;
+	position: absolute;
+	background: green;
 	color: white;
 	border: none;
 }
