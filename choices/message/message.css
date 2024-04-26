@@ -25,12 +25,12 @@ body {
 }
 
 .scroll-up {
-	height: 92%;	
+	height: 800px;	
 	overflow: hidden;
 	position: absolute;
 	background: green;
 	color: white;
-	border: none;
+	border: solid;
 }
 
 .scroll-up p {
