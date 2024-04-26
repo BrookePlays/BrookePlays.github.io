@@ -30,7 +30,7 @@ body {
 	position: relative;
 	background: black;
 	color: white;
-	border: solid;
+	border: none;
 }
 
 .scroll-up p {
